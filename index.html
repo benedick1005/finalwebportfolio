@@ -215,7 +215,7 @@ ul li a:hover{
     border-radius:101%;
     max-width:20rem;
     margin:0px 10px 0px;
-    opacity: .9;
+    
 }
 .imgrightside:hover{
     opacity: .5;
@@ -230,7 +230,8 @@ ul li a:hover{
 }
 
 .mynametxt{
-    font-size:27px;
+    
+    font-size:24px;
 }
 .Btnlearn{
     border:none;
@@ -257,6 +258,16 @@ ul li a:hover{
 @media screen and (max-width:750px){
     .box1{
         margin:170px 10px 0px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .mynametxt{
+        font-size: 20px;
+
+    }
+    .slidertxt{
+        font-size: 13px;
     }
 }
 
@@ -287,23 +298,18 @@ ul li a:hover{
             <div class="contacttxtbox1" >
                 <div class="circleimage">  <img src="img/benedick.jpg" alt="" class="contactimg"></div>
 
-                <div class="contacticoncontainer">
-                    <div class="icon1"><i class='fas fa-phone-volume'></i></div>
-                    <div class="icon1"><i class='fab fa-google'></i></div>
-                    <!-- <div class="icon1"><i class='fab fa-facebook-f'></i></div> -->
-                </div>
+                <!-- <div class="contacticoncontainer">
+                    <div class="icon1"><i class="fa fa-phone"></i></div>
+                    <div class="icon1"><i class="fa fa-google"></i></div>
+                </div> -->
 
 
                 <div class="contacticoncontainer1"> 
-                    <div class="contacttxt1">+639658629717</div>
-                    <div class="contacttxt1">lanlenlen78@gmail.com</div>
-                    <!-- <div class="contacttxt1">+639658629717</div> -->
+                    <div class="contacttxt1"><i class="fa fa-phone" id="iconcontact"></i> +639658629717</div>
+                    <div class="contacttxt1"> <i class="fa fa-google" id="iconcontact"></i> lanlenlen78@gmail.com</div>
+                    <div class="contacttxt1"> <i class="fa fa-facebook-official" id="iconcontact"></i> Facebook</div>
                 </div>
 
-                <div class="contacticoncontainer2"> 
-                    <div class="fbicon"><i class='fab fa-facebook-f'></i></div>
-                    <div class="fbtxt">Benedick Erlano</div>
-                </div>
 
 
             </div>
@@ -333,7 +339,7 @@ ul li a:hover{
 
 .txtsample1{    
     margin-left:117px;
-    font-size:27px;
+    font-size:20px;
     border-width: 0px;
     border-bottom: 4px solid #FF00FF;
     font-weight:bold;
@@ -433,33 +439,26 @@ ul li a:hover{
     height: 0 auto;
     max-width: 100vh;
 }
-.icon1{
-    flex-direction:column;
-    margin: 5px 60px 5px;
-    color: #FF00FF;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: bold;
-}
-
 .contacticoncontainer1{
     margin: 5px  5px 0px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+
     height: 0 auto;
-    max-width: 100vh;
+    max-width:auto;
     background-color:white;
 }
 
 .contacttxt1{
     flex-direction:column;
-    margin: 10px 10px 10px;
+    margin: 20px 10px 10px;
     color: black;
     font-size:15px;
     
 }
-
+#iconcontact
+{   margin: 0px 20px 0px;
+    color:#FF00FF;
+    font-size: 20px;
+}
 .contacticoncontainer2{
     margin:20px 1px 0px;
     align-content: center;
@@ -495,9 +494,22 @@ ul li a:hover{
         margin: 1px 20px -20px;
 
     }
+.txtsample1{
+    font-size: 20px;
+}
+.objectivetxt{
+font-size: 17px;
+}
+.objectivetxtparagraph{
+    font-size: 15px;
+}
 
+.contacttxt1{
 
-    }
+    font-size: 15px;
+}
+   
+ }
 
 </style>
 
@@ -622,7 +634,7 @@ ul li a:hover{
    
 .designtxt{
     
-    font-size: 13px;
+    font-size: 15px;
     margin: 13px 1px 2px  26px;
 } 
 
