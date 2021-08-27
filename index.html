@@ -186,6 +186,7 @@ ul li a:hover{
      display:flex;
      flex-wrap:wrap;
      align-items:center;
+     background-color: white;
      justify-content:space-around;
  }
 
@@ -196,6 +197,7 @@ ul li a:hover{
     margin:0px 10px 0px;
     /* border:1px solid black; */
     display:flex;
+    background-color: white;
     line-height:20px;
     flex-wrap:wrap;
 }
@@ -264,7 +266,12 @@ ul li a:hover{
 
 @media screen and (max-width:750px){
     .box1{
-        margin:170px 10px 0px;
+        margin:40px 10px 0px;
+        
+    }
+    .box2{
+        margin:-120px 10px 0px;
+        
     }
 }
 
@@ -297,7 +304,7 @@ ul li a:hover{
 
                 <div class="objectivecontainertxt">
                     <H4 class="objectivetxt">OBJECTTIVE</H4>
-                    <P class="objectivetxtparagraph">As Frontend developer web developer my objective is to grow <span class="exponentiallytxt"> exponentially </span>in terms of web designing in industry/company 
+                    <P class="objectivetxtparagraph">As Frontend web developer my objective is to grow <span class="exponentiallytxt"> exponentially </span>in terms of web designing in industry/company 
                                     that recognize the value of hardwork.And secure a responsible career opportunity to fully utilize my training and skill.</P>
                 </div>
             </div>
@@ -649,6 +656,7 @@ font-size: 17px;
 
 <!-- for skillss -->
 <div class="container4">
+    <!-- 1st container -->
     <div class="skillcontainer">
         <div class="Titletxt"> <h2>Skills</h2></div>
         <div class="skill1"> 
@@ -676,44 +684,86 @@ font-size: 17px;
                 <span class="jquerry"></span></span>
         </div>
 
-    </div>
+<!-- 2nd container -->
+<div class="otherskillcontainer">
+    <div class="Titletxt"><h3>Other skills</h3></div>
+   <div class="skill1">
+       <div class="titletxt">photoshop</div>
+       <span class="bar2"> <span class="photoshop"></span></span>
+   </div> 
 
-    <div class="otherskillcontainer">
-        <div class="Titletxt"><h3>Other skills</h3></div>
-       <div class="skill1">
-           <div class="titletxt">photoshop</div>
-           <span class="bar2"> <span class="photoshop"></span></span>
-       </div> 
 
+   <div class="skill1">
+        <div class="titletxt">microsoft office</div>
+        <span class="bar2"> <span class="microsoft"></span></span>
+    </div> 
 
-       <div class="skill1">
-            <div class="titletxt">microsoft office</div>
-            <span class="bar2"> <span class="microsoft"></span></span>
-        </div> 
+    
+   <div class="skill1">
+        <div class="titletxt">ui/ux mobile</div>
+        <span class="bar2"> <span class="uiuxmobile"></span></span>
+    </div> 
+</div>
+
+<!--  -->
 
         
-       <div class="skill1">
-            <div class="titletxt">ui/ux mobile</div>
-            <span class="bar2"> <span class="uiuxmobile"></span></span>
-        </div> 
-
-
-
     </div>
+<!--  -->
+    <!-- 3rd container -->
+
+    <div class="aboutcontainer">
+        <div class="about">About</div>
+        <div class="abouttxt"><p>Im Benedick Erlano 23 years old, Graduate of bachelor science in information technology, 
+            product of the university of caloocan city (UCC). I was born on october 5 1997 in Gubat Sorsogon</p></div>
+        
+        <div class="personalbox"> 
+            <div class="personaltitle">Personal Skills</div>
+            <div class="personalskillcontainer">
+                <li>  Creative</li>
+                <li>  Organized</li>
+                <li>  Time management</li>
+     
+            </div> 
+        </div>
+        <div class="personalbox"> 
+            <div class="personaltitle"> Work Experience</div>
+            <div class="personalskillcontainer">
+                <li>  Saleman</li>
+                <li>  Hairstylist</li>
+            
+     
+            </div> 
+        </div>
+        
+        <div class="personalbox"> 
+            <div class="personaltitle">School Background</div>
+            <div class="personalskillcontainer">
+                <li>  Elem/Sampaguita (2014-2015 / ALS)</li>
+                <li>  Sampaguita/High (2015-2016 / ALS)</li>
+                <li>  University of Caloocan/college (2017-2021)</li>
+     
+            </div> 
+        </div>
+        
+    </div>
+    
 </div>
 <style>
 
     .Titletxt{
         color: #FF00FF;
+        font-size: 15px;
+        margin:15px;
     }
     .titletxt{
-        color: white;
+        color:white;
     }
     .container4{
         flex-wrap: wrap;
         max-width: 100rem;
         height: 100vh;
-        background-color: #333;
+        background-color:white;
         display: flex;
         
         align-items: center;
@@ -721,20 +771,20 @@ font-size: 17px;
     }
     .skillcontainer{
         display:block;
-        height: 215px;
-        width: 500px;
+        height: 500px;
+        width: 300px;
         margin: 10px;
-        
-        
+        background-color:#333;
+        flex-direction: column;    
     }
-    .bar1{
+    .bar1{  
         color: white;
         display: inline-block;
         height: 5px;
         width: 80%;
         border: 1px solid blue;
         overflow: hidden;
-        box-shadow: 5px 5px 10px #FF00FF;  
+        /* box-shadow  : 5px 5px 10px #FF00FF;   */
     /* box-shadow: 0 18px 20px rgba(0,0,0,0.20),  0 10px 11px rgba(0,0,0,0.22); */ 
     }
     .skill1{
@@ -821,10 +871,11 @@ font-size: 17px;
     }
 
 .otherskillcontainer{
-    display:block;
-        height: 215px;
-        width: 500px;
-        margin: 10px;
+    
+        height: 100px;
+        width: 300px;
+       margin: 30px 0px 0px;
+        background-color: #333;
            }
 .bar2{
     height: 5px;
@@ -832,7 +883,7 @@ font-size: 17px;
     border: 1px solid blue;
     display: inline-block;
     overflow: hidden;
-    box-shadow: 5px 5px 10px #FF00FF;  
+    /* box-shadow: 5px 5px 10px #FF00FF;   */
     /* box-shadow: 0 18px 20px rgba(0,0,0,0.20),  0 10px 11px rgba(0,0,0,0.22); */ 
 }
 
@@ -888,9 +939,52 @@ animation: uiuxmobile 2s;
     }
 
 }
+.aboutcontainer{
+    height: 500px;
+    width: 500px;
+    margin: 2px 10px 0px;
+    background-color: white;
+}
+.abouttxt{
+ font-size:17px;
+ margin: 10px 20px 0px;
+}
 
+/* for responsive */
 
-</style>
+@media  screen and (max-width:600px)
+{
+    .container4{
+        flex-wrap: wrap;
+    }
+} 
+
+.personalbox{
+    margin: 20px 5px 10px;
+    background-color: #333;
+    text-align: center;
+    height: 115px;
+}
+ .personalskillcontainer{
+     color: white;
+     margin: 20px 0px  0px 10px;
+     text-align: left;
+ }
+ .personalskillcontainer li{
+     padding:5px 0px 0px;
+    font-size: 14px;
+ }
+
+ .personaltitle{
+    color: #FF00FF; 
+    font-size: 18px;
+ }
+ .about{
+     font-weight: bold;
+     color: #FF00FF;
+     font-size: 20px;
+ }
+</style    >
 
 
 
