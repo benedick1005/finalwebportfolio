@@ -650,36 +650,55 @@ font-size: 17px;
 <!-- for skillss -->
 <div class="container4">
     <div class="skillcontainer">
-        <div class="Titletxt"> <h2>SKILLS</h2></div>
+        <div class="Titletxt"> <h2>Skills</h2></div>
         <div class="skill1"> 
-            <div class="titletxt">HTML</div>
+            <div class="titletxt">html</div>
                 <span class="bar1"> <span class="html"></span></span>
         </div>
 
         <div class="skill1"> 
-            <div class="titletxt">CSS</div>
+            <div class="titletxt">css</div>
                 <span class="bar1"> <span class="css"></span></span>
         </div>
 
         <div class="skill1"> 
-            <div class="titletxt">JAVASCRIPT</div>
+            <div class="titletxt">javascript</div>
                 <span class="bar1"> <span class="javascript"></span></span>
         </div>
 
         <div class="skill1"> 
-            <div class="titletxt">RESPONSIVE DESIGN</div>
+            <div class="titletxt">responsive design</div>
                 <span class="bar1"> <span class="responsive"></span></span>
         </div>
 
         <div class="skill1"> 
-            <div class="titletxt">JQUERRY</div>   <span class="bar1"> 
+            <div class="titletxt">jquerry</div>   <span class="bar1"> 
                 <span class="jquerry"></span></span>
         </div>
 
     </div>
 
-    <div class="skillcontainer">
+    <div class="otherskillcontainer">
+        <div class="Titletxt"><h3>Other skills</h3></div>
+       <div class="skill1">
+           <div class="titletxt">photoshop</div>
+           <span class="bar2"> <span class="photoshop"></span></span>
+       </div> 
+
+
+       <div class="skill1">
+            <div class="titletxt">microsoft office</div>
+            <span class="bar2"> <span class="microsoft"></span></span>
+        </div> 
+
         
+       <div class="skill1">
+            <div class="titletxt">ui/ux mobile</div>
+            <span class="bar2"> <span class="uiuxmobile"></span></span>
+        </div> 
+
+
+
     </div>
 </div>
 <style>
@@ -702,9 +721,10 @@ font-size: 17px;
     }
     .skillcontainer{
         display:block;
-        height: auto;
+        height: 215px;
         width: 500px;
         margin: 10px;
+        
     }
     .bar1{
         color: white;
@@ -797,6 +817,72 @@ font-size: 17px;
         }
     }
 
+.otherskillcontainer{
+    display:block;
+        height: 215px;
+        width: 500px;
+        margin: 10px;
+           }
+.bar2{
+    height: 5px;
+    width: 80%;
+    border: 1px solid blue;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.bar2 span{
+    float: left;
+    height: 5px;
+    background-color:#FF00FF;
+}
+
+.photoshop{
+width: 50%;
+animation: photoshop 2s;
+}
+
+.microsoft{
+width: 70%;
+animation:  microsoft 2s;
+}
+
+.uiuxmobile{
+width: 60%;
+animation: uiuxmobile 2s;
+}
+@keyframes photoshop {
+    0%{
+        width: 0%;        
+    }
+
+    100%{
+        width: 50%;
+    }
+
+}
+@keyframes microsoft {
+    0%{
+        width: 0%;        
+    }
+
+    100%{
+        width: 70%;
+    }
+
+}
+
+
+@keyframes uiuxmobile {
+    0%{
+        width: 0%;        
+    }
+
+    100%{
+        width: 60%;
+    }
+
+}
 
 
 </style>
