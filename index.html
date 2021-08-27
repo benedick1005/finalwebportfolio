@@ -713,10 +713,10 @@ font-size: 17px;
     <!-- 3rd container -->
 
     <div class="aboutcontainer">
-        <div class="about">About</div>
+        <!-- <div class="about">About</div>
         <div class="abouttxt"><p>Im Benedick Erlano 23 years old, Graduate of bachelor science in information technology, 
             product of the university of caloocan city (UCC). I was born on october 5 1997 in Gubat Sorsogon</p></div>
-        
+         -->
         <div class="personalbox"> 
             <div class="personaltitle">Personal Skills</div>
             <div class="personalskillcontainer">
@@ -765,7 +765,7 @@ font-size: 17px;
         height: 100vh;
         background-color:white;
         display: flex;
-        
+        background-color: #333;
         align-items: center;
         justify-content:space-around;
     }
@@ -774,7 +774,7 @@ font-size: 17px;
         height: 500px;
         width: 300px;
         margin: 10px;
-        background-color:#333;
+        /* box-shadow: 5px 5px 10px #FF00FF;   */
         flex-direction: column;    
     }
     .bar1{  
@@ -784,6 +784,7 @@ font-size: 17px;
         width: 80%;
         border: 1px solid white;
         overflow: hidden;
+        border-radius: 10px 10px 10px 10px;
         /* box-shadow  : 5px 5px 10px #FF00FF;   */
     /* box-shadow: 0 18px 20px rgba(0,0,0,0.20),  0 10px 11px rgba(0,0,0,0.22); */ 
     }
@@ -883,6 +884,7 @@ font-size: 17px;
     border: 1px solid white;
     display: inline-block;
     overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
     /* box-shadow: 5px 5px 10px #FF00FF;   */
     /* box-shadow: 0 18px 20px rgba(0,0,0,0.20),  0 10px 11px rgba(0,0,0,0.22); */ 
 }
@@ -942,8 +944,8 @@ animation: uiuxmobile 2s;
 .aboutcontainer{
     height: 500px;
     width: 500px;
-    margin: 2px 10px 0px;
-    background-color: white;
+    margin: 2px 0px 0px;
+   
 }
 .abouttxt{
  font-size:17px;
@@ -965,13 +967,13 @@ animation: uiuxmobile 2s;
 .personalbox{
     margin: 20px 5px 10px;
     background-color: #333;
-    text-align: center;
+
     height: 115px;
 }
  .personalskillcontainer{
      color: white;
      margin: 20px 0px  0px 10px;
-     text-align: left;
+     text-align: center;
  }
  .personalskillcontainer li{
      padding:5px 0px 0px;
@@ -981,6 +983,7 @@ animation: uiuxmobile 2s;
  .personaltitle{
     color: #FF00FF; 
     font-size: 18px;
+    text-align: center;
  }
  .about{
      font-weight: bold;
@@ -991,5 +994,39 @@ animation: uiuxmobile 2s;
 
 
 
+<!-- 
+<div class="container5">
+    <div class="firstline">
+        <div class="box1con">box1</div>
+        <div class="box1con">box2</div>
+        <div class="box1con"> box3</div>
+        <div class="box1con">box4</div>
+    </div>   
+     
+</div>
+
+
+<style>
+    .container5{
+        height: 100vh;
+        width: 100%;
+        background-color: yellow;
+    }
+.firstline{
+    max-width: 100rem;
+    height: 50vh;
+    background-color: turquoise;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.box1con{
+    height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+}
+
+</style> -->
 </body>
 </html>
