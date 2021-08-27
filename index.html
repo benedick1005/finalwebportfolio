@@ -57,7 +57,6 @@
         display:block;
         margin-right:39px;
     }
-
 ul{
     position:fixed;
     height:100vh;
@@ -77,6 +76,12 @@ ul{
     #check:checked ~  ul{
         left:0px;
     }
+    .logo{
+        color: red;
+        font-size: 10px;
+        position: absolute;
+    }
+
 }
 
 
@@ -90,7 +95,7 @@ ul{
     padding: 0;
 }
 
-ul{
+ul{ 
     line-height:50px;
     float:right;
     margin-right:30px;
@@ -322,7 +327,7 @@ ul li a:hover{
 </div>
 
 <style>
-
+ 
 .container2{
     
     height:100vh;
@@ -374,12 +379,11 @@ ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #FF00FF;
+    border: px solid #FF00FF;
     flex-wrap: wrap;
     margin:0px 10px 0px;
-
-
-    box-shadow: 0 18px 20px rgba(0,0,0,0.20),  0 10px 11px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 10px #FF00FF;  
+    /* box-shadow: 0 18px 20px rgba(0,0,0,0.20),  0 10px 11px rgba(0,0,0,0.22); */ 
     /* background-color:#FF00FF; */
 }
 
@@ -527,13 +531,13 @@ font-size: 17px;
 
     <div class="boxcontainer1">
         <div class="designcontainer">
-            <h3 class="designicon"><i class="fa fa-file-o" id="designicon"></i> <span class="buildPortfoliotxt">Build/Portfolio</span> </h3>
-            <p class="designtxt">As Frontend developer web developer my objective is to grow exponentially in terms of web designing. This is my first portfolio i've done and i want to make more </p>
+                <h3 class="designicon"><i class="fa fa-file-o" id="designicon"></i> <span class="buildPortfoliotxt">Build/Portfolio</span> </h3>
+                <p class="designtxt">As Frontend web developer my objective is to grow exponentially in terms of web designing. This is my first portfolio i've done and i want to make more </p>
         </div>
+        
         <div class="designcontainer">
-        <h3 class="designicon"><i class="fa fa-linode" id="designicon"></i> <span class="buildPortfoliotxt">Mobile/Responsive</span> </h3>
-            <p class="designtxt"> when it comes user interface of web i use my knowlegde to make responsive and clearly fixed in screen so that why ilove it.
-                                   .</p>
+                <h3 class="designicon"><i class="fa fa-linode" id="designicon"></i> <span class="buildPortfoliotxt">Mobile/Responsive</span> </h3>
+                <p class="designtxt"> when it comes user interface of web i use my knowlegde to make responsive and clearly fixed in screen so that why ilove it..</p>
         </div>
 
     </div>
@@ -541,17 +545,17 @@ font-size: 17px;
     
     <div class="boxcontainer2">
         <div class="designcontainer2">
-        <h3 class="designicon"><i class="fa fa-gittip"id="designicon"></i>  <span class="buildPortfoliotxt">Design</span> </h3>
+            <h3 class="designicon"><i class="fa fa-gittip"id="designicon"></i>  <span class="buildPortfoliotxt">Design</span> </h3>
             <p class="designtxt"> Designing a web interface  is one of my favorite activity. I like to explore and get inspired, and grow exponentially in terms of desingning.<p>
-    
         </div>
-        <div class="designcontainer2">
-        <h3 class="designicon"><i class="fa fa-cogs" id="designicon"></i><span class="buildPortfoliotxt">Development</span> </h3>
-            <p class="designtxt">In terms of web design, spcially  the user interface which is need create user freindly. I create basic and readable web design interface which result a good respons from the user. </p>
-    
-        </div>
-    </div>
 
+        <div class="designcontainer2">
+            <h3 class="designicon"><i class="fa fa-cogs" id="designicon"></i><span class="buildPortfoliotxt">Development</span> </h3>
+            <p class="designtxt">In terms of web design, spcially  the user interface which is need create user freindly. I create basic and readable web design interface which result a good respons from the user. </p>
+        </div>
+
+    </div>
+</div>
 <style>
 
 .buildPortfoliotxt{
@@ -642,6 +646,162 @@ font-size: 17px;
 }
 }
 </style>
-<div>hello</div>
+
+<!-- for skillss -->
+<div class="container4">
+    <div class="skillcontainer">
+        <div class="Titletxt"> <h2>SKILLS</h2></div>
+        <div class="skill1"> 
+            <div class="titletxt">HTML</div>
+                <span class="bar1"> <span class="html"></span></span>
+        </div>
+
+        <div class="skill1"> 
+            <div class="titletxt">CSS</div>
+                <span class="bar1"> <span class="css"></span></span>
+        </div>
+
+        <div class="skill1"> 
+            <div class="titletxt">JAVASCRIPT</div>
+                <span class="bar1"> <span class="javascript"></span></span>
+        </div>
+
+        <div class="skill1"> 
+            <div class="titletxt">RESPONSIVE DESIGN</div>
+                <span class="bar1"> <span class="responsive"></span></span>
+        </div>
+
+        <div class="skill1"> 
+            <div class="titletxt">JQUERRY</div>   <span class="bar1"> 
+                <span class="jquerry"></span></span>
+        </div>
+
+    </div>
+
+    <div class="skillcontainer">
+        
+    </div>
+</div>
+<style>
+
+    .Titletxt{
+        color: #FF00FF;
+    }
+    .titletxt{
+        color: white;
+    }
+    .container4{
+        flex-wrap: wrap;
+        max-width: 100rem;
+        height: 100vh;
+        background-color: #333;
+        display: flex;
+        
+        align-items: center;
+        justify-content:space-around;
+    }
+    .skillcontainer{
+        display:block;
+        height: auto;
+        width: 500px;
+        margin: 10px;
+    }
+    .bar1{
+        color: white;
+        display: inline-block;
+        height: 5px;
+        width: 80%;
+        border: 1px solid blue;
+        overflow: hidden;
+    }
+    .skill1{
+        margin: 0px 0px 0px 10px;
+    }
+
+    .bar1 span{
+        float: left;
+        background-color: #FF00FF;
+        height: 5px;
+    }
+
+    .css{
+        width: 80%;
+        animation: css 2s;
+    }
+
+    .html{
+        width: 80%;
+        animation: html 2s;
+    }
+    
+    .javascript{
+        width: 20%;
+        animation: javascript 2s;
+    }
+    
+    .responsive{
+        width: 90%;
+        animation: responsive 2s;
+    }
+    
+    .jquerry{
+        width: 20%;
+        animation: jquerry 2s;
+    }
+
+    @keyframes css {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 80%;
+        }
+    }
+    
+    @keyframes html {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 80%;
+        }
+    }
+
+    
+    @keyframes responsive {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 90%;
+        }
+    }
+
+    
+    @keyframes javascript {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 20%;
+        }
+    }
+
+    
+    @keyframes jquerry {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 20%;
+        }
+    }
+
+
+
+</style>
+
+
+
 </body>
 </html>
