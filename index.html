@@ -30,8 +30,8 @@
     </label>
 
     <ul>
-    <li><a href="" class="Active">My project</a></li>
-    <li><a href="container2">Objective</a></li>
+    <li><a href="" class="Active">Home</a></li>
+    <li><a href="container2">My Project</a></li>
     <li><a href="">Contact</a></li>
     <li><a href="">Category</a></li>
     </ul>
@@ -1008,15 +1008,21 @@ animation: uiuxmobile 2s;
 
 @media screen and (max-width:830px) {
     .container4{
-        height: 170vh;
+        height: 180vh;
     }
 }
 </style    >
 
 
-<!-- 
+
 <div class="container5">
     <div class="firstline">
+        <div class="box1con">box1</div>
+        <div class="box1con">box2</div>
+        <div class="box1con"> box3</div>
+        <div class="box1con">box4</div>
+    </div>   
+    <div class="firstline2">
         <div class="box1con">box1</div>
         <div class="box1con">box2</div>
         <div class="box1con"> box3</div>
@@ -1041,12 +1047,52 @@ animation: uiuxmobile 2s;
     flex-wrap: wrap;
     justify-content:space-around;
 }
+.firstline2{
+    max-width: 100rem;
+    height: 50vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
 .box1con{
     height: 200px;
     width: 200px;
+    margin: 5px;
     background-color: yellowgreen;
 }
 
-</style> -->
+@media screen and (max-width:834px) {
+    .firstline{
+        height: 100vh;
+    }
+    .firstline2{
+        height: 100vh;
+    }
+    
+}
+
+@media screen and (max-width:410px) {
+    .firstline{
+        height:200vh;
+    }
+    .firstline2{
+        height: 160vh;
+    }
+    
+}
+
+@media screen and (max-width:280px) {
+    .firstline{
+        height: 160vh;
+    }
+    .firstline2{
+        height: 160vh;
+    }
+    
+}
+
+</style> 
 </body>
 </html>
