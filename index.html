@@ -1029,8 +1029,30 @@ animation: uiuxmobile 2s;
         
     </div>   
     <div class="firstline2">
-        <div class="containerforbox2">box1</div>
-        <div class="box2con"> box3</div>
+        <div class="containerfor1box"> <i class="fa fa-cogs" id="developmenticon"></i></div>
+        <div class="containerforbox2">
+            <div class="description1"> 
+                <div class="spwstitletxt">Indor plant watering support</div>
+                <p class="descriptiontxt">Designing a web interface  is one of my favorite activity. I like to explore and get inspired, and grow exponentially in terms of desingning
+                    Designing a web interface  is one of my favorite activity. I like to explore and get inspired, and grow exponentially in terms of desingning
+                </p>
+            </div>
+            <div class="description1"> 
+                <div class="spwstitletxt">Indor plant watering support</div>
+                <p class="descriptiontxt">Designing a web interface  is one of my favorite activity. I like to explore and get inspired, and grow exponentially in terms of desingning
+                    Designing a web interface  is one of my favorite activity. I like to explore and get inspired, and grow exponentially in terms of desingning
+                </p>
+            </div>
+            <div class="description1"> 
+                <div class="spwstitletxt">Indor plant watering support</div>
+                <p class="descriptiontxt">Designing a web interface  is one of my favorite activity. I like to explore and get inspired, and grow exponentially in terms of desingning
+                    Designing a web interface  is one of my favorite activity. I like to explore and get inspired, and grow exponentially in terms of desingning
+                </p>
+            </div>
+
+        </div>
+        
+   
         
     </div>   
      
@@ -1069,17 +1091,20 @@ animation: uiuxmobile 2s;
     text-align: center;
     background-color: white;
     overflow: hidden;
+    
     box-shadow: 5px 5px 10px #333;  
 
 }
 .box1con:hover{
  transform:scale(1.3);
+
 }
 .title1{
     color: #FF00FF;
     position:relative;
     font-size: 15px;
     padding: 10px;
+    font-weight: bold;
 }
 .imglogo{
     padding: 10px;
@@ -1092,8 +1117,8 @@ animation: uiuxmobile 2s;
 
 .imglogo1{
     padding: 0px 5px 0px;
-    height: 160px;
-    width: 180px;
+    height: 130px;
+    width: 150px;
     object-fit: cover;
  
 }
@@ -1104,18 +1129,62 @@ animation: uiuxmobile 2s;
     margin: 5px;
     background-color:white;
 }
+
+#developmenticon{
+    font-size: 80px;
+    color: white;
+}
+.containerfor1box{
+    height: 10vh;
+    width:120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .containerforbox2{
     height: 45vh;
-    width: 650px;
-    background-color: aquamarine;
+    width: 900px;
+    flex-wrap: wrap;
+    flex-direction: column;
+ 
+}
+
+.description1{
+
+    padding: 10px 1px 0px 20px;
+}
+.spwstitletxt{
+    font-weight: bold;
+    color: #FF00FF;
+}
+.descriptiontxt{
+    color: white;
+    padding: 1px;
+    margin: 10px 0px 0px 10px;
+}
+@media screen and (max-width:1100px) {
+    .firstline2{
+        height: 100vh;
+    }
+    
+}
+
+@media screen and (max-width:635px) {
+    .firstline2{
+        height:100vh;
+
+    }
+    .containerforbox2{
+        margin-top: -200px;
+    }
+    
 }
 @media screen and (max-width:839px) {
     .firstline{
         height: 100vh;
     }
-    .firstline2{
-        height: 100vh;
-    }
+    
     
 }
 
@@ -1124,22 +1193,33 @@ animation: uiuxmobile 2s;
         height:160vh;
     }
     .firstline2{
-        height: 160vh;
+        height: 100vh;
+
     }
-    
 }
+
+@media screen and (max-width:491px) {
+    .firstline2{
+        height: 150vh;
+
+
+    }
+    .containerforbox2{
+        margin-top: -500px;
+    }
+}
+
 
 @media screen and (max-width:280px) {
     .firstline{
-        height: 160vh;
-    }
-    .firstline2{
         height: 160vh;
     }
     
 }
 
 </style> 
+
+
 
 </body>
 </html>
