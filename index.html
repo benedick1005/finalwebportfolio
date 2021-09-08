@@ -260,10 +260,6 @@ ul li a:hover{
     background-color:#FF00FF;
 
 }
-#btnlearn{
-    
-}
-
 @media screen and (max-width:750px){
     .box1{
         margin:40px 10px 0px;
@@ -1011,22 +1007,31 @@ animation: uiuxmobile 2s;
         height: 180vh;
     }
 }
-</style    >
-
+</style>
 
 
 <div class="container5">
     <div class="firstline">
-        <div class="box1con">box1</div>
-        <div class="box1con">box2</div>
-        <div class="box1con"> box3</div>
-        <div class="box1con">box4</div>
+        <div class="box1con">
+            <div class="title1">Indor Plant Wattering Support</div>
+            <div class="logoimg1"><img src="img/logo1.jpg" alt="" class="imglogo1"> </div>
+        </div>
+        
+        <div class="box1con">
+            <div class="title1">Keyk A Bite</div>
+            <div class="logoimg1"><img src="img/logo2.jpeg" alt="" class="imglogo"> </div>
+        </div>
+        
+        <div class="box1con">
+            <div class="title1">Break The Ball</div>
+            <div class="logoimg1"><img src="img/logo2.jpg" alt="" class="imglogo"> </div>
+        </div>
+        
     </div>   
     <div class="firstline2">
-        <div class="box1con">box1</div>
-        <div class="box1con">box2</div>
-        <div class="box1con"> box3</div>
-        <div class="box1con">box4</div>
+        <div class="containerforbox2">box1</div>
+        <div class="box2con"> box3</div>
+        
     </div>   
      
 </div>
@@ -1036,34 +1041,75 @@ animation: uiuxmobile 2s;
     .container5{
         height: 100vh;
         width: 100%;
-        background-color: yellow;
+        /* background-color: yellow; */
     }
 .firstline{
     max-width: 100rem;
     height: 50vh;
-    background-color: turquoise;
+    /* background-color: turquoise; */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:center;
 }
 .firstline2{
     max-width: 100rem;
     height: 50vh;
-    background-color: red;
+    background-color:#333;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:space-evenly;
 }
 .box1con{
     height: 200px;
     width: 200px;
     margin: 5px;
-    background-color: yellowgreen;
+    transition: 1s;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px #333;  
+
+}
+.box1con:hover{
+ transform:scale(1.3);
+}
+.title1{
+    color: #FF00FF;
+    position:relative;
+    font-size: 15px;
+    padding: 10px;
+}
+.imglogo{
+    padding: 10px;
+    height: 100px;
+    width: 180px;
+    margin-top: 20px;
+    object-fit: cover;
+ 
 }
 
-@media screen and (max-width:834px) {
+.imglogo1{
+    padding: 0px 5px 0px;
+    height: 160px;
+    width: 180px;
+    object-fit: cover;
+ 
+}
+
+.box2con{
+    height: 200px;
+    width: 400px;
+    margin: 5px;
+    background-color:white;
+}
+.containerforbox2{
+    height: 45vh;
+    width: 650px;
+    background-color: aquamarine;
+}
+@media screen and (max-width:839px) {
     .firstline{
         height: 100vh;
     }
@@ -1075,7 +1121,7 @@ animation: uiuxmobile 2s;
 
 @media screen and (max-width:410px) {
     .firstline{
-        height:200vh;
+        height:160vh;
     }
     .firstline2{
         height: 160vh;
@@ -1094,5 +1140,6 @@ animation: uiuxmobile 2s;
 }
 
 </style> 
+
 </body>
 </html>
