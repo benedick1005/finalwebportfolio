@@ -130,6 +130,7 @@ ul li a:hover{
     position:fixed;
     width:100%;
     margin: 0px 1px 0px;
+    z-index: 3;
 }
 .logo{
     margin:0px 30px 0px;
@@ -145,11 +146,21 @@ ul li a:hover{
 
 </style>
 
-
+<script>
+    function  changeColor(element){
+        var currentcolor = element.style.backgroundColor;
+        if (currentcolor == "white"){
+            element.style.backgroundColor = "#333";
+        }
+        else{
+            element.style.backgroundColor = "white"
+        }
+    } 
+</script>
 
 
     
-<div class="container1">
+<div class="container1" onclick="changeColor(this)">
 
     <div class="box1">
     
@@ -161,7 +172,7 @@ ul li a:hover{
             </div>
 
         
-            <div class="btnlearn"> <button class="Btnlearn" id="btnlearn">Learn More</button> </div>
+            <div class="btnlearn"  > <button class="Btnlearn" id="btnlearn">Hire me</button> </div>
 
         </div>
 
@@ -197,7 +208,6 @@ ul li a:hover{
     margin:0px 10px 0px;
     /* border:1px solid black; */
     display:flex;
-    background-color: white;
     line-height:20px;
     flex-wrap:wrap;
 }
@@ -1157,6 +1167,7 @@ animation: uiuxmobile 2s;
 .spwstitletxt{
     font-weight: bold;
     color: #FF00FF;
+    z-index: -2;
 }
 .descriptiontxt{
     color: white;
@@ -1188,34 +1199,50 @@ animation: uiuxmobile 2s;
     
 }
 
-@media screen and (max-width:410px) {
-    .firstline{
-        height:160vh;
-    }
+@media screen and (max-width:413px) {
     .firstline2{
-        height: 100vh;
-
+        height:130vh;
+        background-color: yellow;
     }
-}
+    .spwstitletxt{
+        font-size: 15px;
+    }
+    .descriptiontxt{
+        font-size: 13px;
+    }
+
+    
+    .containerforbox2{
+        margin-top: -200px;
+    }
+    
+   }
+
+
+@media screen and (max-width:419px) {
+    .firstline{
+        height:130vh;
+    }
+   }
 
 @media screen and (max-width:491px) {
     .firstline2{
-        height: 150vh;
+        height: 130vh;
+       }
+        .containerforbox2{
+            margin-top: -400px;
+        }
 
-
-    }
-    .containerforbox2{
-        margin-top: -500px;
-    }
 }
 
 
 @media screen and (max-width:280px) {
     .firstline{
-        height: 160vh;
+        height: 100vh;
     }
     
 }
+
 
 </style> 
 
