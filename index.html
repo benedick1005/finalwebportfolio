@@ -17,7 +17,7 @@
 <div class="MaincontainerNav">
 
     
-    <div class="logo"> < ERLANO <span class="iocolor">b.g</span> 
+    <div class="logo"> Portfol
     </div>
 
     <nav>
@@ -40,6 +40,10 @@
 
 <style>
 /* --------navbar css */
+.logo::after{
+    content: "io";
+    color: #333;
+}
 .Active{
    
     border-bottom:4px solid #FF00FF;
@@ -150,7 +154,7 @@ ul li a:hover{
     function  changeColor(element){
         var currentcolor = element.style.backgroundColor;
         if (currentcolor == "white"){
-            element.style.backgroundColor = "#333";
+            element.style.backgroundColor = "#E6DCDC";
         }
         else{
             element.style.backgroundColor = "white"
@@ -254,7 +258,7 @@ ul li a:hover{
 }
 .Btnlearn{
     border:none;
-    
+    width: 100px;
     border:2px solid #FF00FF;
     background:white;
     /* background-color:#FF00FF; */
@@ -1039,7 +1043,8 @@ animation: uiuxmobile 2s;
         
     </div>   
     <div class="firstline2">
-        <div class="containerfor1box"> <i class="fa fa-cogs" id="developmenticon"></i></div>
+        <div class="containerfor1box"> <i class="fa fa-cogs" id="developmenticon"></i><div class="developedtxt"> System Developed</div></div>
+        
         <div class="containerforbox2">
             <div class="description1"> 
                 <div class="spwstitletxt">Indor plant watering support</div>
@@ -1174,84 +1179,79 @@ animation: uiuxmobile 2s;
     padding: 1px;
     margin: 10px 0px 0px 10px;
 }
-@media screen and (max-width:1100px) {
-    .firstline2{
-        height: 100vh;
-    }
-    
+.developedtxt{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
 }
 
-@media screen and (max-width:635px) {
+@media screen and (max-width:1085px) {
     .firstline2{
-        height:100vh;
-
+        background-color: blue;
+        height:90vh;
     }
     .containerforbox2{
-        margin-top: -200px;
+        margin-top: -10rem;
     }
-    
 }
-@media screen and (max-width:839px) {
+
+@media screen and (max-width:627px) {
     .firstline{
+        background-color:black;
+        height: 80vh;
+    }
+    .firstline2{
         height: 100vh;
     }
-    
-    
-}
-
-@media screen and (max-width:413px) {
-    .firstline2{
-        height:10vh;
-        
-    }
-    .spwstitletxt{
-        font-size: 15px;
-    }
-    .descriptiontxt{
-        font-size: 13px;
-    }
-
-    .containerfor1box{
-        margin-top: -100px;
-    }
     .containerforbox2{
-        margin-top: -300px;
+        margin-top: -20rem;
     }
     #developmenticon{
-        font-size: 50px;
+        display: none;
     }
-   }
+    .developedtxt{
+        display: block;
+        margin-top: -10rem;
+    }
+    .developedtxt::first-letter{
+        color: #FF00FF;
+        font-size: 30px;
+        
+    }
 
+}
 
 @media screen and (max-width:419px) {
     .firstline{
-        height:120vh;
+        height:auto;
     }
-   }
-
-@media screen and (max-width:491px) {
-    .firstline2{
-        height: 100vh;
-       }
-
 }
 
-
-@media screen and (max-width:280px) {
-    .firstline{
-        height: 120vh;
+@media screen and (max-width:320px) {
+    .firstline2{
+        height: 130vh ;
+        background-color: green;
+    }
+    
+    .containerforbox2{
+        margin-top: -30rem;
     }
     
 }
-}
 
-@media screen and (max-width:411px) {
-    .firstline{
-        height: 90vh;
+@media only screen and (max-width:375px){
+    .firstlin2{
+     background-color: greenyellow;
+    }
+    .containerforbox2{
+        margin-top: -30rem;
     }
     
 }
 </style> 
+
+
 
 
 
