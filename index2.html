@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--     
+    <style type="text/css">
+        .lightbox {
+           display: table; /* helps us center the lightbox-content */
+           opacity: 0; /* fully transparent (hidden) */
+           z-index: -1; /* put the lightbox layer below the body */
+           transition-duration: 1s; /* duration of the fade in effect */
+           
+           /* make the lightbox occupy the entire page */
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 200px;
+           height: 200px;
+           background: rgba(0, 0, 0, 0.7); /* black with 0.7 opacity */
+        }
+        .lightbox:target {
+           opacity: 1; /* fully opaque (visible) */
+           z-index: 1; /* put the lightbox layer above the body */
+        }
+        .logimg1 {
+           display: table-cell;
+           vertical-align: middle; /* vertically center */
+           text-align: center; /* horizontally center */
+        }
+        .close {
+           /* position the CLOSE button to the top-right corner */
+           position: absolute;
+           top: 10px;
+           right: 10px;
+            color: blue;
+           font-size: 20px;
+           
+           /* style the close button */
+           font-size: 20px;
+           font-weight: 300;
+           text-decoration: none;
+        
+        }
+        
+        /* make the image responsive */
+        img {
+           max-width: 100%;
+           height: auto;
+        }
+     </style>
+  </head>
+  <body>   
+     <a href="#example"> Show example lightbox </a>
+     
+     <div class="lightbox" id="example">
+        <a href="#" class="close">CLOSE</a>
+        <div class="logoimg1" id="example"><img src="img/logo1.jpg" alt="" class="imglogo1"> </div>
+     </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="maincontainer">
+    <div class="container">
+        <div class="box1"><h3>box1</h3> <p class="sample">The objective of developing this mobile and hardware application is to lessen the worries of the plant owner on
+            . </p></div>
+        <div class="box1">box2</div>
+         <div class="box1">box3</div>
+        <div class="box1">box4</div>
+    </div>
+    <div class="container2">
+        <div class="box1">box1</div>
+        <div class="box1">box2</div>
+         <div class="box1">box3</div>
+        
+    </div>
+    <div class="container3">
+        <div class="box1">box1</div>
+        <div class="box1">box2</div>
+         
+    </div>
+
+    
+    <div class="container4">
+        <div class="box1">box1</div>
+        
+         
+    </div>
+
+</div>
+
+
+<style>
+
+body{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.maincontainer{
+    height: 100vh;
+    flex-direction: column;
+    background-color: violet;
+}
+    .container{
+        background-color: yellow;
+        height: 0 auto;
+        max-width: 100rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;    
+    }
+
+    
+    .container2{
+        background-color:violet;
+        height: 0 auto;
+        max-width: 100rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;    
+    }
+
+    
+    .container3{
+        background-color:blue;
+        height: 0 auto;
+        max-width: 100rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;    
+    }
+    
+    .container4{
+        background-color:green;
+        height: 0 auto;
+        max-width: 100rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;    
+    }
+    .box1{
+        position: relative;
+        height: 200px;
+        width:200px;
+        margin:20px;
+        margin: 10px;
+        padding: 20px;
+        background-color: red;
+    }
+     .sample{
+        border: 2px solidwhite;
+        padding: 3px;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
