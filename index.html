@@ -32,7 +32,7 @@
     <ul>
     <li><a href="" class="Active">Home</a></li>
     <li><a href="container2">My Project</a></li>
-    <li><a href="">Contact</a></li>
+    <li><a href="index2.html">Contact</a></li>
     <li><a href="">Category</a></li>
     </ul>
     </nav>
@@ -1041,7 +1041,7 @@ animation: uiuxmobile 2s;
 <div class="container5">
     <div class="firstline">
         <div class="box1con">
-            <div class="title1" > <a href="#example"></a>Indor Plant Wattering Support </a></div>
+            <div class="title1" > <a href="#example"></a>SPWSAMS</a></div>
 
             <div class="logoimg1" id="example"><img src="img/logo1.jpg" alt="" class="imglogo1"> </div>
         </div>
@@ -1120,14 +1120,13 @@ animation: uiuxmobile 2s;
     justify-content:space-evenly;
 }
 .box1con{
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
     margin: 5px;
     transition: 1s;
     text-align: center;
     background-color: white;
     overflow: hidden;
-    
     box-shadow: 5px 5px 10px #333;  
 
 }
@@ -1136,17 +1135,31 @@ animation: uiuxmobile 2s;
 
 }
 .title1{
-    color: #333;
+    
     position:relative;
     font-size: 15px;
     padding: 10px;
+    padding: 25px 1px 0px 1px;
+    overflow: hidden;
     font-weight: bold;
 
+    position: relative;
+
+}
+
+.title1::first-letter{
+
+    color:#FF00FF;
+    font-size:25px;
+    border-bottom: solid #FF00FF;
+    border-bottom-width: 20px;
+
+    
 }
 .imglogo{
     padding: 10px;
-    height: 100px;
-    width: 180px;
+    height: 70px;
+    width: 150px;
     margin-top: 20px;
     object-fit: cover;
  
@@ -1154,8 +1167,8 @@ animation: uiuxmobile 2s;
 
 .imglogo1{
     padding: 0px 5px 0px;
-    height: 130px;
-    width: 150px;
+    height: 100px;
+    width: 120px;
     object-fit: cover;
  
 }
@@ -1219,7 +1232,7 @@ animation: uiuxmobile 2s;
     }
 }
 
-@media screen and (max-width:627px) {
+@media screen and (max-width:667px) {
     .firstline{
         height: 80vh;
     }
