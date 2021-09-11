@@ -68,115 +68,71 @@
 
 
 
-
-
-
-
-
-
 <div class="maincontainer">
-    <div class="container">
-        <div class="box1"><h3>box1</h3> <p class="sample">The objective of developing this mobile and hardware application is to lessen the worries of the plant owner on
-            . </p></div>
-        <div class="box1">box2</div>
-         <div class="box1">box3</div>
-        <div class="box1">box4</div>
+    <div class="container1">
+        <div class="box1">hello</div>
+        
+        <div class="box1">hi</div>
+
+        <div class="box1">hello</div>
+        
+        <div class="box1">hi</div>
     </div>
+
     <div class="container2">
-        <div class="box1">box1</div>
-        <div class="box1">box2</div>
-         <div class="box1">box3</div>
         
     </div>
+
     <div class="container3">
-        <div class="box1">box1</div>
-        <div class="box1">box2</div>
-         
-    </div>
-
-    
-    <div class="container4">
-        <div class="box1">box1</div>
         
-         
     </div>
-
 </div>
 
 
+
 <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .maincontainer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .container1, .container2, .container3{
+        max-width: 100rem;
+        height: 100vh;
+    }
+.container1{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-body{
-    margin: 0;
-    padding: 0;
-    
+}
+.container2{
+    background-color: turquoise;
+
+}
+.container3{
+    background-color: teal      ;
+}
+.box1{  
+    height: 200px;
+    width: 300px;
+    background-color: teal;
+    margin:10px;
+
+}
+@media screen and (max-width:639px) {
+    .container1{
+        height: 190vh;
+    }
     
 }
-.maincontainer{
-    height: 100vh;
-    flex-direction: column;
-    background-color: violet;
-}
-    .container{
-        background-color: yellow;
-        height: 0 auto;
-        max-width: 100rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;    
-    }
-
-    
-    .container2{
-        background-color:violet;
-        height: 0 auto;
-        max-width: 100rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;    
-    }
-
-    
-    .container3{
-        background-color:blue;
-        height: 0 auto;
-        max-width: 100rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;    
-    }
-    
-    .container4{
-        background-color:green;
-        height: 0 auto;
-        max-width: 100rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;    
-    }
-    .box1{
-        position: relative;
-        height: 200px;
-        width:200px;
-        margin:20px;
-        margin: 10px;
-        padding: 20px;
-        background-color: red;
-    }
-     .sample{
-        border: 2px solidwhite;
-        padding: 3px;
-    }
 </style>
-
-
-
-
-
 
 
 
