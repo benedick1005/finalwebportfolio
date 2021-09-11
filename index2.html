@@ -68,71 +68,81 @@
 
 
 
-<div class="maincontainer">
-    <div class="container1">
-        <div class="box1">hello</div>
-        
-        <div class="box1">hi</div>
 
-        <div class="box1">hello</div>
-        
-        <div class="box1">hi</div>
+
+
+
+
+
+<div class="maincontainer">
+    <div class="container">
+            <div class="boxcon1">number1</div>
+            <div class="boxcon1">number1</div>
+          
     </div>
+
 
     <div class="container2">
-        
+        <div class="boxcon1">number1</div>
+        <div class="boxcon1">number1</div>
+        <div class="boxcon1">number1</div>
+        <div class="boxcon1">number1</div>
+      
     </div>
 
-    <div class="container3">
-        
-    </div>
 </div>
 
 
-
 <style>
-    *{
-        margin: 0%;
-        padding: 0%;
-    }
-    .maincontainer{
-        flex-direction: column;
-        flex-wrap: wrap;
-        
-    }
-    .container1, .container2, .container3{
-        max-width: 100rem;
-        height: 100vh;
-    }
-.container1{
-    background-color: yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 
-}
-.container2{
-    background-color: turquoise;
-
-}
-.container3{
-    background-color: teal      ;
-}
-.box1{  
-    height: 200px;
-    width: 300px;
-    background-color: teal;
-    margin:10px;
-
-}
-@media screen and (max-width:639px) {
-    .container1{
-        height: 190vh;
-    }
+body{
+    margin: 0;
+    padding: 0;
+    
     
 }
+.maincontainer{
+    height: 100vh;
+    flex-direction: column;
+    background-color: violet;
+}
+    .container{
+        background-color: yellow;
+        min-height: 100vh;
+        max-width: 100rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;    
+    }
+
+    
+    .container2{
+        background-color: blue;
+        min-height: 100vh;
+        max-width: 100rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;    
+    }
+
+   
+   
+    .boxcon1{
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+        background-color: white;
+    }
 </style>
+
+
+
+
+
 
 
 
