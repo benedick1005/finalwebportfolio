@@ -13,28 +13,22 @@
 </head>
 <body>
 
-
+<!-- for navbar strucure -->
 <div class="MaincontainerNav">
-
-    
     <div class="logo"> Portfol
-    </div>
+                        </div>
 
     <nav>
-    <input type="checkbox" id="check">
-
-    <label for="check" class="checkbtn">
-    
-        <i class="fa fa-bars" style=" text-align:center; font-size:23px; text-align:center;"></i>
-
-    </label>
-
-    <ul>
-    <li><a href="" class="Active">Home</a></li>
-    <li><a href="container2">My Project</a></li>
-    <li><a href="index2.html">Contact</a></li>
-    <li><a href="">Category</a></li>
-    </ul>
+           <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                 <i class="fa fa-bars" style=" text-align:center; font-size:23px; text-align:center;"></i>
+            </label>
+        <ul>
+             <li><a href="" class="Active">Home</a></li>
+             <li><a href="container2">My Project</a></li>
+            <li><a href="index2.html">Contact</a></li>
+            <li><a href="">Category</a></li>
+        </ul>
     </nav>
 </div>
 
@@ -150,76 +144,58 @@ ul li a:hover{
 
 </style>
 
-<script>
-    function  changeColor(element){
-        var currentcolor = element.style.backgroundColor;
-        if (currentcolor == "white"){
-            element.style.backgroundColor = "#E6DCDC";
-        }
-        else{
-            element.style.backgroundColor = "white"
-        }
-    } 
-</script>
 
-
-    
-<div class="container1" onclick="changeColor(this)">
-
-    <div class="box1">
-    
-         <div class="slidercontainer1">
-            
-            <div class="caption1">
-                 <h2 class ="mynametxt"> <span class="Hitxt">Hi !</span> BENEDICK ERLANO</h2>
-                <P class="slidertxt"> GRADUATE BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY IN UNIVERSITY OF CALOOCAN CITY (UCC) 2017-2021.AND THIS IS MY 1ST PORTFOLIO</P>
+<!-- for whole container -->
+<div class="maincontainer">
+    <!-- first conatiner -->
+    <div class="container1" onclick="changeColor(this)">    
+        <div class="boxforobjective">
+             <div class="slidercontainer1">
+                <div class="caption1">
+                     <h2 class ="mynametxt"> <span class="Hitxt">Hi !</span> BENEDICK ERLANO</h2>
+                    <P class="portfoliotxt"> GRADUATE BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY IN UNIVERSITY OF CALOOCAN CITY (UCC) 2017-2021.AND THIS IS MY 1ST PORTFOLIO</P>
+                </div>
+                <div class="btnlearn"  > <button class="Btnlearn" id="btnlearn">Hire me</button> </div>
             </div>
-
-        
-            <div class="btnlearn"  > <button class="Btnlearn" id="btnlearn">Hire me</button> </div>
-
         </div>
-
+                   
+        <div class="boxforimag">  <img src="img/benedick.jpg" alt="" class="imgrightside"></div>
     </div>
-                    <div class="box2">  <img src="img/benedick.jpg" alt="" class="imgrightside">
 
-                 </div>
-
+    <!-- second container -->
+    <div class="container2"></div>
 </div>
 
-<!-- for  box1 box 2 -->
-
+<!-- first conatainer-->
 <style>
-
-
-
-.container1{
-     height:100vh;
-     max-width:100rem;
+.container1, .container2{
+     min-height:100vh;
+     max-width:100%;
      margin: 0 auto;
      /* background-color:red;  */
      display:flex;
      flex-wrap:wrap;
      align-items:center;
-     background-color: white;
      justify-content:space-around;
  }
 
-.box1{
+.boxforobjective{
     text-align:center;
-    height:200px;
-    width:500px;
+    min-height:200px;
+    max-width:700px;
     margin:0px 10px 0px;
     /* border:1px solid black; */
     display:flex;
     line-height:20px;
     flex-wrap:wrap;
+
 }
 
-.box2{
+.boxforimag{
     overflow:hidden;
-    height:170px;
-    width:170px;
+    min-height:170px;
+    max-width:170px;
+    background-color: yellow;
     background-color: #FF00FF;
     display:flex;
     justify-content:center;
@@ -247,14 +223,17 @@ ul li a:hover{
 .Hitxt{
     color:#FF00FF;
 }
-.slidertxt{
+.portfoliotxt{
     padding: 18px 4px ;
-    font-size:15px;
+    font-size:19px;
 }
 
 .mynametxt{
     
     font-size:24px;
+}
+.caption1{
+    margin-top: 6rem;
 }
 .Btnlearn{
     border:none;
@@ -275,14 +254,7 @@ ul li a:hover{
 
 }
 @media screen and (max-width:750px){
-    .box1{
-        margin:40px 10px 0px;
-        
-    }
-    .box2{
-        margin:-120px 10px 0px;
-        
-    }
+    
 }
 
 @media screen and (max-width:640px) {
@@ -299,1018 +271,19 @@ ul li a:hover{
 
 
 
-<!-- -----------------------------------------------------body2 -->
 
-<div class="container2">
-    <div class="sample1txtcontainer">
+<!-- for fisrtcontainer script -->
 
-        <div class="sampletxt">
-            <div class="txtsample1"> MY <span  class="portfoliotxt">PORTFOLIO</span> </div>
-        </div>
-
-        <div class="twobox1">
-            <div class="objectivecontainer">
-                <div></div>
-
-                <div class="objectivecontainertxt">
-                    <H4 class="objectivetxt">Objective</H4>
-                    <P class="objectivetxtparagraph">As Frontend web developer my objective is to grow <span class="exponentiallytxt"> exponentially </span>in terms of web designing in industry/company 
-                                    that recognize the value of hardwork.And secure a responsible career opportunity to fully utilize my training and skill.</P>
-                </div>
-            </div>
-
-            <div class="contacttxtbox1" >
-                <div class="circleimage">  <img src="img/benedick.jpg" alt="" class="contactimg"></div>
-
-                <!-- <div class="contacticoncontainer">
-                    <div class="icon1"><i class="fa fa-phone"></i></div>
-                    <div class="icon1"><i class="fa fa-google"></i></div>
-                </div> -->
-
-
-                <div class="contacticoncontainer1"> 
-                    <div class="contacttxt1"><i class="fa fa-phone" id="iconcontact"></i> +639658629717</div>
-                    <div class="contacttxt1"> <i class="fa fa-google" id="iconcontact"></i> lanlenlen78@gmail.com</div>
-                    <div class="contacttxt1"> <i class="fa fa-facebook-official" id="iconcontact"></i>Benedick Erlano</div>
-                </div>
-
-
-
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-<style>
- 
- .objectivetxt::first-letter{
-     color: #FF00FF;
-     font-size:30px;
-
- }
-.container2{
-    
-    height:100vh;
-     max-width:100rem;
-     margin: 0 auto;
-
-}
-
-.sampletxt{
-    height:100px;
-    max-width:100rem;
-    display:flex;
-    align-items:flex-end;
-    justify-content:flex-start;
-}
-
-.txtsample1{    
-    margin-left:117px;
-    font-size:20px;
-    border-width: 0px;
-    border-bottom: 4px solid #FF00FF;
-    font-weight:bold;
-}
-.portfoliotxt{
-    color:#FF00FF;
-}
-
-.twobox1{
-    height:100vh;
-    max-width:100rem;
-    display: flex;
-    flex-wrap:wrap;
-    align-items: center; 
-    justify-content:space-evenly;
-    background-color:white;
-}
-.objectivecontainer{
-    height:300px;
-    width:700px;
-    /* border: 1px solid black; */
-    margin:0px 10px 0px;
-    background-color:white;
-}
-
-
-.contacttxtbox1{
-    height:300px;
-    width:300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: px solid #FF00FF;
-    flex-wrap: wrap;
-    margin:0px 10px 0px;
-    box-shadow: 5px 5px 10px #FF00FF;  
-    /* box-shadow: 0 18px 20px rgba(0,0,0,0.20),  0 10px 11px rgba(0,0,0,0.22); */ 
-    /* background-color:#FF00FF; */
-}
-
-.objectivecontainertxt{
-    margin:70px 5px 0px;
-
-}
-
-.objectivetxtparagraph{
-    font-size:18px;
-    padding:10px 0px 0px;
-    margin:10px 0px 0px;
-    line-height:28px;
-
-}
-.objectivetxt{
-    font-size:25px
-}
-
-.exponentiallytxt{
-    color:#FF00FF;
-    cursor: pointer;
-}
-.exponentiallytxt:hover{
-    color:DEEPPINK;
-}
-.circleimage{
-    display: flex;
-    align-items: center;
-    justify-content: center;   
-    height:99px;
-    width:99px;
-    overflow: hidden;
-    border:5px solid white; 
-    border-radius:100%;
-    margin-top: -50px;
-    transition: 1s;
-}
-.circleimage:hover{
-    rotate: 95deg;
-    transform: scale(1.3);
-}
-
-.contactimg{
-    border-radius:100%;
-    height:100px;
-    width:100px;
-    
-}
-
-.contacticoncontainer{
-    margin: 20px  5px 0px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    height: 0 auto;
-    max-width: 100vh;
-}
-.contacticoncontainer1{
-    margin: 5px  5px 0px;
-
-    height: 0 auto;
-    max-width:auto;
-    background-color:white;
-}
-
-.contacttxt1{
-    flex-direction:column;
-    margin: 20px 10px 10px;
-    color: black;
-    font-size:15px;
-    
-}
-#iconcontact
-{   margin: 0px 20px 0px;
-    color:#FF00FF;
-    font-size: 20px;
-}
-.contacticoncontainer2{
-    margin:20px 1px 0px;
-    align-content: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.fbicon{
-    color: #FF00FF;
-    font-size: 25px;
-    margin:1px;
-    cursor: pointer;
-}
-
-.fbtxt{
-    margin:14px 1px 0px;
-    font-size: 15x;
-}
-
-
-@media screen and (max-width: 600px){
-
-    .objectivecontainer{
-        margin: 5px 5px 0px;
-        display:flex;
- 
-        width:100%;
-        align-items: center;
-        justify-content: center;
-        background-color: white;
-
-    }
-    .objectivecontainertxt{
-        
-        margin: 1px 20px -20px;
-
-    }
-.txtsample1{
-    font-size: 20px;
-}
-.objectivetxt{
-font-size: 17px;
-}
-.objectivetxtparagraph{
-    font-size: 15px;
-}
-
-.contacttxt1{
-
-    font-size: 15px;
-}
-   .contacttxtbox1{
-       height: 280px;
-       width: 280px;
-   }
- }
-
-</style>
-
-<!-- container 3 -->
-<div class="extersionbg"></div>
-<style>
-    .extersionbg{
-        height: 30vh;
-        max-width: 100rem;
-        
-    }
-</style>
-<div class="container3">
-    
-<div class="whatido">
-            <div class="whatidotxt"> What i <span  class="dotxt">do</span> </div>
-        </div>
-
-    <div class="boxcontainer1">
-        <div class="designcontainer">
-                <h3 class="designicon"><i class="fa fa-file-o" id="designicon"></i> <span class="buildPortfoliotxt">Build/Portfolio</span> </h3>
-                <p class="designtxt">As Frontend web developer my objective is to grow exponentially in terms of web designing. This is my first portfolio i've done and i want to make more </p>
-        </div>
-        
-        <div class="designcontainer">
-                <h3 class="designicon"><i class="fa fa-linode" id="designicon"></i> <span class="buildPortfoliotxt">Mobile/Responsive</span> </h3>
-                <p class="designtxt"> when it comes user interface of web i use my knowlegde to make responsive and clearly fixed in screen so that why ilove it..</p>
-        </div>
-
-    </div>
-
-    
-    <div class="boxcontainer2">
-        <div class="designcontainer2">
-            <h3 class="designicon"><i class="fa fa-gittip"id="designicon"></i>  <span class="buildPortfoliotxt">Design</span> </h3>
-            <p class="designtxt"> Designing a web interface  is one of my favorite activity. I like to explore and get inspired, and grow exponentially in terms of desingning.<p>
-        </div>
-
-        <div class="designcontainer2">
-            <h3 class="designicon"><i class="fa fa-cogs" id="designicon"></i><span class="buildPortfoliotxt">Development</span> </h3>
-            <p class="designtxt">In terms of web design, spcially  the user interface which is need create user freindly. I create basic and readable web design interface which result a good respons from the user. </p>
-        </div>
-
-    </div>
-</div>
-<style>
-
-.buildPortfoliotxt{
-    font-size: 17px;
-}
-.dotxt{
-    color:#FF00FF;
-    border: none;
-    
-
-}.whatido{
-    height:100px;
-    max-width:100rem;
-    display:flex;
-    background-color:white;
-    align-items:flex-end;
-    justify-content:flex-start;
-}
-
-.whatidotxt{    
-    margin:0px 0px 50px 117px;
-    font-size:20px;
-    border-width: 0px;
-    border-bottom: 4px solid #FF00FF;
-    font-weight:bold;
-    
-}
-    #designicon{
-        color:#FF00FF;
-        font-size: 30px;
-        margin: 0px  10px 0px  3px;
-    }
-.container3{
-    max-width: 100rem;
-    height: 100vh;
-    margin: 0 auto;
-    background-color:white;
-}
-.boxcontainer1{
-    flex-wrap: wrap;
-    display: flex;
-    align-items:flex-start;
-    justify-content: space-evenly;
-    max-width: 100rem;
-    height: 40vh;    
-    background-color: white;
-
-}
-.designcontainer{
-    height: 120px;
-    width:35rem;
-    background-color: white;
-
-}
-
-.boxcontainer2{
-    flex-wrap: wrap;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    max-width: 100rem;
-    height: 50vh;
-    background-color:white;
-
-}
-.designcontainer2{
-    height: 120px;
-    width:35rem;
-    background-color: white;
-
-}
-
-.designtxt{
-    font-size: 17px;
-    margin: 10px 1px 2px  40px;
-    padding: 0 10px 0 10px;
-
-}
-@media screen and (max-width:640px){
-
-   
-.designtxt{
-    
-    font-size: 15px;
-    margin: 13px 1px 2px  26px;
-} 
-
-#designicon{
-    font-size: 20px;
-}
-}
-</style>
-
-<!-- for skillss -->
-<div class="container4">
-    <!-- 1st container -->
-    <div class="skillcontainer">
-        <div class="Titletxt"> <h2>Skills</h2></div>
-        <div class="skill1"> 
-            <div class="titletxt">html</div>
-                <span class="bar1"> <span class="html"></span></span>
-        </div>
-
-        <div class="skill1"> 
-            <div class="titletxt">css</div>
-                <span class="bar1"> <span class="css"></span></span>
-        </div>
-
-        <div class="skill1"> 
-            <div class="titletxt">javascript</div>
-                <span class="bar1"> <span class="javascript"></span></span>
-        </div>
-
-        <div class="skill1"> 
-            <div class="titletxt">responsive design</div>
-                <span class="bar1"> <span class="responsive"></span></span>
-        </div>
-
-        <div class="skill1"> 
-            <div class="titletxt">jquerry</div>   <span class="bar1"> 
-                <span class="jquerry"></span></span>
-        </div>
-
-<!-- 2nd container -->
-<div class="otherskillcontainer">
-    <div class="Titletxt"><h3>Other skills</h3></div>
-   <div class="skill1">
-       <div class="titletxt">photoshop</div>
-       <span class="bar2"> <span class="photoshop"></span></span>
-   </div> 
-
-
-   <div class="skill1">
-        <div class="titletxt">microsoft office</div>
-        <span class="bar2"> <span class="microsoft"></span></span>
-    </div> 
-
-    
-   <div class="skill1">
-        <div class="titletxt">ui/ux mobile</div>
-        <span class="bar2"> <span class="uiuxmobile"></span></span>
-    </div> 
-</div>
-
-<!--  -->
-
-        
-    </div>
-<!--  -->
-    <!-- 3rd container -->
-
-    <div class="aboutcontainer">
-        <!-- <div class="about">About</div>
-        <div class="abouttxt"><p>Im Benedick Erlano 23 years old, Graduate of bachelor science in information technology, 
-            product of the university of caloocan city (UCC). I was born on october 5 1997 in Gubat Sorsogon</p></div>
-         -->
-        <div class="personalbox"> 
-            <div class="personaltitle"><i class="fa fa-odnoklassniki"></i> <span class="titlebackgroundtxt"> Personal skill</span></div>
-            <div class="personalskillcontainer">
-                <li>  Creative</li>
-                <li>  Organized</li>
-                <li>  Time management</li>
-     
-            </div> 
-        </div>
-        <div class="personalbox"> 
-            <div class="personaltitle"><i class="fa fa-file-word-o"></i><span class="titlebackgroundtxt"> Work experience</span></div>
-            <div class="personalskillcontainer">
-                <li>  Saleman</li>
-                <li>  Hairstylist</li>
-            
-     
-            </div> 
-        </div>
-        
-        <div class="personalbox"> 
-            <div class="personaltitle"><i class="fa fa-hospital-o"></i><span class="titlebackgroundtxt"> School Background</span></div>
-            <div class="personalskillcontainer">
-                <li>  Elem/Sampaguita (2014-2015 / ALS)</li>
-                <li>  Sampaguita/High (2015-2016 / ALS)</li>
-                <li>  University of Caloocan/college (2017-2021)</li>
-     
-            </div> 
-        </div>
-        
-    </div>
-    
-</div>
-<style>
-
-    .Titletxt{
-        color: #FF00FF;
-        font-size: 15px;
-        margin:15px;
-    }
-    .titletxt{
-        color:white;
-    }
-    .container4{
-        flex-wrap: wrap;
-        max-width: 100rem;
-        height: 100vh;
-        background-color:white;
-        display: flex;
-        background-color: #333;
-        align-items: center;
-        justify-content:space-around;
-    }
-    .skillcontainer{
-        display:block;
-        height: 500px;
-        width: 300px;
-        margin: 10px;
-        /* box-shadow: 5px 5px 10px #FF00FF;   */
-        flex-direction: column;    
-    }
-    .bar1{  
-        color: white;
-        display: inline-block;
-        height: 5px;
-        width: 80%;
-        border: 1px solid white;
-        overflow: hidden;
-        border-radius: 10px 10px 10px 10px;
-        /* box-shadow  : 5px 5px 10px #FF00FF;   */
-    /* box-shadow: 0 18px 20px rgba(0,0,0,0.20),  0 10px 11px rgba(0,0,0,0.22); */ 
-    }
-    .skill1{
-        margin: 0px 0px 0px 10px;
-    }
-
-    .bar1 span{
-        float: left;
-        background-color: #FF00FF;
-        height: 5px;
-    }
-
-    .css{
-        width: 80%;
-        animation: css 2s;
-    }
-
-    .html{
-        width: 80%;
-        animation: html 2s;
-    }
-    
-    .javascript{
-        width: 20%;
-        animation: javascript 2s;
-    }
-    
-    .responsive{
-        width: 90%;
-        animation: responsive 2s;
-    }
-    
-    .jquerry{
-        width: 20%;
-        animation: jquerry 2s;
-    }
-
-    @keyframes css {
-        0%{
-            width: 0%;
+<script>
+    function  changeColor(element){
+        var currentcolor = element.style.backgroundColor;
+        if (currentcolor == "white"){
+            element.style.backgroundColor = "#E6DCDC";
         }
-        100%{
-            width: 80%;
+        else{
+            element.style.backgroundColor = "white"
         }
-    }
-    
-    @keyframes html {
-        0%{
-            width: 0%;
-        }
-        100%{
-            width: 80%;
-        }
-    }
-
-    
-    @keyframes responsive {
-        0%{
-            width: 0%;
-        }
-        100%{
-            width: 90%;
-        }
-    }
-
-    
-    @keyframes javascript {
-        0%{
-            width: 0%;
-        }
-        100%{
-            width: 20%;
-        }
-    }
-
-    
-    @keyframes jquerry {
-        0%{
-            width: 0%;
-        }
-        100%{
-            width: 20%;
-        }
-    }
-
-.otherskillcontainer{
-    
-        height: 100px;
-        width: 300px;
-       margin: 30px 0px 0px;
-      
-           }
-.bar2{
-    height: 5px;
-    width: 80%;
-    border: 1px solid white;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 10px 10px 10px 10px;
-    /* box-shadow: 5px 5px 10px #FF00FF;   */
-    /* box-shadow: 0 18px 20px rgba(0,0,0,0.20),  0 10px 11px rgba(0,0,0,0.22); */ 
-}
-
-.bar2 span{
-    float: left;
-    height: 5px;
-    background-color:#FF00FF;
-}
-
-.photoshop{
-width: 50%;
-animation: photoshop 2s;
-}
-
-.microsoft{
-width: 70%;
-animation:  microsoft 2s;
-}
-
-.uiuxmobile{
-width: 60%;
-animation: uiuxmobile 2s;
-}
-@keyframes photoshop {
-    0%{
-        width: 0%;        
-    }
-
-    100%{
-        width: 50%;
-    }
-
-}
-@keyframes microsoft {
-    0%{
-        width: 0%;        
-    }
-
-    100%{
-        width: 70%;
-    }
-
-}
-
-
-@keyframes uiuxmobile {
-    0%{
-        width: 0%;        
-    }
-
-    100%{
-        width: 60%;
-    }
-
-}
-.aboutcontainer{
-    height: 500px;
-    width: 500px;
-    margin: 2px 0px 0px;
-   
-}
-.abouttxt{
- font-size:17px;
- margin: 10px 20px 0px;
-}
-
-/* for responsive */
-
-@media  screen and (max-width:600px)
-{
-    .container4{
-        flex-wrap: wrap;
-    }
-    .abouttxt{
-        font-size:15px;
-    }
-} 
-
-.personalbox{
-    margin: 29px 5px 10px;
-    background-color: #333;
-    height: 115px;
-}
- .personalskillcontainer{
-     color: white;
-     margin: 2px 0px  0px 10px;
-     
- }
- .personalskillcontainer li{
-     padding:5px 0px 0px 50px;
-    font-size: 14px;
-    
- }
-
- .personaltitle{
-    color: #FF00FF; 
-    font-size: 25px;
-    margin: 10px 0px 0px 30px;  
- }
-
- .titlebackgroundtxt{
-     color: white;
-     font-size: 15px;
-     font-weight:bold;
-     margin: 5px 0px 0px 8px;
- }
- .about{
-     font-weight: bold;
-     color: #FF00FF;
-     font-size: 20px;
- }
-
- @media  screen and (max-width:1150px) {
-    .container4{
-   
-        margin-top: 100px;
-    
-    }
-}
-
-@media screen and (max-width:830px) {
-    .container4{
-        height: 180vh;
-    }
-}
-</style>
-
-
-<div class="container5">
-    <div class="firstline">
-        <div class="box1con">
-            <div class="title1" > <a href="#example"></a>SPWSAMS</a></div>
-
-            <div class="logoimg1" id="example"><img src="img/logo1.jpg" alt="" class="imglogo1"> </div>
-        </div>
-
-
-        <div class="box1con">
-            <div class="title1">Keyk A Bite</div>
-            <div class="logoimg1"><img src="img/logo2.jpeg" alt="" class="imglogo"> </div>
-        </div>
-        
-        <div class="box1con">
-            <div class="title1">Break The Ball</div>
-            <div class="logoimg1"><img src="img/logo2.jpg" alt="" class="imglogo"> </div>
-        </div>
-        
-    </div>   
-    <div class="firstline2">
-        <div class="containerfor1box"> <i class="fa fa-cogs" id="developmenticon"></i><div class="developedtxt"> System Developed</div></div>
-        
-        <div class="containerforbox2">
-            <div class="description1"> 
-                <div class="spwstitletxt">Indor Plant Watering Support</div>
-                <p class="descriptiontxt">The objective of developing this mobile and hardware application is to lessen the worries of the plant owner on
-                     how they can maintain their plant to grow healthy. With the help of this technology they can now have innovative assistance that 
-                     cares to their plants specially in watering support. They will gain benefits from plants as well as the plants will gain proper care
-                      from the owner. 
-                </p>
-            </div>
-            <div class="description1"> 
-                <div class="spwstitletxt">Keyk A Bite</div>
-                <p class="descriptiontxt">Keyk-A-Bite is a web-based platform that offers cake products such as birthday cakes, wedding cakes, premium 
-                    cakes and etc. Just like the other online shopping platform, the user can add, remove, edit the items they added to their cart. 
-                    The admin can upload new item, edit, update and also remove if necessary, as security precautions Keyk-A-Bite provides CMS or 
-                    Content Management System for admins where the activity and logs are recorded. The system has Dashboard also where the total orders,
-                     users, items, delivered items and etc. are displayed. 
-                </p>
-            </div>
-            <div class="description1"> 
-                <div class="spwstitletxt">Breack The Ball</div>
-                <p class="descriptiontxt">This is kind of a game that consist of the balls  that need to hit while it is moving around,
-                     until it breaks into smaller pieces when it hit until it gone and reach another stage. The players need to complete to 
-                     each other to get the highest score so that  they would enjoy the game. Each stage has a different difficulty.  </p>
-            </div>
-
-        </div>
-        
-   
-        
-    </div>   
-     
-</div>
-
-
-<style>
-    .container5{
-        height: 100vh;
-        width: 100%;
-        /* background-color: yellow; */
-    }
-.firstline{
-    max-width: 100rem;
-    height: 50vh;
-    /* background-color: turquoise; */
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content:center;
-}
-.firstline2{
-    max-width: 100rem;
-    height: 50vh;
-    background-color:#333;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-}
-.box1con{
-    height: 170px;
-    width: 170px;
-    margin: 5px;
-    transition: 1s;
-    text-align: center;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 5px 5px 10px #333;  
-
-}
-.box1con:hover{
- transform:scale(1.3);
-
-}
-.title1{
-    
-    position:relative;
-    font-size: 15px;
-    padding: 10px;
-    padding: 25px 1px 0px 1px;
-    overflow: hidden;
-    font-weight: bold;
-
-    position: relative;
-
-}
-
-.title1::first-letter{
-
-    color:#FF00FF;
-    font-size:25px;
-    border-bottom: solid #FF00FF;
-    border-bottom-width: 20px;
-
-    
-}
-.imglogo{
-    padding: 10px;
-    height: 70px;
-    width: 150px;
-    margin-top: 20px;
-    object-fit: cover;
- 
-}
-
-.imglogo1{
-    padding: 0px 5px 0px;
-    height: 100px;
-    width: 120px;
-    object-fit: cover;
- 
-}
-
-.box2con{
-    height: 200px;
-    width: 400px;
-    margin: 5px;
-    background-color:white;
-}
-
-#developmenticon{
-    font-size: 80px;
-    color: white;
-}
-.containerfor1box{
-    height: 10vh;
-    width:120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.containerforbox2{
-    height: 45vh;
-    width: 900px;
-    flex-wrap: wrap;
-    flex-direction: column;
- 
-}
-
-.description1{
-
-    padding: 10px 10px 0px 10px;
-}
-.spwstitletxt{
-    font-weight: bold;
-    color: #FF00FF;
-    z-index: -2;
-}
-.descriptiontxt{
-    color: white;
-    padding: 1px;
-    font-size:14px;
-    line-height: 18px;
-    margin: 5px 0px 0px 10px;
-}
-.developedtxt{
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    display: none;
-}
-
-@media screen and (max-width:1085px) {
-    .firstline2{
-        height:90vh;
-    }
-    .containerforbox2{
-        margin-top: -10rem;
-    }
-}
-
-@media screen and (max-width:667px) {
-    .firstline{
-        height: 80vh;
-    }
-    .firstline2{
-        height: 100vh;
-    }
-    .containerforbox2{
-        margin-top: -20rem;
-    }
-    #developmenticon{
-        display: none;
-    }
-    .developedtxt{
-        display: block;
-        margin-top: -10rem;
-    }
-    .developedtxt::first-letter{
-        color: #FF00FF;
-        font-size: 30px;
-        
-    }
-    .spwstitletxt{
-        font-size: 18px;
-
-    }
-    .descriptiontxt{
-        font-size: 13px;
-    }
-
-}
-
-@media screen and (max-width:419px) {
-    .firstline{
-        height:auto;
-    }
-}
-
-@media screen and (max-width:320px) {
-    .firstline2{
-        height: 130vh ;
-    }
-    
-    .containerforbox2{
-        margin-top: -30rem;
-    }
-    
-}
-
-@media only screen and (max-width:375px){
-    .containerforbox2{
-        margin-top: -23rem;
-    }
-    
-}
-
-@media only screen and (max-width:511px){
-    .firstline2{
-        height: 120vh;
-        background-color: ;
-    }
-    
-}
-@media only screen and (max-width:439px){
-    .firstline2{
-        height: 150vh;
-        background-color:;
-    }
-
-    .containerforbox2{
-        margin-top: -43rem;
-    }
-    
-}
-</style> 
-
-
-
-
-
+    } 
+</script>
 </body>
 </html>
