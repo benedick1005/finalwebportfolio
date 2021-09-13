@@ -50,7 +50,7 @@
     display:none;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 743px){
     .checkbtn{
         display:block;
         margin-right:39px;
@@ -96,7 +96,7 @@ ul{
 ul{ 
     line-height:50px;
     float:right;
-    margin-right:30px;
+    margin-right:8em;
 }
 ul li{
     margin:0px 10px  0px;
@@ -131,7 +131,7 @@ ul li a:hover{
     z-index: 3;
 }
 .logo{
-    margin:0px 30px 0px;
+    margin:0 0 0 6.5em;
     color:#FF00FF;
     font-weight:bold;
     font-size:24px;
@@ -150,29 +150,36 @@ ul li a:hover{
     <!-- first conatiner -->
     <div class="container1" onclick="changeColor(this)">    
         <div class="boxforobjective">
-             <div class="slidercontainer1">
                 <div class="caption1">
                      <h2 class ="mynametxt"> <span class="Hitxt">Hi !</span> BENEDICK ERLANO</h2>
                     <P class="portfoliotxt"> GRADUATE BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY IN UNIVERSITY OF CALOOCAN CITY (UCC) 2017-2021.AND THIS IS MY 1ST PORTFOLIO</P>
                 </div>
                 <div class="btnlearn"  > <button class="Btnlearn" id="btnlearn">Hire me</button> </div>
-            </div>
         </div>
-                   
-        <div class="boxforimag">  <img src="img/benedick.jpg" alt="" class="imgrightside"></div>
+        <div class="boxforimag">  <img src="img/benedick.jpg" alt="" class="imgrightside">
+        </div>
     </div>
 
     <!-- second container -->
-    <div class="container2"></div>
+    <div class="container2">
+            <div class="myobjectivecontainer">
+                <div class="myobjectivetitle"> Objective</div>
+                <P class="myobjectivetxt">As Frontend web developer my objective is to grow exponentially in terms of web designing in industry/company that recognize the value of hardwork.And secure a responsible career opportunity to fully utilize my training and skill.</P>
+            </div>
+            <div class="mycontactcontainer">
+                <div class="myprofilecontainer"><img src="" alt="">image</div>
+                <div class="contacttxtandicon">facebook</div>
+            </div>
+
+    </div>
 </div>
 
 <!-- first conatainer-->
 <style>
-.container1, .container2{
+.container1{
      min-height:100vh;
-     max-width:100%;
+     max-width:90%;
      margin: 0 auto;
-     /* background-color:red;  */
      display:flex;
      flex-wrap:wrap;
      align-items:center;
@@ -180,7 +187,7 @@ ul li a:hover{
  }
 
 .boxforobjective{
-    text-align:center;
+    
     min-height:200px;
     max-width:700px;
     margin:0px 10px 0px;
@@ -226,6 +233,8 @@ ul li a:hover{
 .portfoliotxt{
     padding: 18px 4px ;
     font-size:19px;
+
+    line-height: 1.6rem;
 }
 
 .mynametxt{
@@ -239,40 +248,84 @@ ul li a:hover{
     border:none;
     width: 100px;
     border:2px solid #FF00FF;
-    background:white;
+    background:#FF00FF;
     /* background-color:#FF00FF; */
     padding:5px;
-    color:black;
+    font-weight: bold;
     cursor: pointer;
+    color: aliceblue;
     border-radius:10%;
+    border: none;
 }                                                                                                                                                                         
 
 #btnlearn:hover{
-    transition: 1s;
-    color: white;
-    background-color:#FF00FF;
+    transition: .5s;
+    color: #FF00FF;
+    background-color:white;
 
 }
-@media screen and (max-width:750px){
-    
-}
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:414px) {
     .mynametxt{
         font-size: 20px;
-
     }
-    .slidertxt{
-        font-size: 13px;
+    .portfoliotxt{
+        font-size: 14px;
     }
 }
 
+/* container2 */
+.container2{
+     min-height:100vh;
+     max-width:90%;
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+ .myobjectivecontainer{
+     min-height: 10em;
+     width: 39rem;
+   }
+ .mycontactcontainer{
+        
+        min-height: 10rem;
+        width: 20rem;
+    }
+  .myobjectivetxt{
+     margin: .1rem 0 0;
+     font-size: 19px;
+     padding: 0 0 0 1em;
+     line-height: 1.5rem;
+ }
+ .myobjectivetitle{
+     font-size: 29px;
+     font-weight: bold;
+     margin: .5rem 0 0;
+     padding: 1em; 
+ }
+ .myobjectivetitle::first-letter{
+    color:#FF00FF;
+    font-size:25px;
+    border-bottom-width: 20px;
+ }
+ /* @media for objective title and txt 414px*/
+ @media screen and (max-width:414px){
+    .myobjectivetxt{
+        font-size: 15px;
+     }
+     .myobjectivetitle{
+        font-size: 20px;
+     }
+     
+ }
 </style>
 
 
 
 
-<!-- for fisrtcontainer script -->
+<!-- for fisrtcontainer script
 
 <script>
     function  changeColor(element){
@@ -284,6 +337,6 @@ ul li a:hover{
             element.style.backgroundColor = "white"
         }
     } 
-</script>
+</script> -->
 </body>
 </html>
