@@ -136,6 +136,8 @@ ul li a:hover{
     font-weight:bold;
     font-size:24px;
     position: absolute;
+    font-family:cursive;
+
 }
 .iocolor{
     color:black;
@@ -167,8 +169,12 @@ ul li a:hover{
                 <P class="myobjectivetxt">As Frontend web developer my objective is to grow exponentially in terms of web designing in industry/company that recognize the value of hardwork.And secure a responsible career opportunity to fully utilize my training and skill.</P>
             </div>
             <div class="mycontactcontainer">
-                <div class="myprofilecontainer"><img src="" alt="">image</div>
-                <div class="contacttxtandicon">facebook</div>
+                <div class="contactcontainer">
+                    <div class="myprofilecontainer">Contact <i></i></div>
+                    <div class="contacttxtandicon"> <i class="fa fa-phone" id="iconcontact"></i> +639658629717</div>
+                    <div class="contacttxtandicon"><i class="fa fa-google" id="iconcontact"></i> lanlenlen78@gmail.com</div>
+                    <div class="contacttxtandicon"><i class="fa fa-facebook-official" id="iconcontact"></i>Benedick Erlano</div>
+                </div>
             </div>
 
     </div>
@@ -260,9 +266,9 @@ ul li a:hover{
 
 #btnlearn:hover{
     transition: .5s;
-    color: #FF00FF;
-    background-color:white;
-
+    color:white;
+    background-color:#194569;
+  
 }
 
 @media screen and (max-width:414px) {
@@ -270,29 +276,27 @@ ul li a:hover{
         font-size: 20px;
     }
     .portfoliotxt{
+
         font-size: 14px;
     }
 }
 
 /* container2 */
 .container2{
-     min-height:100vh;
+     min-height:30vh;
      max-width:90%;
      margin: 0 auto;
      display: flex;
      align-items: center;
      justify-content: space-around;
      flex-wrap: wrap;
+     
 }
  .myobjectivecontainer{
-     min-height: 10em;
+     min-height: 35vh;
      width: 39rem;
+     align-items: center;
    }
- .mycontactcontainer{
-        background-color: #FF00FF;
-        min-height: 10rem;
-        width: 20rem;
-    }
   .myobjectivetxt{
      margin: .1rem 0 0;
      font-size: 19px;
@@ -300,15 +304,42 @@ ul li a:hover{
      line-height: 1.5rem;
  }
  .myobjectivetitle{
-     font-size: 29px;
+     font-size: 25px;
      font-weight: bold;
      margin: .5rem 0 0;
      padding: 1em; 
  }
  .myobjectivetitle::first-letter{
     color:#FF00FF;
-    font-size:25px;
+    font-size:29px;
     border-bottom-width: 20px;
+ }
+ 
+/* contact container */
+ .mycontactcontainer{
+        min-height: 35vh;
+        min-width:20%;
+  
+    }
+ .contactcontainer{
+     padding: 10px;
+ }
+ .contacttxtandicon{
+     line-height: 22px;
+ }
+ #iconcontact{
+     padding: 0 10px 0 0;
+
+ }
+ .myprofilecontainer{
+    font-size: 25px;
+     font-weight: bold;
+     margin: .3rem 0 0;
+     padding: 1em 1rem 1rem 0; 
+ }
+ .myprofilecontainer::first-letter{
+     font-size: 29px;
+    color: #FF00FF;
  }
  /* @media for objective title and txt 414px*/
  @media screen and (max-width:414px){
