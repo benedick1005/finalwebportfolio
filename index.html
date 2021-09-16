@@ -170,10 +170,14 @@ ul li a:hover{
             </div>
             <div class="mycontactcontainer">
                 <div class="contactcontainer">
-                    <div class="myprofilecontainer">Contact <i></i></div>
+                    <div class="mycontacttitle">Contact <i></i></div>
                     <div class="contacttxtandicon"> <i class="fa fa-phone" id="iconcontact"></i> +639658629717</div>
                     <div class="contacttxtandicon"><i class="fa fa-google" id="iconcontact"></i> lanlenlen78@gmail.com</div>
                     <div class="contacttxtandicon"><i class="fa fa-facebook-official" id="iconcontact"></i>Benedick Erlano</div>
+                </div>
+                <div class="contactcontainer">
+                    <div class="mycontacttitle">Address <i></i></div>
+                    <div class="contacttxtandicon"> <i class="fa fa-phone" id="iconcontact"></i> B.S.C.C</div>
                 </div>
             </div>
     </div>
@@ -293,18 +297,17 @@ ul li a:hover{
    }
   .myobjectivetxt{
      font-size: 19px;
-     padding: 1rem;
+     padding: .9rem;
      line-height: 1.5rem;
  }
  .myobjectivetitle{
      font-size: 25px;
      font-weight: bold;
-     margin: .5rem 0 0;
-     
+     margin: 0 0 0 1rem; 
  }
  .myobjectivetitle::first-letter{
     color:#FF00FF;
-    font-size:29px;
+    font-size:25px;
     border-bottom-width: 20px;
  }
  
@@ -312,12 +315,16 @@ ul li a:hover{
  .mycontactcontainer{
     min-height: 37vh;
     width: 30rem;
+    /* background-color: #FF00FF; */
+    display: flex;
+    flex-wrap: wrap;
 }
  .contactcontainer{
     margin: .1rem 0 0;
-     font-size: 19px;
-     padding: 1rem;
-     line-height: 1.5rem;
+    font-size: 19px;
+    padding: 1rem;
+    line-height: 1.5rem;
+
  }
  .contacttxtandicon{
      line-height: 22px;
@@ -326,15 +333,15 @@ ul li a:hover{
      padding: 0 10px 0 0;
 
  }
- .myprofilecontainer{
+ .mycontacttitle{
     font-size: 25px;
      font-weight: bold;
      margin: .3rem 0 0;
      padding: 1em 0 1rem 0;
      margin-top: -1.8rem; 
  }
- .myprofilecontainer::first-letter{
-     font-size: 29px;
+ .mycontacttitle::first-letter{
+     font-size: 25px;
      color: #FF00FF;
  }
  /* @media for objective title and txt 414px*/
@@ -343,9 +350,14 @@ ul li a:hover{
         font-size: 15px;
      }
      .myobjectivetitle{
-        font-size: 20px;
+        font-size: 18px;
      }
-     
+     .contactcontainer{
+         font-size: 15px;
+     }
+     .mycontacttitle{
+         font-size: 18px;
+     }
  }
 </style>
 
