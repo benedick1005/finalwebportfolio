@@ -180,9 +180,15 @@ ul li a:hover{
     <br> 
     <br>
     <br>
-<div class="whatidocontainer"><div class="whatidotxt">what i <span class="dotxt">do</span></div>
+
+
+<div class="whatidocontainer">
+    <div class="containerforwhatido">
+         <div class="whatidotxt">what i <span class="dotxt">do</span></div>
+    </div>
 </div>
- <!-- third container   -->
+
+<!-- third container   -->
     <div class="container3">
         <div class="buildportfoliocontainer">
             <div class="icontitleandparagraphcontainer">
@@ -210,12 +216,9 @@ ul li a:hover{
         </div>
     </div>
 
-
-    <div class="sampleconatiner">hi
-        <div class="box">e</div>
-        <div class="box">e</div>
-        
-        <div class="box">e</div>
+<!-- 4th container -->
+    <div class="fourthcontainer">
+       
         
     </div>
 </div>
@@ -348,6 +351,7 @@ ul li a:hover{
     margin: 1rem;
     /* background-color: #FF00FF; */
 }
+
 .headertitle{
     font-weight: bold;
     font-size: 25px;
@@ -393,46 +397,53 @@ ul li a:hover{
      align-items: center;
      justify-content: space-around;
      flex-wrap: wrap;
-     /* background-color: #333; */
+     background-color: #333;
 }
 .buildportfoliocontainer{
     min-height: 25vh;
     width: 30rem;
-    background-color: white;
+    /* background-color: white; */
     margin: 1px;
 }
 
 .mobileresponsivcontainer{
     min-height: 25vh;
     width: 30rem;
-    background-color: white;
+    /* background-color: white; */
     margin: 1px;
 }
 
 .designcontainer{
     min-height: 25vh;
     width: 30rem;
-    background-color: white;
+    /* background-color: white; */
     margin: 1px;
 }
 
 .developmentcontainer{
     min-height: 25vh;
     width: 30rem;
-    background-color:white;
+    /* background-color:white; */
     margin: 1px;
     
 }
 .whatidocontainer{
     min-height: 4vh;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color:#333;
+}
+.containerforwhatido{
+    min-height: 4vh;
     max-width: 86%;
     margin: 0 auto;
-    /* background-color: aquamarine; */
+    /* background-color:red; */
 }
 .whatidotxt{
    font-size: 23px;
    font-weight:bold;
-   margin: 5px;
+   color: white;
+   margin: 5px 0 0 0;
    padding: .5rem 0 0 .7rem;
 }
 .dotxt{
@@ -451,11 +462,13 @@ ul li a:hover{
 .buildPortfoliotxt{
     font-weight: bold;
     margin: 0 0 0 .5rem;
+    color: #FF00FF;
 }
 .paragraphtxt{
     padding: 0 .4rem 0 1.6rem;
     margin: .9rem 0 0 .5rem  ;
     line-height: 1.4rem;
+    color: aliceblue;
 }
 
 @media screen and (max-width:414px){
