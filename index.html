@@ -147,6 +147,8 @@ ul li a:hover{
 </style>
 
 
+<br><br><br>
+
 <!-- for whole container -->
 <div class="maincontainer">
     <!-- first conatiner -->
@@ -154,7 +156,7 @@ ul li a:hover{
     <div class="container1" onclick="changeColor(this)">    
         <div class="boxforobjective">
                 <div class="caption1">
-                     <h2 class ="mynametxt"> Hey ! I'm a Junior <span class="txtfrontend">Frontend Developer</span> </h2>
+                     <h2 class ="mynametxt"> Hey! I'm a Junior <span class="txtfrontend">Frontend Developer</span> </h2>
                     <P class="portfoliotxt">I'm Benedick erlano from caloocan bagong silang, graduate Bachelor of Science In Information technology in University of caloocan city "Ucc" 2017-2021</P>
                 </div>
                 <div class="btnlearn"  > <button class="Btnlearn" id="btnlearn">Hire me</button> </div>
@@ -163,28 +165,21 @@ ul li a:hover{
         </div>
     </div>
 
-<br>
-<br>
-<br>
-<br>
+<br><br><br><br><br><br><br><br><br><br>
+
     <!-- second container -->
     <div class="containe2">
         <div class="headerandparagraphcontainer">
-        <div class="borderline">Get started</div>
+        <div class="Getstarted">Get started</div>
             <div class="headertitle">bout</div>
             <div class="txtparagraph">Do what you love and Love what you do. 
              <br>   all your strugle are the best things that wil be the key for the bright future</div>
         </div>
     </div>
-    <br>
-    <br> 
-    <br>
-    <br>
-
-
+    <br><br><br><br><br><br>
 <div class="whatidocontainer">
     <div class="containerforwhatido">
-         <div class="whatidotxt">what i <span class="dotxt">do</span></div>
+         <div class="whatidotxt">What i <span class="dotxt">do</span></div>
     </div>
 </div>
 
@@ -234,30 +229,29 @@ ul li a:hover{
      align-items:center;
      justify-content:space-around;
      background-color: #333;
-     clip-path: polygon(50% 0%, 100% 0, 100% 100%, 84% 93%, 69% 100%, 48% 92%, 29% 100%, 16% 92%, 0 100%, 0 0);
- }
+     box-shadow: 5px 5px 10px #333;  
+     clip-path: polygon(100% 0, 100% 100%, 83% 92%, 67% 100%, 49% 91%, 32% 100%, 15% 91%, 0 100%, 0 0);
+    }
 
 .boxforobjective{
-    min-height:200px;
+    min-height:230px;
     max-width:700px;
     margin:0px 10px 0px;
-    /* border:1px solid black; */
-    display:flex;
+    
     line-height:20px;
     flex-wrap:wrap;
+
+    padding: 0 7px 15px;
+   
 }
 .boxforimag{
     overflow:hidden;
-    min-height:170px;
+    min-height:250px;
     max-width:170px;
-    background-color: yellow;
-    background-color: #FF00FF;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     
-    border-radius:101%;
-    /* border-radius:100%; */
     margin:0px 10px 0px; 
     
     /* align-items:center; */
@@ -265,9 +259,10 @@ ul li a:hover{
 }
 .imgrightside{
     margin-top:10px;    
-    height: 180px;
-    max-width:187PX;
-    margin:0px 10px 0px;   
+    min-height: 150px;
+    max-width:150px;
+    margin:0px 10px 0px;
+    border-radius: 100%;   
 }
 .imgrightside:hover{
     opacity: .8;
@@ -277,7 +272,7 @@ ul li a:hover{
     color:#FF00FF;
 }
 .portfoliotxt{
-    padding: 18px 4px ;
+    padding: 10px 4px ;
     font-size:17px;
     line-height: 1.5rem;
     color: white;
@@ -288,24 +283,25 @@ ul li a:hover{
 
 .mynametxt{
     line-height: 2rem;
-    font-size:40px;
+    font-size:50px;
     font-weight: bold;
     margin: 0 0  0 6px;
     color: white;
+    line-height: 3rem;
 }
 .caption1{
-    margin-top: 6rem;
+    margin-top: 1rem;
 }
 .Btnlearn{
     border:none;
-    width: 100px;
+    min-width: 120px;
     border:2px solid #FF00FF;
     background:yellow;
-    /* background-color:#FF00FF; */
     padding:2px;
     font-weight: bold;
     cursor: pointer;
-    color: #FF00FF;
+    color: black;
+    font-weight: bold;
     border-radius:10%;
     border: none;
     font-size: 17px;
@@ -320,7 +316,7 @@ ul li a:hover{
 
 @media screen and (max-width:414px) {
     .mynametxt{
-        font-size: 20px;
+        font-size: 35px;
     }
     .portfoliotxt{
 
@@ -331,31 +327,31 @@ ul li a:hover{
 
 /* container2//////////////////////// */
 .containe2{
-     min-height:20vh;
+     min-height:50vh;
      max-width:100%;
      display: flex;
      align-items: center;
      justify-content: space-around;
      flex-wrap: wrap;
-     /* background-color: aqua; */
+
      
      
 }
 .headerandparagraphcontainer{
     text-align: center;
     min-height: 20vh;
-    min-width: 86%;
+    min-width: 50%;
     overflow: hidden;
     box-shadow: 5px 5px 10px #333;  
-    border: 1px solid #333;
+    border: px solid #333;
     margin: 1rem;
+    
     /* background-color: #FF00FF; */
 }
 
 .headertitle{
     font-weight: bold;
     font-size: 25px;
-
     margin: .3rem 0 0 0;
     padding: 3px;
 }
@@ -364,30 +360,43 @@ ul li a:hover{
     color:#FF00FF
 }
 .txtparagraph{
-    
-    font-size: 17px;
+    font-weight: bold; 
+    font-size: 20px;
     font-style: normal;
     padding: 1rem;
+    line-height: 1.7rem;
 }
 
 .txtparagraph::before{
-    content: " Inpirational quotes ";
+    /* content: " Inpirational quotes:  ";
     color: #FF00FF;
-    font-size: 16px;
+    font-size: 20px; */
 }
-.borderline{
+.Getstarted{
     min-height: 1rem;
     max-width: 7rem;
     margin:.5rem 0 0 1rem;
     background-color:#333;
-   
     padding:5px;
     color:white;
     font-weight: bold;
     text-align: center;
     overflow: hidden;
+    transition: 1s;
+    cursor: pointer;
     box-shadow: 5px 5px 10px #333;  
 }
+.Getstarted:hover{
+    transform: scale(1.3);
+}
+/* for responsive text */
+@media screen and (max-width:414px) {
+    .txtparagraph{
+        font-size: 17px;
+    }
+    
+}
+
  /* container 3 */
  .container3{
      min-height:70vh;
@@ -402,7 +411,7 @@ ul li a:hover{
 .buildportfoliocontainer{
     min-height: 25vh;
     width: 30rem;
-    /* background-color: white; */
+    /* background-color: #9CA2A8; */
     margin: 1px;
 }
 
@@ -428,7 +437,7 @@ ul li a:hover{
     
 }
 .whatidocontainer{
-    min-height: 4vh;
+    min-height: 15vh;
     max-width: 100%;
     margin: 0 auto;
     background-color:#333;
@@ -440,11 +449,21 @@ ul li a:hover{
     /* background-color:red; */
 }
 .whatidotxt{
-   font-size: 23px;
+   font-size: 26px;
    font-weight:bold;
    color: white;
    margin: 5px 0 0 0;
-   padding: .5rem 0 0 .7rem;
+   padding: 1rem 0 0 3rem;
+   
+}
+.whatidotxt::after{
+    display: block;
+    content: "hi";
+    font-size: 5px;
+    min-width: 1rem;
+    color: #FF00FF;
+    max-width: 4.1rem;
+    background-color:#FF00FF;
 }
 .dotxt{
     color: #FF00FF;
@@ -462,7 +481,7 @@ ul li a:hover{
 .buildPortfoliotxt{
     font-weight: bold;
     margin: 0 0 0 .5rem;
-    color: #FF00FF;
+    color: white;
 }
 .paragraphtxt{
     padding: 0 .4rem 0 1.6rem;
