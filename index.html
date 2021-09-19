@@ -171,9 +171,10 @@ ul li a:hover{
     <div class="containe2">
         <div class="headerandparagraphcontainer">
         <div class="Getstarted">Get started</div>
-            <div class="headertitle">bout</div>
-            <div class="txtparagraph">Do what you love and Love what you do. 
-             <br>   all your strugle are the best things that wil be the key for the bright future</div>
+            <!-- <div class="headertitle"></div> -->
+            <div class="txtparagraph"> "Do what you love <br> <span class="andtxt"> &</span> <br>Love what you do" 
+             <!-- <br>   all your strugle are the best things that wil be the key for the bright future -->
+            </div>
         </div>
     </div>
     <br><br><br><br><br><br>
@@ -222,7 +223,7 @@ ul li a:hover{
 <style>
 
 .container1{
-     min-height:100vh;
+     min-height:95vh;
      max-width:100%;
      display:flex;
      flex-wrap:wrap;
@@ -296,11 +297,11 @@ ul li a:hover{
     border:none;
     min-width: 120px;
     border:2px solid #FF00FF;
-    background:yellow;
+    background-color: #FF00FF;
     padding:2px;
+    color: white;
     font-weight: bold;
     cursor: pointer;
-    color: black;
     font-weight: bold;
     border-radius:10%;
     border: none;
@@ -333,6 +334,7 @@ ul li a:hover{
      align-items: center;
      justify-content: space-around;
      flex-wrap: wrap;
+     
 
      
      
@@ -342,43 +344,51 @@ ul li a:hover{
     min-height: 20vh;
     min-width: 50%;
     overflow: hidden;
-    box-shadow: 5px 5px 10px #333;  
     border: px solid #333;
     margin: 1rem;
+    background-color: #333;
+    transition: 1s;
+    box-shadow: 12px 12px 1px 5px #9CA2a8;  
     
-    /* background-color: #FF00FF; */
+}
+.headerandparagraphcontainer:hover{
+}
+.andtxt{
+    color: #FF00FF;
 }
 
 .headertitle{
     font-weight: bold;
     font-size: 25px;
     margin: .3rem 0 0 0;
+    color: white;
     padding: 3px;
 }
-.headertitle::before{
+/* .headertitle::before{
     content: "A";
     color:#FF00FF
-}
+}    */
 .txtparagraph{
     font-weight: bold; 
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
-    padding: 1rem;
-    line-height: 1.7rem;
+    padding: 0 1rem 1rem;
+    line-height: 1.9rem;
+    color: white;
+    font-weight: lighter;
 }
-
+/* 
 .txtparagraph::before{
-    /* content: " Inpirational quotes:  ";
+    content: " ' ";
     color: #FF00FF;
-    font-size: 20px; */
-}
+    font-size: 20px;
+} */
 .Getstarted{
     min-height: 1rem;
     max-width: 7rem;
     margin:.5rem 0 0 1rem;
-    background-color:#333;
+    background-color: white;
     padding:5px;
-    color:white;
     font-weight: bold;
     text-align: center;
     overflow: hidden;
@@ -386,6 +396,7 @@ ul li a:hover{
     cursor: pointer;
     box-shadow: 5px 5px 10px #333;  
 }
+
 .Getstarted:hover{
     transform: scale(1.3);
 }
@@ -406,33 +417,33 @@ ul li a:hover{
      align-items: center;
      justify-content: space-around;
      flex-wrap: wrap;
-     background-color: #333;
+ 
 }
 .buildportfoliocontainer{
     min-height: 25vh;
     width: 30rem;
-    /* background-color: #9CA2A8; */
+    background-color: #333;
     margin: 1px;
 }
 
 .mobileresponsivcontainer{
     min-height: 25vh;
     width: 30rem;
-    /* background-color: white; */
+    background-color: #333;
     margin: 1px;
 }
 
 .designcontainer{
     min-height: 25vh;
     width: 30rem;
-    /* background-color: white; */
+    background-color: #333;
     margin: 1px;
 }
 
 .developmentcontainer{
     min-height: 25vh;
     width: 30rem;
-    /* background-color:white; */
+    background-color: #333;
     margin: 1px;
     
 }
@@ -440,31 +451,48 @@ ul li a:hover{
     min-height: 15vh;
     max-width: 100%;
     margin: 0 auto;
-    background-color:#333;
 }
 .containerforwhatido{
     min-height: 4vh;
     max-width: 86%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
     /* background-color:red; */
 }
 .whatidotxt{
-   font-size: 26px;
+   font-size: 30px;
    font-weight:bold;
-   color: white;
    margin: 5px 0 0 0;
    padding: 1rem 0 0 3rem;
    position: relative;
 }
+.whatidotxt::before{
+    display: block;
+    margin-top: -1rem;
+    padding: .0 4rem 0;
+    content: "what i can";
+    font-size: 15px;
+    min-width: 4.5rem;
+    color: black;
+    font-style: italic;
+    position: absolute;
+
+}
+
 .whatidotxt::after{
     display: block;
-    content: "hi";
-    font-size: 5px;
+    content: "what i learn";
+    font-size: 15px;
     min-width: 4.5rem;
-    color: #FF00FF;
+    color: black;
+    font-style: italic;
+    padding: 0 -3rem 0;
+    margin-left: -2rem;
     position: absolute;
-    background-color:#FF00FF;
+
 }
+
 .dotxt{
     color: #FF00FF;
 }
