@@ -170,7 +170,7 @@ ul li a:hover{
     <!-- second container -->
     <div class="containe2">
         <div class="headerandparagraphcontainer">
-        <div class="Getstarted">Get started</div>
+        <div class="Getstarted"></div>
             <!-- <div class="headertitle"></div> -->
             <div class="txtparagraph"> "Do what you love <br> <span class="andtxt"> &</span> <br>Love what you do" 
              <!-- <br>   all your strugle are the best things that wil be the key for the bright future -->
@@ -201,13 +201,13 @@ ul li a:hover{
         <div class="designcontainer">
             <div class="icontitleandparagraphcontainer">
                 <div class="icon"><i class="fa fa-gittip"id="designicon"></i>  <span class="buildPortfoliotxt">Design</span></div>
-                <p class="paragraphtxt">As Frontend web developer my objective is to grow exponentially in terms of web designing. This is my first portfolio i've done and i want to make more</p>
+                <p class="paragraphtxt">Designing a web interface is one of my favorite activity. I like to explore and get inspired, and grow exponentially in terms of desingning.</p>
             </div>
         </div>
         <div class="developmentcontainer">
             <div class="icontitleandparagraphcontainer">
                 <div class="icon"><i class="fa fa-cogs" id="designicon"></i><span class="buildPortfoliotxt">Development</span></div>
-                <p class="paragraphtxt">As Frontend web developer my objective is to grow exponentially in terms of web designing. This is my first portfolio i've done and i want to make more</p>
+                <p class="paragraphtxt">In terms of web design, spcially the user interface which is need create user freindly. I create basic and readable web design interface which result a good respons from the user.</p>
             </div>
         </div>
     </div>
@@ -352,6 +352,7 @@ ul li a:hover{
     
 }
 .headerandparagraphcontainer:hover{
+    transform: scale(1.1);
 }
 .andtxt{
     color: #FF00FF;
@@ -370,10 +371,10 @@ ul li a:hover{
 }    */
 .txtparagraph{
     font-weight: bold; 
-    font-size: 30px;
+    font-size:36px;
     font-style: normal;
     padding: 0 1rem 1rem;
-    line-height: 1.9rem;
+    line-height: 3rem;
     color: white;
     font-weight: lighter;
 }
@@ -384,9 +385,9 @@ ul li a:hover{
     font-size: 20px;
 } */
 .Getstarted{
-    min-height: 1rem;
-    max-width: 7rem;
-    margin:.5rem 0 0 1rem;
+    min-height: 2px;
+    max-width: 2rem;
+    margin:.5rem 0 0 -1rem;
     background-color: white;
     padding:5px;
     font-weight: bold;
@@ -394,11 +395,14 @@ ul li a:hover{
     overflow: hidden;
     transition: 1s;
     cursor: pointer;
+    font-weight: bold;
     box-shadow: 5px 5px 10px #333;  
+    
 }
 
 .Getstarted:hover{
     transform: scale(1.3);
+    
 }
 /* for responsive text */
 @media screen and (max-width:414px) {
@@ -475,7 +479,7 @@ ul li a:hover{
 }
 .whatidotxt::before{
     display: block;
-    content: "what i learn";
+    content: "what i can";
     font-size: 15px;
     min-width: 4.5rem;
     color: black;
