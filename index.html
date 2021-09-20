@@ -169,7 +169,7 @@ ul li a:hover{
 
     <!-- second container -->
     <div class="containe2">
-        <div class="headerandparagraphcontainer">
+        <div class="headerandparagraphcontainer fade-in">
         <div class="Getstarted"></div>
             <!-- <div class="headertitle"></div> -->
             <div class="txtparagraph"> "Do what you love <br> <span class="andtxt"> &</span> <br>Love what you do" 
@@ -179,32 +179,32 @@ ul li a:hover{
     </div>
     <br><br><br><br><br><br>
 <div class="whatidocontainer">
-    <div class="containerforwhatido">
+    <div class="containerforwhatido fade-in">
          <div class="whatidotxt">What i <span class="dotxt">do</span></div>
     </div>
 </div>
 
 <!-- third container   -->
     <div class="container3">
-        <div class="buildportfoliocontainer">
+        <div class="buildportfoliocontainer from-left slider-in">
             <div class="icontitleandparagraphcontainer">
                 <div class="icon"><i class="fa fa-file-o" id="designicon"></i> <span class="buildPortfoliotxt">Build/Portfolio</span></div>
                     <p class="paragraphtxt">As Frontend web developer my objective is to grow exponentially in terms of web designing. This is my first portfolio i've done and i want to make more</p>
             </div>
         </div>
-        <div class="mobileresponsivcontainer">
+        <div class="mobileresponsivcontainer from-right slider-in">
             <div class="icontitleandparagraphcontainer">
                 <div class="icon"><i class="fa fa-linode" id="designicon"></i> <span class="buildPortfoliotxt">Mobile/Responsive</span></div>
                 <p class="paragraphtxt">when it comes user interface of web i use my knowlegde to make responsive and clearly fixed in screen so that why ilove it.</p>
             </div>
         </div>
-        <div class="designcontainer">
+        <div class="designcontainer from-left slider-in">
             <div class="icontitleandparagraphcontainer">
                 <div class="icon"><i class="fa fa-gittip"id="designicon"></i>  <span class="buildPortfoliotxt">Design</span></div>
                 <p class="paragraphtxt">Designing a web interface is one of my favorite activity. I like to explore and get inspired, and grow exponentially in terms of desingning.</p>
             </div>
         </div>
-        <div class="developmentcontainer">
+        <div class="developmentcontainer from-right slider-in">
             <div class="icontitleandparagraphcontainer">
                 <div class="icon"><i class="fa fa-cogs" id="designicon"></i><span class="buildPortfoliotxt">Development</span></div>
                 <p class="paragraphtxt">In terms of web design, spcially the user interface which is need create user freindly. I create basic and readable web design interface which result a good respons from the user.</p>
@@ -221,6 +221,45 @@ ul li a:hover{
 
 <!-- first conatainer-->
 <style>
+
+
+/* for javascript animation */
+
+body{
+    overflow-x: hidden;
+}
+.fade-in{
+    opacity: 0;
+    transition: 1s;
+    transform: opacity 250ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+}
+.from-left{
+    transform: translateX(-50%);
+}
+.from-right{
+    transform: translateX(50%);
+}
+
+.from-left,
+.from-right{
+    transition: 
+    opacity 250ms ease-in, 
+    transform 400ms ease-in;
+    opacity:0;
+    
+}
+
+.from-left.appear,
+.from-right.appear{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* for javascript animation */
+
 
 .container1{
      min-height:95vh;
@@ -310,8 +349,8 @@ ul li a:hover{
 
 #btnlearn:hover{
     transition: .5s;
-    color:white;
-    background-color:#FF00FF;
+    color:black;
+    background-color:white;
   
 }
 
@@ -382,32 +421,19 @@ ul li a:hover{
 
     }
 .andtxt{
-    color:;
+    /* color:; */
 }
 
 .txtparagraph{
-    font-weight: bold; 
+
     font-size:50px;
     font-style: normal;
     padding: 0 4rem 1rem;
     line-height: 3rem;
-    color: black;
     z-index: 2;
     position: relative;
-    font-weight: lighter;
+ 
 }
-
-/* .txtparagraph::before{
-    content: "hi";
-    display: block;
-    min-width: 20%;
-    max-height: 10vh;
-    background-color: burlywood;
-    transform: rotate(45deg);
-    z-index: -1;
-    margin: 2rem 30rem 0  0;
-    position: absolute  ;
-} */
 
 /* for responsive text */
 @media screen and (max-width:414px) {
@@ -426,7 +452,7 @@ ul li a:hover{
      display: flex;
      align-items: center;
      justify-content: space-around;
-     flex-wrap: wrap;
+     flex-wrap:wrap;
  
 }
 .buildportfoliocontainer{
@@ -584,15 +610,53 @@ ul li a:hover{
 
 
 <script>
-    function  changeColor(element){
-        var currentcolor = element.style.backgroundColor;
-        if (currentcolor == "white"){
-            element.style.backgroundColor = "#E6DCDC";
-        }
-        else{
-            element.style.backgroundColor = "white"
-        }
-    } 
+    // function  changeColor(element){
+    //     var currentcolor = element.style.backgroundColor;
+    //     if (currentcolor == "white"){
+    //         element.style.backgroundColor = "#E6DCDC";
+    //     }
+    //     else{
+    //         element.style.backgroundColor = "white"
+    //     }
+    // } 
+
+
+
+    // fade-in
+    // slider-in
+    const slider = document.querySelectorAll(".slider-in")
+    const faders = document.querySelectorAll(".fade-in");
+
+    const appearOptions = {
+        threshold: 0,
+        rootMargin:"0px 0px -100px 0px"
+
+    };
+
+    const appearOnScroll = new IntersectionObserver
+    (function(
+        entries, 
+        appearOnScroll)
+        {
+            entries.forEach(entry =>{
+                if(!entry.isIntersecting){
+                    return;
+                }
+                else{
+                    entry.target.classList.add("appear");
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, 
+        appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+
+        slider.forEach(slider => {
+            appearOnScroll.observe(slider);
+        });
 </script> 
 </body>
 </html>
