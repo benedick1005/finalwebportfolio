@@ -180,7 +180,8 @@ ul li a:hover{
     <br><br><br><br><br><br>
 <div class="whatidocontainer">
     <div class="containerforwhatido fade-in">
-         <div class="whatidotxt">What i <span class="dotxt">do</span></div>
+         <div class="whatidotxt1">What i <span class="dotxt"> do</span>
+            <br><div class="whatilearn">what i learn</div></div>
     </div>
 </div>
 
@@ -213,7 +214,7 @@ ul li a:hover{
     </div>
 
 <!-- 4th container -->
-    <div class="fourthcontainer">
+    <div class="container4">
        
         
     </div>
@@ -224,8 +225,6 @@ ul li a:hover{
 
 
 /* for javascript animation */
-
-
 .fade-in{
     opacity: 0;
     transition: 2s;
@@ -235,10 +234,10 @@ ul li a:hover{
     opacity: 1;
 }
 .from-left{
-    transform: translateX(-5%);
+    transform: translateX(-3%);
 }
 .from-right{
-    transform: translateX(4%);
+    transform: translateX(5%);
 }
 
 .from-left,
@@ -246,8 +245,7 @@ ul li a:hover{
     transition: 
     opacity .5s ease-in, 
     transform 400ms ease-in;
-    opacity:0;
-    
+    opacity:0;   
 }
 
 .from-left.appear,
@@ -255,10 +253,11 @@ ul li a:hover{
     transform: translateX(0);
     opacity: 1;
 }
-
 /* for javascript animation */
 
 
+
+/* for container1 */
 .container1{
      min-height:95vh;
      max-width:100%;
@@ -270,17 +269,13 @@ ul li a:hover{
      box-shadow: 5px 5px 10px #333;  
      clip-path: polygon(100% 0, 100% 100%, 83% 92%, 67% 100%, 49% 91%, 32% 100%, 15% 91%, 0 100%, 0 0);
     }
-
 .boxforobjective{
     min-height:230px;
     max-width:700px;
     margin:0px 10px 0px;
-    
     line-height:20px;
     flex-wrap:wrap;
-
     padding: 0 7px 15px;
-   
 }
 .boxforimag{
     overflow:hidden;
@@ -289,11 +284,7 @@ ul li a:hover{
     display:flex;
     justify-content:center;
     align-items:flex-start;
-    
     margin:0px 10px 0px; 
-    
-    /* align-items:center; */
-    
 }
 .imgrightside{
     margin-top:10px;    
@@ -305,10 +296,6 @@ ul li a:hover{
 .imgrightside:hover{
     opacity: .8;
 }
-
-.Hitxt{
-    color:#FF00FF;
-}
 .portfoliotxt{
     padding: 10px 4px ;
     font-size:17px;
@@ -318,7 +305,6 @@ ul li a:hover{
 .txtfrontend{
     color: #FF00FF;
 }
-
 .mynametxt{
     line-height: 2rem;
     font-size:50px;
@@ -344,20 +330,16 @@ ul li a:hover{
     border: none;
     font-size: 17px;
 }                                                                                                                                                                         
-
 #btnlearn:hover{
     transition: .5s;
     color:black;
     background-color:white;
-  
 }
-
 @media screen and (max-width:414px) {
     .mynametxt{
         font-size: 35px;
     }
     .portfoliotxt{
-
         font-size: 18px;
     }
 }
@@ -370,11 +352,7 @@ ul li a:hover{
      display: flex;
      align-items: c;
      justify-content: space-around;
-     flex-wrap: wrap;
-     
-
-     
-     
+     flex-wrap: wrap;     
 }
 .headerandparagraphcontainer{
     text-align: center;
@@ -383,66 +361,46 @@ ul li a:hover{
     overflow: hidden;
     border: px solid #333;
     margin: 1rem;
-    /* background-color: #333;
-    transition: 1s;
-    box-shadow: 12px 12px 1px 5px #9CA2a8;   */
-
-
 }
 .headerandparagraphcontainer::before{
-  content: "<";
-  display: block;
-  min-width: 20%;
-  max-height: 20vh;
-  background-color:white;
-
-  font-size: 50px;
-  font-weight: bold;
-  color: #FF00FF;
-  transform: rotate(0deg);
-  
-
+    content: "<";
+    display: block;
+    min-width: 20%;
+    max-height: 20vh;
+    background-color:white;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FF00FF;
+    transform: rotate(0deg);
     }
-
-    .headerandparagraphcontainer::after{
-  content: "/>";
-  display: block;
-  min-width: 20%;
-  max-height: 20vh;
-  background-color:white;
-
-  font-size: 50px;
-  font-weight: bold;
-  color: #FF00FF;
-  transform: rotate(0deg);
-  
-
+.headerandparagraphcontainer::after{
+    content: "/>";
+    display: block;
+    min-width: 20%;
+    max-height: 20vh;
+    background-color:white;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FF00FF;
+    transform: rotate(0deg);
     }
-.andtxt{
-    /* color:; */
-}
-
 .txtparagraph{
-
     font-size:50px;
     font-style: normal;
     padding: 0 4rem 1rem;
     line-height: 3rem;
     z-index: 2;
     position: relative;
- 
 }
-
 /* for responsive text */
 @media screen and (max-width:414px) {
     .txtparagraph{
         font-size: 25px;
         line-height: 2rem;
-    }
-    
+    }   
 }
 
- /* container 3 */
+ /* container 3////////////////// */
  .container3{
      min-height:70vh;
      max-width:100%;
@@ -451,7 +409,6 @@ ul li a:hover{
      align-items: center;
      justify-content: space-around;
      flex-wrap:wrap;
- 
 }
 .buildportfoliocontainer{
     min-height: 25vh;
@@ -460,13 +417,10 @@ ul li a:hover{
     margin: 1rem ;
     transition: 1s;
     box-shadow: 10px 10px 16px 4px  #9CA2AB;
-    
 }
 .buildportfoliocontainer:hover{
     transform: scale(1.1);
 }
-
-
 .mobileresponsivcontainer{
     min-height:25vh;
     width: 30rem;
@@ -474,7 +428,6 @@ ul li a:hover{
     background-color: #9CA2AB;
     box-shadow: 10px 10px 16px 4px  #333;
 }
-
 .designcontainer{
     min-height: 25vh;
     width: 30rem;
@@ -482,16 +435,13 @@ ul li a:hover{
     background-color: #9CA2AB;
     box-shadow: 10px 10px 18px 4px  #333;
 }
-
 .developmentcontainer{
     min-height: 25vh;
     width: 30rem;
     background-color: #333;
     box-shadow: 10px 10px 16px 4px  #9CA2AB;
-    margin:1rem;
-    
+    margin:1rem;   
 }
-
 .paragraphtxt{
     padding: 0 .4rem 1rem 1.6rem;
     margin: .9rem 0 0 .5rem  ;
@@ -515,48 +465,64 @@ ul li a:hover{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    /* background-color:red; */
     padding: 2rem;
     flex-wrap: wrap;
-    position: relative;
-    
+    position: relative;   
 }
-.whatidotxt{
+.whatidotxt1{
    font-size: 30px;
    font-weight:bold;
    margin: 5px 0 0 0;
    min-width: 12rem;
    text-align: center;
    position: relative;
-   padding: 1rem;
- 
-   
+   padding: 3.3rem;
 }
-.whatidotxt::before{
-  content: " my capabilities";
-  display: block;
-  max-height: 1vh;
-  font-size: 15px;
-  font-weight: bold;
-  padding:-5rem 0 0 1rem;
-  margin:-2rem 0 0 3.2rem;
-  position:absolute;
-
-}
-
-.whatidotxt::after{
-    display: block;
+/* .whatidotxt::before{
     content: "what i learn";
-    font-size: 15px;
-    min-width: 4.5rem;
+    font-size: .1px;
+    min-width: 3rem;
+    background-color: #FF00FF;
+    margin: 1rem 0 0 -3.5rem;
+    padding:.2rem;
+    position: absolute;
+} */
+/* .whatidotxt::after{
+    content: "what i learn";
+    font-size: .1px;
+    min-width: 3rem;
     color: black;
     font-style: italic;
-    margin: .5rem 0 0 3.2rem ;
-    padding: .5rem;
+    margin: 1rem 0 0 .3rem;
+    padding:.2rem;
     position: absolute;
+    background-color: #FF00FF;
+} */
 
+.whatilearn{
+    padding: .1rem;
+    font-size: 17px;
 }
 
+ .whatilearn::before{
+    content: "what i learn";
+    font-size: .1px;
+    min-width: 3rem;
+    background-color: #333;
+    margin: .5rem 0 0 -3.5rem;
+    padding:.1rem;
+    position: absolute;
+} 
+
+.whatilearn::after{
+    content: "what i learn";
+    font-size: .1px;
+    min-width: 3rem;
+    background-color: #333;
+    margin: .5rem 0 0 .3rem;
+    padding:.1rem;
+    position: absolute;
+} 
 .dotxt{
     color: #FF00FF;
 }
@@ -577,34 +543,27 @@ ul li a:hover{
 }
 /* FOR resposive */
 @media screen  and (max-width:1024px){
-
     .buildportfoliocontainer{
     min-height: auto;
     width: 70rem;
     margin: 1rem ;
-    
 }
     .mobileresponsivcontainer{
     min-height:auto;
     width: 70rem;
     margin: 1rem ;
-    
 }
 .designcontainer{
     min-height: auto;
     width: 70rem;
     margin: 1rem ;
-    
 }
 .developmentcontainer{
     min-height: auto;
     width: 70rem;
     margin: 1rem ;
-    
 }
 }
-    
-
 @media screen and (max-width:414px){
     .paragraphtxt{
         font-size: 15px;
@@ -615,8 +574,17 @@ ul li a:hover{
     #designicon{
         font-size: 25px;
     }
+    .whatidotxt1{
+        font-size: 25px;
+    }
 }
 
+/* for  container 4 /////////// */
+.container4{
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #333;
+}
 </style>
 
 
@@ -643,7 +611,7 @@ ul li a:hover{
 
     const appearOptions = {
         threshold: 0,
-        rootMargin:"0px 0px -100px 0px"
+        rootMargin:"0px 0px -200px 0px"
 
     };
 
