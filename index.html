@@ -36,11 +36,11 @@
 /* --------navbar css */
 .logo::after{
     content: "io";
-    color: #333;
+    color: white;
 }
 .Active{
    
-    border-bottom:4px solid #FF00FF;
+    border-bottom:4px solid #00eded;
 }
 .checkbtn{
     float:right;
@@ -59,7 +59,7 @@ ul{
     position:fixed;
     height:100vh;
     width:100%;
-    background-color:white;
+    background-color:rgb(0,32,50);
     top:50px;
     left:100%;
     transition:all .5s;
@@ -73,11 +73,6 @@ ul{
 
     #check:checked ~  ul{
         left:0px;
-    }
-    .logo{
-        color: red;
-        font-size: 10px;
-        position: absolute;
     }
 
 }
@@ -108,31 +103,31 @@ ul li{
 
 a{ 
     font-weight:bold;
-    color:black;
+    color:white;
     font-size:17px;
     
 }
 
 ul li a:hover{
- border-bottom:4px solid #FF00FF;
+ border-bottom:4px solid #00eded;
  transition: 2ms;
- padding:1px;
+ 
  
 }
 
 .MaincontainerNav{
     /* background-color:#990099; */
-    background-color:white;
+    background-color:rgb(0,32,50);
     line-height:50px;
-    height:50px;
+    height:55px;
     position:fixed;
     width:100%;
-    margin: 0px 1px 0px;
+ 
     z-index: 3;
 }
 .logo{
     margin:0 0 0 6.5em;
-    color:#FF00FF;
+    color:#00eded;
     font-weight:bold;
     font-size:24px;
     position: absolute;
@@ -221,14 +216,20 @@ ul li a:hover{
 <!-- 4th container -->
     <div class="container4">
        <div class="objectivecontainer">
-           <div class="titletxt">bjective</div>
+           <div class="titletxt">0bjective</div>
            <div class="objectivetxt">As Frontend web developer my objective is to grow exponentially in terms of web designing in 
                                   industry/company that recognize the value of hardwork.And secure a responsible career opportunity 
                                   to fully utilize my training and skill.</div>
-
-       </div>
-        
+       </div> 
     </div>
+<!-- 5th conatainer -->
+    <div class="container5">
+        <div class="systemdevelopedcontainer">
+            <div class="systemdevelopedtxt">System Developed</div>
+        </div>
+    </div>
+    
+
 </div>
 
 <!-- first conatainer-->
@@ -273,7 +274,7 @@ ul li a:hover{
      flex-wrap:wrap;
      align-items:center;
      justify-content:space-around;
-     background-color: #333;
+     background-color: rgb(0,32,50);
      box-shadow: 5px 5px 10px #333;  
      clip-path: polygon(100% 0, 100% 100%, 83% 92%, 67% 100%, 49% 91%, 32% 100%, 15% 91%, 0 100%, 0 0);
     }
@@ -309,9 +310,10 @@ ul li a:hover{
     font-size:17px;
     line-height: 1.8rem;
     color: white;
+    
 }
 .txtfrontend{
-    color: #FF00FF;
+    color:#00eded;
 }
 .mynametxt{
     line-height: 2rem;
@@ -327,14 +329,14 @@ ul li a:hover{
 .Btnlearn{
     border:none;
     min-width: 120px;
-    background-color:#FFA400;
+    background-color: rgb(0,32,50);
     padding:2px;
-    color: white;
+    color: #00eded;
     font-weight: bold;
+    border: 2px solid #00eded;
     cursor: pointer;
     font-weight: bold;
     border-radius:5%;
-    border: none;
     font-size: 17px;
 }                                                                                                                                                                         
 #btnlearn:hover{
@@ -360,12 +362,14 @@ ul li a:hover{
      align-items: c;
      justify-content: space-around;
      flex-wrap: wrap;     
+     background-color: rgb(0,32,50);
 }
 .headerandparagraphcontainer{
     text-align: center;
     min-height: 50vh;
     min-width: 100%;
     overflow: hidden;
+    background-color: rgb(0,32,50);
     border: px solid #333;
     margin: 1rem;
 }
@@ -374,10 +378,9 @@ ul li a:hover{
     display: block;
     min-width: 20%;
     max-height: 20vh;
-    background-color:white;
     font-size: 50px;
     font-weight: bold;
-    color: #FF00FF;
+    color: #00eded;
     transform: rotate(0deg);
     }
 .headerandparagraphcontainer::after{
@@ -385,10 +388,9 @@ ul li a:hover{
     display: block;
     min-width: 20%;
     max-height: 20vh;
-    background-color:white;
     font-size: 50px;
     font-weight: bold;
-    color: #FF00FF;
+    color: #00eded;
     transform: rotate(0deg);
     }
 .txtparagraph{
@@ -397,6 +399,7 @@ ul li a:hover{
     padding: 0 4rem 1rem;
     line-height: 3rem;
     z-index: 2;
+    color: white;
     position: relative;
 }
 /* for responsive text */
@@ -422,38 +425,39 @@ ul li a:hover{
     width: 30rem;
     margin: 1rem ;
     transition: 1s;
-    box-shadow: 7px 0px 0px 0px #9CA2AB;
+    box-shadow: 7px 0px 0px 0px #00eded;
 }
 
 .mobileresponsivcontainer{
     min-height:25vh;
     width: 30rem;
     margin:  1rem;
-    box-shadow: 7px 0px 0px 0px #9CA2AB;
+    box-shadow: 7px 0px 0px 0px #00eded;
 }
 .designcontainer{
     min-height: 25vh;
     width: 30rem;
     margin: 1rem;
-    box-shadow: 7px 0px 0px 0px #9CA2AB;
+    box-shadow: 7px 0px 0px 0px #00eded;
   }
 .developmentcontainer{
     min-height: 25vh;
     width: 30rem;
     margin:1rem;
-    box-shadow: 7px 0px 0px 0px #9CA2AB;
+    box-shadow: 7px 0px 0px 0px #00eded;
 }
 .paragraphtxt{
     padding: 0 .4rem 1rem 1.6rem;
     margin: .9rem 0 0 .5rem  ;
     line-height: 2rem;
+    color: white;
 
 } 
 .paragraphtxt2{
     padding: 0 .4rem 1rem 1.6rem;
     margin: .9rem 0 0 .5rem  ;
     line-height: 2rem;
-    color: black;
+    color:white;
 }
 .whatidocontainer{
     min-height: 15vh;
@@ -479,38 +483,26 @@ ul li a:hover{
    text-align: center;
    position: relative;
    padding: 1rem;
+   color: white;
 }
-/* .whatidotxt::before{
-    content: "what i learn";
-    font-size: .1px;
-    min-width: 3rem;
-    background-color: #FF00FF;
-    margin: 1rem 0 0 -3.5rem;
-    padding:.2rem;
-    position: absolute;
-} */
-/* .whatidotxt::after{
-    content: "what i learn";
-    font-size: .1px;
-    min-width: 3rem;
-    color: black;
-    font-style: italic;
-    margin: 1rem 0 0 .3rem;
-    padding:.2rem;
-    position: absolute;
-    background-color: #FF00FF;
-} */
-
+.whatidotxt1::before{
+    content: " 0.1 ";
+    font-size: 25px;
+    color: #00eded;
+    font-weight: normal;
+}
 .whatilearn{
     padding: .1rem;
     font-size: 17px;
+    color: white;
+    font-weight: normal;
 }
 
  .whatilearn::before{
     content: "what i learn";
     font-size: .1px;
     min-width: 3rem;
-    background-color: #333;
+    background-color: #00eded;
     margin: .5rem 0 0 -3.5rem;
     padding:.1rem;
     position: absolute;
@@ -520,13 +512,13 @@ ul li a:hover{
     content: "what i learn";
     font-size: .1px;
     min-width: 3rem;
-    background-color: #333;
+    background-color: #00eded;
     margin: .5rem 0 0 .3rem;
     padding:.1rem;
     position: absolute;
 } 
 .dotxt{
-    color: #FF00FF;
+    color: #00eded;
 }
 /* iocontxttitle container */
 .icontitleandparagraphcontainer{
@@ -536,7 +528,7 @@ ul li a:hover{
 }
 #designicon{
     font-size: 28px;
-    color: #FF00FF;
+    color: #00eded;
 }
 .buildPortfoliotxt{
     font-weight: bold;
@@ -583,10 +575,10 @@ ul li a:hover{
 
 /* for  container 4 /////////// */
 .container4{
-    min-height: 30vh;
+    min-height: 60vh;
     max-width: 100%;
-    background-color: white;
-    box-shadow: 4px 5px 10px 1px  #9CA2AB;
+    background-color:rgb(0,32,50);
+   
     display: flex;
     align-items: center;
     background-color: ;
@@ -604,18 +596,42 @@ ul li a:hover{
     margin: 1rem;
     padding: 0 0 0 1.6rem;
     line-height: 2rem;
-    color: ;
+    color: white;
     
 
 }
 .titletxt::before{
-    content: "O";
-    color:#FF00FF;
+    content: "0.1 ";
+    color:#00eded;
+    font-size: 25px;
+    font-weight: normal;
+
+}
+.titletxt::after{
+    content: " ";
+    color:white;
+    position:absolute;
+    font-size: 25px;
+
 }
 .titletxt{
-    color:;
-    padding: 0 0 0 1rem;
+    color:white;
+    padding: 0 0 0 2.5rem;
     font-size: 30px;
+    font-weight: bolder;
+
+}
+
+/* for 5thcontainer */
+.container5{
+    min-height: 50vh;
+    max-width: 100%;
+}
+
+.maincontainer{
+    min-height: 372vh;
+    max-width: 100%;
+    background-color: rgb(0,32,50);
 }
 </style>
 
