@@ -128,7 +128,7 @@ ul li a:hover{
     z-index: 3;
 }
 .logo{
-    margin:0 0 0 6.5em;
+    margin:0 0 0 5.4em;
     color:#00eded;
     font-weight:bold;
     font-size:24px;
@@ -153,7 +153,7 @@ ul li a:hover{
     <div class="container1" onclick="changeColor(this)">    
         <div class="boxforobjective">
                 <div class="caption1">
-                     <h2 class ="mynametxt"> Hey! I'm a Junior <span class="txtfrontend">Frontend Developer</span> </h2>
+                     <h2 class ="mynametxt"> Hi! I'm a Junior <span class="txtfrontend">Frontend Developer</span> </h2>
                     <P class="portfoliotxt">I'm Benedick erlano from caloocan bagong silang, graduate Bachelor of Science In 
                                             Information technology in University of caloocan city "Ucc" 2017-2021</P>
                 </div>
@@ -216,17 +216,23 @@ ul li a:hover{
 
 <!-- 4th container -->
     <div class="container4">
-       <div class="objectivecontainer">
-           <div class="titletxt">0bjective</div>
-           <div class="objectivetxt">As Frontend web developer my objective is to grow exponentially in terms of web designing in 
+       <div class="aboutcontainer fade-in">
+           <div class="titleabouttxt">About___________</div>
+           <div class="abouttxt">As Frontend web developer my objective is to grow exponentially in terms of web designing in 
                                   industry/company that recognize the value of hardwork.And secure a responsible career opportunity 
-                                  to fully utilize my training and skill.</div>
+                                  to fully utilize my training and skill.
+                                  industry/company that recognize the value of hardwork.And secure a responsible career opportunity </div>
+         
        </div> 
+       <div class="cardcontainerforimage fade-in">
+          <div class="cardforimg"></div>
+       </div>
+
     </div>
 <!-- 5th conatainer -->
     <div class="container5">
         <div class="systemdevelopedcontainer">
-            <div class="systemdevelopedtxt">System Developed</div>
+            <div class="systemdevelopedtxt"></div>
         </div>
     </div>
     
@@ -245,22 +251,22 @@ ul li a:hover{
     opacity: 1;
 }
 .from-left{
-    transform: translateX(-1%);
+    transform: translateY(50%);
 }
 .from-right{
-    transform: translateX(1%);
+    transform: translateY(50%);
 }
 .from-left,
 .from-right{
     transition: 
     opacity .5s ease-in, 
-    transform 400ms ease-in;
+    transform 600ms ease-in;
     opacity:0;   
 }
 
 .from-left.appear,
 .from-right.appear{
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
 }
 /* for javascript animation */
@@ -303,9 +309,8 @@ ul li a:hover{
     max-width:150px;
     margin:0px 10px 0px;
     border-radius: 100%;   
-}
-.imgrightside:hover{
-    opacity: .8;
+    background-color: #00eded;
+
 }
 .portfoliotxt{
     padding: 10px 4px ;
@@ -333,6 +338,7 @@ ul li a:hover{
     min-width: 120px;
     background-color: rgb(0,32,50);
     padding:2px;
+    margin: 0 0 0 .3rem;
     color: #00eded;
     font-weight: bold;
     border: 2px solid #00eded;
@@ -407,7 +413,7 @@ ul li a:hover{
 /* for responsive text */
 @media screen and (max-width:414px) {
     .txtparagraph{
-        font-size: 40px;
+        font-size: 35px;
         line-height: 3rem;
     }   
 }
@@ -441,12 +447,14 @@ ul li a:hover{
     width: 30rem;
     margin: 1rem;
     box-shadow: 7px 0px 0px 0px #00eded;
+    
   }
 .developmentcontainer{
     min-height: 25vh;
     width: 30rem;
     margin:1rem;
     box-shadow: 7px 0px 0px 0px #00eded;
+    
 }
 .paragraphtxt{
     padding: 0 .4rem 1rem 1.6rem;
@@ -489,7 +497,7 @@ ul li a:hover{
 }
 .whatidotxt1::before{
     content: " 0.1 ";
-    font-size: 25px;
+    font-size: 22px;
     color: #00eded;
     font-weight: normal;
 }
@@ -577,53 +585,62 @@ ul li a:hover{
 
 /* for  container 4 /////////// */
 .container4{
-    min-height: 60vh;
+    min-height: 100vh;
     max-width: 100%;
-    background-color:rgb(0,32,50);
-   
+    /* background-color:rgb(0,32,50); */
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    background-color: ;
-    justify-content: space-around;
+    justify-content: center;
   
 }
-.objectivecontainer{
-    min-height: 20h;
-    max-width: 85%;
-    padding: 1rem .5rem 0 ;
+.aboutcontainer{
+    min-height: 40vh;
+    width: 30rem;
+    margin: 1rem ;
+
+ 
 }
-.objectivetxt{
-    float: left;
-    font-size: 17px;
-    margin: 1rem;
-    padding: 0 0 0 1.6rem;
-    line-height: 2rem;
-    color: white;
+.cardcontainerforimage{
+    min-height: 40vh;
+    width: 30rem;
+    margin: 1rem ;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.cardforimg{
+    height: 30vh;
+    width: 200px;
+    background-color:#00eded;
+    position: relative;
+    background-blend-mode:multiply;
+    background-image: url(img/benedick.jpg) ;
+    background-size:cover;
+    box-shadow: 10px 10px 1px 1px white;
     
 
 }
-.titletxt::before{
-    content: "0.1 ";
+.titleabouttxt{
+    padding: 0 .4rem 1rem 1.6rem;
+    margin: .3rem 0 0 .5rem ;
+    color:white;
+    font-size: 25px;
+}
+.titleabouttxt::before{
+    content: "0.2 ";
     color:#00eded;
-    font-size: 25px;
+    font-size: 22px;
+
+}
+.abouttxt{
+    padding: 0 .4rem 1rem 1.6rem;
+    margin: .9rem 0 0 .5rem ;
+    font-size: 17px;
+    line-height: 2rem;
+    color:white;
     font-weight: normal;
-
 }
-.titletxt::after{
-    content: " ";
-    color:white;
-    position:absolute;
-    font-size: 25px;
-
-}
-.titletxt{
-    color:white;
-    padding: 0 0 0 2.5rem;
-    font-size: 30px;
-    font-weight: bolder;
-
-}
-
 /* for 5thcontainer */
 .container5{
     min-height: 50vh;
