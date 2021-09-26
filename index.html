@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 
-    <title>Document</title>
+    <title>My Portfolio</title>
 </head>
 <body>
 
@@ -154,8 +154,7 @@ ul li a:hover{
         <div class="boxforobjective">
                 <div class="caption1">
                      <h2 class ="mynametxt"> Hi! I'm a Junior <span class="txtfrontend">Frontend Developer</span> </h2>
-                    <P class="portfoliotxt">I'm Benedick erlano from caloocan bagong silang, graduate Bachelor of Science In 
-                                            Information technology in University of caloocan city "Ucc" 2017-2021</P>
+                    <P class="portfoliotxt"> I'm Benedick erlano passionte ragarding creating interactive user interface of web design </P>
                 </div>
                 <div class="btnlearn"  > <button class="Btnlearn" id="btnlearn">Hire me</button> </div>
         </div>
@@ -217,11 +216,31 @@ ul li a:hover{
 <!-- 4th container -->
     <div class="container4">
        <div class="aboutcontainer fade-in">
-           <div class="titleabouttxt">About___________</div>
-           <div class="abouttxt">As Frontend web developer my objective is to grow exponentially in terms of web designing in 
-                                  industry/company that recognize the value of hardwork.And secure a responsible career opportunity 
-                                  to fully utilize my training and skill.
-                                  industry/company that recognize the value of hardwork.And secure a responsible career opportunity </div>
+           <div class="titleabouttxt">About</div>
+           <div class="abouttxt">I'm Benedick erlano from caloocan bagong silang, graduate Bachelor of Science In 
+            Information technology in University of caloocan city "Ucc" 2017-2021. I enjoy creating things and interactive design. 
+            My interest in ui design started back in 2020. i love this things and imsure it will grow if i push myself to do this every day.
+            My goal now is to practice in html, css and javascript to be frondend developer. 
+            <br> 
+            <br>
+            <div class="titletxtforskill">
+                Here are a few skill that i have.
+            </div>
+            <div class="listforskill">
+                <div class="listoftitle1">
+                    <div class="csstxt">css</div>
+                    <div class="html5txt">html5</div>
+                    <div class="javascripttxt">javascript</div>
+                    <div class="responsivetxt">responsive</div>
+                </div>
+                <div class="listoftitle2">
+                    <div class="microftofficetxt">microsoft  office</div>
+                    <div class="photoshop">photoshop</div>
+                    <div class="c#">c#</div>
+                    <div class="javatxt">java</div>
+                </div>
+            </div>
+            </div>
          
        </div> 
        <div class="cardcontainerforimage fade-in">
@@ -360,8 +379,6 @@ ul li a:hover{
         font-size: 18px;
     }
 }
-
-
 /* container2//////////////////////// */
 .containe2{
      min-height:50vh;
@@ -392,7 +409,7 @@ ul li a:hover{
     transform: rotate(0deg);
     }
 .headerandparagraphcontainer::after{
-    content: "/>";
+        content: "/>";
     display: block;
     min-width: 20%;
     max-height: 20vh;
@@ -509,7 +526,7 @@ ul li a:hover{
 }
 
  .whatilearn::before{
-    content: "what i learn";
+    content: "1";
     font-size: .1px;
     min-width: 3rem;
     background-color: #00eded;
@@ -585,29 +602,28 @@ ul li a:hover{
 
 /* for  container 4 /////////// */
 .container4{
-    min-height: 100vh;
+    min-height: 130vh;
     max-width: 100%;
-    /* background-color:rgb(0,32,50); */
+    /* background-color:red; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  
 }
 .aboutcontainer{
     min-height: 40vh;
-    width: 30rem;
-    margin: 1rem ;
-
- 
+    max-width: 30rem;
+    margin: 1rem;
+    /* background-color: red; */
 }
 .cardcontainerforimage{
-    min-height: 40vh;
+    min-height:61vh;
     width: 30rem;
-    margin: 1rem ;
+    margin: 1rem;
     display:flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
+    /* background-color: red; */
 }
 .cardforimg{
     height: 30vh;
@@ -618,8 +634,6 @@ ul li a:hover{
     background-image: url(img/benedick.jpg) ;
     background-size:cover;
     box-shadow: 10px 10px 1px 1px white;
-    
-
 }
 .titleabouttxt{
     padding: 0 .4rem 1rem 1.6rem;
@@ -641,6 +655,23 @@ ul li a:hover{
     color:white;
     font-weight: normal;
 }
+.listforskill{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    min-height:10rem;
+    /* background-color: seagreen; */
+}
+.listoftitle1{
+    flex-direction: column;
+    
+}
+.listoftitle2{
+    flex-direction: column;
+    padding: 0 0 0 0;
+}
+
+
 /* for 5thcontainer */
 .container5{
     min-height: 50vh;
@@ -649,7 +680,7 @@ ul li a:hover{
 
 .maincontainer{
     min-height: 372vh;
-    max-width: 100%;
+    min-width: 100%;
     background-color: rgb(0,32,50);
 }
 </style>
