@@ -627,12 +627,12 @@ ul li a:hover{
 .cardforimg{
     height: 30vh;
     width: 200px;
-    background-color:#0fe8b2;
+    background-color:;
     position: relative;
     background-blend-mode:multiply;
     background-image: url(img/benedick.jpg) ;
     background-size:cover;
-    box-shadow: 10px 10px 1px 1px white;
+    box-shadow: 10px 10px 1px 1px #0fe8b2;
 }
 .titleabouttxt{
     padding: 0 .4rem 1rem 1.6rem;
@@ -675,7 +675,11 @@ ul li a:hover{
 .txtcolor{
     color: #0fe8b2;
 }
-.csstxt{
+@media screen and (max-width: 414px) {
+    .abouttxt 
+    {
+        font-size: 15px;
+    }
     
 }
 
