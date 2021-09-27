@@ -246,9 +246,10 @@ ul li a:hover{
     </div>
 <!-- 5th conatainer -->
     <div class="container5">
-        <div class="systemdevelopedcontainer">
-            <div class="systemdevelopedtxt"></div>
-        </div>
+           <div class="certificate img1">1</div>
+           <div class="certificate img2">2</div>
+           <div class="certificate img3">3</div>
+           <div class="certificate img4">4</div>
     </div>
     
 
@@ -503,7 +504,7 @@ ul li a:hover{
      display: flex;
      align-items: center;
      justify-content: space-around;
-     flex-wrap:wrap;; 
+     flex-wrap:wrap;
 }
 .buildportfoliocontainer{
     min-height: 25vh;
@@ -603,7 +604,6 @@ ul li a:hover{
 .container4{
     min-height: 130vh;
     max-width: 100%;
-    /* background-color:red; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -613,7 +613,6 @@ ul li a:hover{
     min-height: 40vh;
     max-width: 30rem;
     margin: 1rem;
-    /* background-color: red; */
 }
 .cardcontainerforimage{
     min-height:61vh;
@@ -627,12 +626,12 @@ ul li a:hover{
 .cardforimg{
     height: 30vh;
     width: 200px;
-    background-color:;
+    background-color:#0fe8b2;
     position: relative;
     background-blend-mode:multiply;
     background-image: url(img/benedick.jpg) ;
     background-size:cover;
-    box-shadow: 10px 10px 1px 1px #0fe8b2;
+    box-shadow: 10px 10px 1px 1px white;
 }
 .titleabouttxt{
     padding: 0 .4rem 1rem 1.6rem;
@@ -684,13 +683,45 @@ ul li a:hover{
 }
 
 /* for 5thcontainer */
-.container5{
-    min-height: 50vh;
-    max-width: 100%;
+.container5
+    { min-height:40vh;
+     max-width:100%;
+     margin: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap:wrap;
+     gap:1em;
+}
+.certificate{
+    min-height: 30vh;
+    width: 15rem;
+    transition: 1s;
+    background:#00eded;
+    box-shadow: 7px 0px 0px 0px #0fe8b2;
+    overflow: hidden;
+}
+.certificate:hover{
+    transform: scale(1.3);
+}
+.img1,
+.img2,
+.img3,
+.img4
+{
+    background-image: url(img/benedick.jpg);
+    background-size: cover;
+    min-height: 30vh;
+    width: 14rem;
+    
 }
 
+
+
+
+/* whole body background color */
 .maincontainer{
-    min-height: 372vh;
+    min-height: 392vh;
     min-width: 100%;
     background-color: rgb(0,32,50);
 }
