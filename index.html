@@ -40,7 +40,7 @@
 }
 .Active{
    
-    border-bottom:4px solid #0fe8b2;
+    border-bottom:4px solid #00eded;
 }
 .checkbtn{
     float:right;
@@ -74,7 +74,7 @@ ul{
 
     #check:checked ~  ul{
         left:0px;
-        color: #0fe8b2;
+        color: #00eded;
     }
 
 }
@@ -83,7 +83,7 @@ ul{
 
 
 *{
-    list-style: none;
+    
     text-decoration: none;
     box-sizing: 0px;
     margin: 0px;
@@ -111,7 +111,7 @@ a{
 }
 
 ul li a:hover{
- border-bottom:4px solid #0fe8b2;
+ border-bottom:4px solid #00eded;
  transition: 2ms;
  
  
@@ -129,7 +129,7 @@ ul li a:hover{
 }
 .logo{
     margin:0 0 0 5.4em;
-    color:#0fe8b2;
+    color:#00eded;
     font-weight:bold;
     font-size:24px;
     position: absolute;
@@ -137,7 +137,7 @@ ul li a:hover{
 
 }
 .iocolor{
-    color:#0fe8b2;
+    color:#00eded;
     font-size:26px;
 }
 
@@ -174,8 +174,8 @@ ul li a:hover{
     <br><br><br><br><br><br>
 <div class="whatidocontainer">
     <div class="containerforwhatido fade-in">
-         <div class="whatidotxt1">What I <span class="dotxt"> do</span>
-            <br><div class="whatilearn">what i learn</div></div>
+         <div class="whatidotxt1">What I  do
+           
     </div>
 </div>
 
@@ -240,12 +240,13 @@ ul li a:hover{
          
        </div> 
        <div class="cardcontainerforimage fade-in">
-          <div class="cardforimg"></div>
+          <div class="cardforimg">  <img src="img/benedick.jpg" alt="" id="cardforimg"></div>
        </div>
 
     </div>
 <!-- 5th conatainer -->
     <div class="container5">
+        <ul><li>hi</li></ul>
            <div class="certificate img1">1</div>
            <div class="certificate img2">2</div>
            <div class="certificate img3">3</div>
@@ -300,10 +301,10 @@ ul li a:hover{
      justify-content:space-around;
      background-color: rgb(0,32,50);
      /* box-shadow: 5px 5px 10px #333;   */
-     /* clip-path: polygon(100% 0, 100% 100%, 83% 92%, 67% 100%, 49% 91%, 32% 100%, 15% 91%, 0 100%, 0 0); */
+     /* clip-path: polygon(100% 0, 100% 100%, 83% 92%, 67% 100%, 49% 91%, 32% 100%, 15% 91%, 0 100%, 0 0); */   
     }
 .boxforobjective{
-    min-height:230px;
+    min-height:260px;
     max-width:700px;
     margin:0px 10px 0px;
     line-height:20px;
@@ -316,7 +317,7 @@ ul li a:hover{
     max-width:170px;
     display:flex;
     justify-content:center;
-    align-items:flex-start;
+    align-items:center;
     margin:0px 10px 0px; 
 }
 .imgrightside{
@@ -325,7 +326,7 @@ ul li a:hover{
     max-width:150px;
     margin:0px 10px 0px;
     border-radius: 100%;   
-    background-color: #50f4a2;
+    background-color: #00eded;
 
 }
 .portfoliotxt{
@@ -336,7 +337,7 @@ ul li a:hover{
     
 }
 .txtfrontend{
-    color:#0fe8b2;
+    color:#00eded;
 }
 .mynametxt{
     line-height: 2rem;
@@ -355,19 +356,59 @@ ul li a:hover{
     background-color: rgb(0,32,50);
     padding:2px;
     margin: 0 0 0 .3rem;
-    color:#0fe8b2;
+    color:#00eded;
     font-weight: bold;
-    border: 2px solid #0fe8b2;
+    border: 2px solid #00eded;
     cursor: pointer;
     font-weight: bold;
     border-radius:5%;
     font-size: 17px;
-}                                                                                                                                                                         
-#btnlearn:hover{
+    position: relative;
+    box-shadow: inset 0 0 0.5em 0 #00eded ;
+}
+
+.Btnlearn::before{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background-color: #00eded;
+    margin: 30% 0 0 -1.7rem;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(1em) rotateX(40deg) scale(1,0.35) ;
+    filter: blur(1em);
+    opacity: 0.7;
+}
+
+.Btnlearn::after{
+    content: "";
+    position: absolute;
+    margin: 1rem 0 0 -2rem;  
+    background-color:lawngreen;
+    box-shadow: 0 0 2em 1em #00eded ;
+    opacity: 0;
+    
+    background-color: #00eded ;
+    z-index: 1;
+    transition: .25ms;
+}
+.Btnlearn:hover,
+.Btnlearn:focus{
+    color:blanchedalmond;
+    text-shadow: none;
+}
+.Btnlearn:hover::after{
+    opacity: 1;
+}
+
+
+
+/* #btnlearn:hover{
     transition: .5s;
     color:black;
     background-color:white;
-}
+} */
 @media screen and (max-width:414px) {
     .mynametxt{
         font-size: 35px;
@@ -402,7 +443,7 @@ ul li a:hover{
     max-height: 20vh;
     font-size: 50px;
     font-weight: bold;
-    color: #0fe8b2;
+    color: #00eded;
     transform: rotate(0deg);
     }
 .headerandparagraphcontainer::after{
@@ -412,7 +453,7 @@ ul li a:hover{
     max-height: 20vh;
     font-size: 50px;
     font-weight: bold;
-    color:#0fe8b2;
+    color:#00eded;
     transform: rotate(0deg);
     }
 .txtparagraph{
@@ -428,35 +469,33 @@ ul li a:hover{
 /* foor what ido container */
 
 .whatidocontainer{
-    min-height: 15vh;
+    min-height: 5vh;
     max-width: 100%;
     margin: 0 auto;
-    
 }
 .containerforwhatido{
-    min-height: 15vh;
+    min-height: 2vh;
     max-width: 86%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
     flex-wrap: wrap;
+    align-items: flex-end;
     position: relative;   
 }
 .whatidotxt1{
-   font-size: 30px;
-   font-weight:bold;
+   font-size: 25px;
    margin: 5px 0 0 0;
    min-width: 12rem;
    text-align: center;
    position: relative;
-   padding: 1rem;
+   padding: ;
    color: white;
 }
 .whatidotxt1::before{
     content: " 0.1 ";
     font-size: 20px;
-    color: #0fe8b2;
+    color: #00eded;
     font-weight: normal;
 }
 .whatilearn{
@@ -465,12 +504,12 @@ ul li a:hover{
     color: white;
     font-weight: normal;
 }
-
+/* 
  .whatilearn::before{
     content: "___________";
     font-size: .1px;
     min-width: 3rem;
-    background-color: #0fe8b2;
+    background-color: #00eded;
     margin: .5rem 0 0 -3.5rem;
     padding:.1rem;
     position: absolute;
@@ -480,13 +519,13 @@ ul li a:hover{
     content: "__________";
     font-size: .1px;
     min-width: 3rem;
-    background-color: #0fe8b2;
+    background-color: #00eded;
     margin: .5rem 0 0 .3rem;
     padding:.1rem;
     position: absolute;
-} 
+}  */
 .dotxt{
-    color: #0fe8b2;
+    color: #00eded;
 }
 /* for responsive text */
 @media screen and (max-width:414px) {
@@ -511,27 +550,27 @@ ul li a:hover{
     width: 30rem;
     margin: 1rem ;
     transition: 1s;
-    box-shadow: 7px 0px 0px 0px #0fe8b2;
+    box-shadow: 7px 0px 0px 0px #00eded;
 }
 
 .mobileresponsivcontainer{
     min-height:25vh;
     width: 30rem;
     margin:  1rem;
-    box-shadow: 7px 0px 0px 0px #0fe8b2;
+    box-shadow: 7px 0px 0px 0px #00eded;
 }
 .designcontainer{
     min-height: 25vh;
     width: 30rem;
     margin: 1rem;
-    box-shadow: 7px 0px 0px 0px #0fe8b2;
+    box-shadow: 7px 0px 0px 0px #00eded;
     
   }
 .developmentcontainer{
     min-height: 25vh;
     width: 30rem;
     margin:1rem;
-    box-shadow: 7px 0px 0px 0px #0fe8b2;
+    box-shadow: 7px 0px 0px 0px #00eded;
     
 }
 .paragraphtxt{
@@ -555,7 +594,7 @@ ul li a:hover{
 }
 #designicon{
     font-size: 28px;
-    color: #0fe8b2;
+    color: #00eded;
 }
 .buildPortfoliotxt{
     font-weight: bold;
@@ -607,47 +646,44 @@ ul li a:hover{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 .aboutcontainer{
-    min-height: 40vh;
-    max-width: 30rem;
+    min-height: 25vh;
+    max-width: 31rem;
     margin: 1rem;
+    box-shadow: 0px -1px 0px 0px grey;
 }
 .cardcontainerforimage{
-    min-height:61vh;
-    width: 24rem;
-    margin: 1rem;
-    display:flex;
-    justify-content: center;
+    min-height: 60vh;
+    width: 20rem;
+    margin: 1rem ;
+    transition: 1s;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-end;
     align-items: flex-start;
- 
-}
-.cardforimg{
-    height: 30vh;
-    width: 200px;
-    background-color:#0fe8b2;
-    position: relative;
-    background-blend-mode:multiply;
-    background-image: url(img/benedick.jpg) ;
-    background-size:cover;
-    box-shadow: 10px 10px 1px 1px white;
+ }
+
+#cardforimg{
+    min-height: 15vh;
+    width: 15rem;
+    margin: 0;
+    box-shadow: -10px 10px 1px 1px #00eded;
 }
 .titleabouttxt{
-    padding: 0 .4rem 1rem 1.6rem;
-    margin: .3rem 0 0 .5rem ;
+    margin: 1rem 0 0 .1rem;
     color:white;
     font-size: 25px;
 }
 .titleabouttxt::before{
     content: "0.2 ";
-    color:#0fe8b2;
+    color:#00eded;
     font-size: 20px;
 
 }
 .abouttxt{
-    
-    margin: .9rem 0 0 .5rem ;
+    margin: .9rem 0 0 .1rem ;
     font-size: 17px;
     line-height: 2rem;
     color:white;
@@ -672,7 +708,7 @@ ul li a:hover{
     
 }
 .txtcolor{
-    color: #0fe8b2;
+    color: #00eded;
 }
 @media screen and (max-width: 414px) {
     .abouttxt 
@@ -683,8 +719,8 @@ ul li a:hover{
 }
 
 /* for 5thcontainer */
-.container5
-    { min-height:40vh;
+.container5{ 
+     min-height:40vh;
      max-width:100%;
      margin: 0  ;
      display: flex;
@@ -693,27 +729,6 @@ ul li a:hover{
      flex-wrap:wrap;
      gap:1em;
 
-}
-.certificate{
-    min-height: 30vh;
-    width: 15rem;
-    transition: 1s;
-    background:#00eded;
-    overflow: hidden;
-}
-.certificate:hover{
-    transform: scale(1.3);
-}
-.img1,
-.img2,
-.img3,
-.img4
-{
-    background-image: url(img/benedick.jpg);
-    background-size: cover;
-    min-height: 30vh;
-    width: 13rem;
-    
 }
 
 
