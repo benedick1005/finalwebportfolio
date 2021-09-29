@@ -215,13 +215,12 @@ ul li a:hover{
     <div class="container4">
        <div class="aboutcontainer fade-in">
            <div class="titleabouttxt">About Me</div>
-           <div class="abouttxt">I'm Benedick erlano from caloocan bagong silang, graduate Bachelor of Science In 
-            Information technology in University of caloocan city "Ucc" 2017-2021. I enjoys <span class="txtcolor"> creating things and interactive design</span>. 
-            My interest in ui design started back in 2020. i love this things and imsure it will grow if i push myself to do this every day.
+           <div class="abouttxt">I'm Benedick erlano residing in  bagong silang Caloocan city, BSIT  (Bachlor f science  in  Information Technology) graduate in University of caloocan city "Ucc" 2017-2021. I enjoys <span class="txtcolor"> creating wonderful things in terms of web designs and interactive ui</span>. 
+            I have been practicing web development (Front-end) since my 1st year in college. i love this things and imsure it will grow if i push myself to do this every day.
             My goal now is to practice in html, css and javascript to be frondend developer. 
             <br> 
             <br>
-            <!-- <div class="titletxtforskill">Here are a few computer li skill that i have:</div> -->
+            
             <div class="listforskill">
                 <div class="listoftitle1">
                     <div class="proficiencytxt">Proficiency:</div>
@@ -242,16 +241,31 @@ ul li a:hover{
          
        </div> 
        <div class="cardcontainerforimage fade-in">
-          <div class="cardforimg">  <img src="img/benedick.jpg" alt="" id="cardforimg"></div>
+          <div class="cardforimg">  <img src="img/benedick.jpg" alt="" id="cardforimg"></div>sss
        </div>
 
     </div>
 <!-- 5th conatainer -->
     <div class="container5">
-        <div class="contacttxt1"><i class="fa fa-phone" id="iconcontact"></i> +639658629717</div>
-        <div class="contacttxt1"> <i class="fa fa-google" id="iconcontact"></i> lanlenlen78@gmail.com</div>
-        <div class="contacttxt1"> <i class="fa fa-facebook-official" id="iconcontact"></i>Benedick Erlano</div>
+        
+        <div class="elmentscontainer">
+            <div class="logonametxt">My Portfolio</div>
+            <div class="messagetxt">Create and design your dream and make it happen. <br> Error is not a hindrance to success. <br>Debug it and compile, until it Run. </div>
+          
+        </div>
+
+        <div class="contactcontainer">
+            <div class="contacttxt1"><i class="fa fa-phone" id="iconcontact"></i> </div>
+            <div class="contacttxt1"> <i class="fa fa-google" id="iconcontact"></i> </div>
+            <div class="contacttxt1"> <i class="fa fa-facebook-official" id="iconcontact"></i></div>
+         </div>
+         <div class="githubandotherelementscontainer">
+             <div class="githubtxt">GitHub </div>
+         </div>
+
+        
     </div>
+
     
 
 </div>
@@ -731,47 +745,57 @@ ul li a:hover{
      margin: 0  ;
      display: flex;
      align-items: center;
-     justify-content: center;
+     justify-content: space-evenly;
      flex-wrap:wrap;
-     gap:3em;
-    background-color: black;
-     /* background-color: rgb(0,30,49); */
-
-     /* background-color: #040F20; */
-
+     gap:4em;
+     background-color: #040F20;
 }
 #iconcontact{
     color:#00eded;
-    padding: 1rem;
-    font-size: 2rem;
-
+    font-size: 1.4rem;
+    padding: .9rem;
+    border: 1px solid white;
+    border-radius: 100%;
+    gap:1rem;
 }
-.contacttxt1{
-    padding: 1rem;
+
+#iconcontact:hover{
     color: white;
-    position: relative;
-    min-height: 20vh;
-    width: 28rem;
+    box-shadow: inset 0 0 0.5em 0 #00eded ;
+    border: 1px solid #00eded;
 }
-.contacttxt1::before{
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    background-color: #00eded;
-    margin: 30% 0 0 -1.7rem;
-    width: 60%;
-    height: 10%;
-    transform: perspective(1em) rotateX(40deg) scale(1,0.35) ;
-    filter: blur(1em);
-    opacity: 0.7;
-}
+.contactcontainer{
+    display: flex;
+    gap:5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .githubtxt{
+        color: white;
+    }
 
+    .logonametxt{
+        font-size: 25px;
+        color:#00eded;
+        font-weight: bold;
+    }
+    .messagetxt{
+        color: white;
+        font-size: 15px;
+    }
+    .elmentscontainer{
+        margin: 1rem;
+        line-height: 1.9rem;
+     
+    }
 /* whole body background color */
 .maincontainer{
-    min-height: 395vh;
+    min-height: 400vh;
     min-width: 100%;
     background-color: rgb(0,32,50);
 }
+
 </style>
 
 
