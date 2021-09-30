@@ -246,10 +246,16 @@ ul li a:hover{
     </div>
 <!-- 5th conatainer -->
     <div class="container5">
-        
+        <div class="myoverviewcontainer">
+            <div class="overviewtxttitle">Overview</div>
+            <div class="overviewtxt">My project</div>
+            <div class="overviewtxt">Contact</div>
+            <div class="overviewtxt">What i do</div>
+            <div class="overviewtxt">About me</div>
+        </div>
         <div class="elmentscontainer">
             <div class="logonametxt">My Portfolio</div>
-            <div class="messagetxt">Create and design your dream and make it happen. <br> Error is not a hindrance to success. <br>Debug it and compile, until it Run. </div> 
+            <div class="messagetxt">Create and design your dream and make it happen. <br> Error is not a hindrance to success. <br>Debug it and compile, until it Run. <br>Don't be rush.</div> 
         </div>
         <div class="contactcontainer">
             <div class="contacttxt1"><i class="fa fa-phone" id="iconcontact"></i> </div>
@@ -257,7 +263,7 @@ ul li a:hover{
             <div class="contacttxt1"> <i class="fa fa-facebook-official" id="iconcontact"></i></div>
          </div>
          <div class="githubandotherelementscontainer">
-             <div class="githubtxt">GitHub </div>
+             <div class="githubtxt">Github </div>
          </div>
     </div>
     
@@ -526,28 +532,26 @@ ul li a:hover{
     width: 30rem;
     margin: 1rem ;
     transition: 1s;
-    box-shadow: 7px 0px 0px 0px #00eded;
+    border-right: 7px solid #00eded;
 }
 
 .mobileresponsivcontainer{
     min-height:25vh;
     width: 30rem;
     margin:  1rem;
-    box-shadow: 7px 0px 0px 0px #00eded;
+    border-right: 7px solid #00eded;
 }
 .designcontainer{
     min-height: 25vh;
     width: 30rem;
     margin: 1rem;
-    box-shadow: 7px 0px 0px 0px #00eded;
-    
+    border-right: 7px solid #00eded;
   }
 .developmentcontainer{
     min-height: 25vh;
     width: 30rem;
     margin:1rem;
-    box-shadow: 7px 0px 0px 0px #00eded;
-    
+    border-right: 7px solid #00eded; 
 }
 .paragraphtxt{
     padding: 0 .4rem 1rem 1.6rem;
@@ -628,7 +632,7 @@ ul li a:hover{
     min-height: 25vh;
     max-width: 31rem;
     margin: 1rem;
-    box-shadow: 0px -1px 0px 0px grey;
+    border-top: 1px solid grey;
 }
 .cardcontainerforimage{
     min-height: 200px;
@@ -711,16 +715,35 @@ ul li a:hover{
      align-items: center;
      justify-content: space-evenly;
      flex-wrap:wrap;
-     gap:4em;
+     gap:1em;
      background-color: #040F20;
 }
 #iconcontact{
     color:#00eded;
     font-size: 1.4rem;
-    padding: 1rem;
+    padding: .49rem;
     border: 1px solid white;
     border-radius: 20%;
-    gap:rem;
+    position: relative;
+    cursor: pointer;
+}
+#iconcontact::after{
+    content: "visit ";
+    position: absolute;
+    padding: .1em 1em  ;
+ 
+    border: 1px solid white;
+    font-size:18px;
+    margin: -3.3em 0 0 -1.6em ;
+    white-space: nowrap;
+    transform: scale(0);
+    transition: transform ease-out 190ms;
+    display: block;
+    
+    text-decoration: none;
+}
+#iconcontact:hover::after{
+    transform: scale(1);
 }
 
 #iconcontact:hover{
@@ -731,7 +754,7 @@ ul li a:hover{
 }
 .contactcontainer{
     display: flex;
-    gap:5rem;
+    gap:1rem;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -747,11 +770,11 @@ ul li a:hover{
     }
     .messagetxt{
         color: white;
-        font-size: 15px;
+        font-size: 17px;
     }
     .elmentscontainer{
         margin: 1rem;
-        line-height: 1.9rem;
+        line-height: 1.7rem;
      
     }
     .githubtxt{
@@ -763,7 +786,9 @@ ul li a:hover{
         margin: 1rem;
         color: #00eded;
         text-shadow:  10px 10px 10px 10px #00eded ;
-     
+    }
+    .githubtxt::after{
+        /* content: "visit my github profile"; */
     }
     .githubtxt::before{
         content: "";
@@ -775,6 +800,19 @@ ul li a:hover{
         transform: perspective(1em) rotateX(40deg) scale(1,0.35) ;
         filter: blur(1em);
         opacity: .9;
+    }
+    .myoverviewcontainer{
+        margin: 1rem;
+        line-height: 1.7rem;
+    }
+    .overviewtxt{
+        color: white;
+        font-size: 17px;
+    }
+    .overviewtxttitle{
+        color: #00eded;
+        font-size: 25px;
+        font-weight: bold;
     }
 /* whole body background color */
 .maincontainer{
