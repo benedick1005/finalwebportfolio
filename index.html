@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-
     <title>My Portfolio</title>
 </head>
 <body>
 
 <!-- for navbar strucure -->
 <div class="MaincontainerNav">
-    <div class="logo"> Portfol
-                        </div>
-
+    <div class="logo"> Portfo</div>
     <nav>
            <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
@@ -27,7 +21,6 @@
              <li><a href="" class="Active">Home</a></li>
              <li><a href="container2">My Project</a></li>
             <li><a href="index2.html">Contact</a></li>
-         
         </ul>
     </nav>
 </div>
@@ -39,7 +32,6 @@
     color: white;
 }
 .Active{
-   
     border-bottom:4px solid #00eded;
 }
 .checkbtn{
@@ -49,13 +41,12 @@
 #check{
     display:none;
 }
-
 @media screen and (max-width: 776px){
-    .checkbtn{
-        display:block;
-        color: white;
-        margin-right:39px;
-    }
+.checkbtn{
+    display:block;
+    color: white;
+    margin-right:39px;
+}
 ul{
     position:fixed;
     height:100vh;
@@ -66,30 +57,20 @@ ul{
     transition:all .5s;
     text-align:center;
 }
-
-    nav ul li{
-        display:block;
+nav ul li{
+    display:block;
     }
-
-
     #check:checked ~  ul{
         left:0px;
         color: #00eded;
     }
-
 }
-
-
-
-
-*{
-    
+*{   
     text-decoration: none;
     box-sizing: 0px;
     margin: 0px;
     padding: 0;
 }
-
 ul{ 
     line-height:50px;
     float:right;
@@ -98,33 +79,25 @@ ul{
 ul li{
     margin:0px 10px  0px;
     display:inline-block;
-    line-height:60px;
-    
-    
+    line-height:60px;   
 }
 
 a{ 
     font-weight:bold;
     color:white;
     font-size:17px;
-    
 }
-
 ul li a:hover{
- border-bottom:4px solid #00eded;
- transition: 2ms;
- 
- 
+    border-bottom:4px solid #00eded;
+    transition: 2ms;
 }
 
 .MaincontainerNav{
-    /* background-color:#990099; */
     background-color:rgb(0,32,50);
     line-height:50px;
     height:55px;
     position:fixed;
     width:100%;
- 
     z-index: 3;
 }
 .logo{
@@ -134,7 +107,6 @@ ul li a:hover{
     font-size:24px;
     position: absolute;
     font-family:cursive;
-
 }
 .iocolor{
     color:#00eded;
@@ -142,15 +114,13 @@ ul li a:hover{
 }
 
 </style>
-
-
 <br><br><br>
 
 <!-- for whole container -->
 <div class="maincontainer">
     <!-- first conatiner -->
 
-    <div class="container1" onclick="changeColor(this)">    
+    <div class="container1">    
         <div class="boxforobjective">
                 <div class="caption1">
                      <h2 class ="mynametxt"> Hi! I'm a Junior <span class="txtfrontend">Frontend Developer</span> </h2>
@@ -303,8 +273,6 @@ ul li a:hover{
 }
 /* for javascript animation */
 
-
-
 /* for container1 */
 .container1{
      min-height:95vh;
@@ -340,14 +308,12 @@ ul li a:hover{
     margin:0px 10px 0px;
     border-radius: 50% ;   
     background-color: #00eded;
-
 }
 .portfoliotxt{
     padding: 10px 4px ;
     font-size:17px;
     line-height: 1.8rem;
     color: white;
-    
 }
 .txtfrontend{
     color:#00eded;
@@ -380,7 +346,6 @@ ul li a:hover{
     position: relative;
     box-shadow: inset 0 0 0.5em 0 #00eded ;
 }
-
 .Btnlearn::before{
     pointer-events: none;
     content: "";
@@ -393,7 +358,6 @@ ul li a:hover{
     filter: blur(1em);
     opacity: 0.7;
 }
-
 .Btnlearn::after{
     content: "";
     position: absolute;
@@ -415,14 +379,6 @@ ul li a:hover{
 .Btnlearn:hover::after{
     opacity: 1;
 }
-
-
-
-/* #btnlearn:hover{
-    transition: .5s;
-    color:black;
-    background-color:white;
-} */
 @media screen and (max-width:414px) {
     .mynametxt{
         font-size: 35px;
@@ -479,9 +435,7 @@ ul li a:hover{
     color: white;
     position: relative;
 }
-
 /* foor what ido container */
-
 .whatidocontainer{
     min-height: 5vh;
     max-width: 100%;
@@ -630,13 +584,13 @@ ul li a:hover{
 }
 .aboutcontainer{
     min-height: 25vh;
-    max-width: 31rem;
+    max-width: 35rem;
     margin: 1rem;
-    border-top: 1px solid grey;
+    border-top: .1px solid gray ;
 }
 .cardcontainerforimage{
-    min-height: 200px;
-    max-width: 350px;
+    min-height: 150px;
+    max-width: 300px;
     margin: 0 1rem 0 1rem ;
     transition: 1s;
     display: flex;
@@ -647,13 +601,12 @@ ul li a:hover{
  }
 
 .imgrightside1{
-    
     min-height: 100px;
     max-width:220px;
     margin:1rem;
-    padding: 4rem;
-    border-radius: 20%;   
-      
+    padding: 0 1rem 1rem 0;
+    border-right: 1px solid #00eded;
+    border-bottom: 1px solid #00eded;    
 }
 .titleabouttxt{
     margin: 1rem 0 0 .1rem;
@@ -664,7 +617,6 @@ ul li a:hover{
     content: "0.2 ";
     color:#00eded;
     font-size: 20px;
-
 }
 .abouttxt{
     margin: .9rem 0 0 .1rem ;
@@ -682,14 +634,10 @@ ul li a:hover{
 }
 .listoftitle1{
     flex-direction: column;
-    
 }
 .listoftitle2{
     flex-direction: column;
     padding: 0 0 0 0;
-}
-.titletxtforskill{
-    
 }
 .txtcolor, 
 .proficiencytxt,
@@ -731,7 +679,6 @@ ul li a:hover{
     content: "visit ";
     position: absolute;
     padding: .1em 1em  ;
- 
     border: 1px solid white;
     font-size:18px;
     margin: -3.3em 0 0 -1.6em ;
@@ -739,13 +686,11 @@ ul li a:hover{
     transform: scale(0);
     transition: transform ease-out 190ms;
     display: block;
-    
     text-decoration: none;
 }
 #iconcontact:hover::after{
     transform: scale(1);
 }
-
 #iconcontact:hover{
     color: white;
     box-shadow: inset 0 0 0.5em 0 #00eded ;
@@ -758,11 +703,10 @@ ul li a:hover{
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    }
+}
     .githubtxt{
         color: white;
     }
-
     .logonametxt{
         font-size: 25px;
         color:#00eded;
@@ -774,8 +718,7 @@ ul li a:hover{
     }
     .elmentscontainer{
         margin: 1rem;
-        line-height: 1.7rem;
-     
+        line-height: 1.7rem;                                                                                                                                                                                                                
     }
     .githubtxt{
         font-size: 25px;
