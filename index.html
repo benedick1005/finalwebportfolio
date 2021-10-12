@@ -128,7 +128,7 @@ ul li a:hover{
                 </div>
                 <div class="btnlearn"  > <button class="Btnlearn" id="btnlearn">Hire me</button> </div>
         </div>
-        <div class="boxforimag">  <img src="img/benedick.jpg" alt="" class="imgrightside">
+        <div class="boxforimag">  <img src="img/nobg.png" alt="" class="imgrightside">
         </div>
     </div>
 
@@ -224,7 +224,7 @@ ul li a:hover{
             <div class="overviewtxt">About me</div>
         </div>
         <div class="elmentscontainer">
-            <div class="logonametxt">My Portfolio</div>
+            <div class="messagetitletxt">My Portfolio</div>
             <div class="messagetxt">Create and design your dream and make it happen. <br> Error is not a hindrance to success. <br>Debug it and compile, until it Run. <br>Don't be rush.</div> 
         </div>
         <div class="contactcontainer">
@@ -282,49 +282,50 @@ ul li a:hover{
      flex-wrap:wrap;
      align-items:center;
      justify-content:space-around;
-     background-color: rgb(0,32,50);
+  
     }
 .boxforobjective{
     min-height:260px;
-    max-width:700px;
+    max-width:570px;
     margin:0px 10px 0px;
-    line-height:20px;
-    flex-wrap:wrap;
-    padding: 0 7px 15px;
+    
+
 }
 .boxforimag{
     overflow:hidden;
-    min-height:250px;
-    max-width:170px;
+    min-height:300px;
+    max-width:300px;
     display:flex;
     justify-content:center;
     align-items:center;
     margin:0px 10px 0px; 
+
 }
 .imgrightside{
     margin-top:10px;    
-    min-height: 150px;
-    max-width:150px;
-    margin:0px 10px 0px;
-    border-radius: 50% ;   
-    background-color: #00eded;
+    min-height: 300px;
+    max-width:400px;
+    margin:0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .portfoliotxt{
-    padding: 10px 4px ;
+    padding: 1px 4px ;
     font-size:17px;
     line-height: 1.8rem;
-    color: white;
+    color:white ;
 }
 .txtfrontend{
     color:#00eded;
 }
 .mynametxt{
     line-height: 2rem;
-    font-size:50px;
+    font-size:60px;
     font-weight: bold;
     margin: 0 0  0 6px;
-    color: white;
-    line-height: 3rem;
+    color:white;
+    line-height: 5rem;
 }
 .caption1{
     margin-top: 1rem;
@@ -650,8 +651,13 @@ ul li a:hover{
     .abouttxt 
     {
         font-size: 15px;
+    }  
+}
+@media screen and (max-width: 891px) {
+.aboutcontainer
+    {
+        max-width: 47rem;
     }
-    
 }
 
 /* for 5thcontainer */
@@ -663,7 +669,7 @@ ul li a:hover{
      align-items: center;
      justify-content: space-evenly;
      flex-wrap:wrap;
-     gap:1em;
+    
      background-color: #040F20;
 }
 #iconcontact{
@@ -707,9 +713,10 @@ ul li a:hover{
     .githubtxt{
         color: white;
     }
-    .logonametxt{
+    .messagetitletxt{
         font-size: 25px;
         color:#00eded;
+        margin: 1rem 0 1rem 0;
         font-weight: bold;
     }
     .messagetxt{
@@ -721,7 +728,7 @@ ul li a:hover{
         line-height: 1.7rem;                                                                                                                                                                                                                
     }
     .githubtxt{
-        font-size: 25px;
+        font-size: 30px;
         font-weight: bold;
         position: relative;
         min-height: 1rem;
@@ -744,6 +751,7 @@ ul li a:hover{
         filter: blur(1em);
         opacity: .9;
     }
+   
     .myoverviewcontainer{
         margin: 1rem;
         line-height: 1.7rem;
@@ -756,6 +764,7 @@ ul li a:hover{
         color: #00eded;
         font-size: 25px;
         font-weight: bold;
+        margin: 1rem 0 1rem 0;
     }
     @media screen and (max-width:414px) {
         .overviewtxt{
