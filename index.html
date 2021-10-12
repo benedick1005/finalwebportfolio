@@ -123,7 +123,8 @@ ul li a:hover{
     <div class="container1">    
         <div class="boxforobjective">
                 <div class="caption1">
-                     <h2 class ="mynametxt"> Hi! I'm a Junior <span class="txtfrontend">Frontend Developer</span> </h2>
+                    <div class="autotyping">Hello </div>
+                     <h2 class ="mynametxt "> Hi! I'm a Junior <span class="txtfrontend">Frontend Developer</span> </h2>
                     <P class="portfoliotxt"> I'm Benedick erlano passionte ragarding creating interactive user interface of web design </P>
                 </div>
                 <div class="btnlearn"  > <button class="Btnlearn" id="btnlearn">Hire me</button> </div>
@@ -131,7 +132,31 @@ ul li a:hover{
         <div class="boxforimag">  <img src="img/nobg.png" alt="" class="imgrightside">
         </div>
     </div>
+<style>
+    .autotyping{
+        color: white;
+        margin:0 0 0 .7rem;
+        font-size: 20px;
+        position: relative;
+    }
+    .autotyping::after{
+        content: "";
+        position:absolute;
+        width: 1px;
+        height: 100%;
+        border-right: 2px solid white;
+        animation: typing 0.5s infinite ease;
+    }
+    @keyframes typing{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity:1;
+        }
+    }
 
+</style>
 <br>
     <!-- second container -->
     <div class="containe2">
@@ -325,7 +350,7 @@ ul li a:hover{
     font-weight: bold;
     margin: 0 0  0 6px;
     color:white;
-    line-height: 3.5rem;
+    line-height: 3.rem;
 }
 .caption1{
     margin-top: 1rem;
@@ -800,18 +825,27 @@ ul li a:hover{
 
 
 <script>
-    // function  changeColor(element){
-    //     var currentcolor = element.style.backgroundColor;
-    //     if (currentcolor == "white"){
-    //         element.style.backgroundColor = "#E6DCDC";
-    //     }
-    //     else{
-    //         element.style.backgroundColor = "white"
-    //     }
-    // } 
+   const texts =["UX/UI Designer", "Frontend Desinger"];
+   let count = 0;
+   let index = 0;
+   let currenttext="";
+   let letter ="";
 
+(function type(){
+    if(count === texts.length){
+        count = 0;
+    }
+    currenttext = texts[count];
+    letter = currenttext.slice(0, ++index);
 
+    document.querySelector(".autotyping").textContent = letter;
+    if (letter.length === currenttext.length){
+        count++;
+        index = 0;
 
+    }
+    setTimeout(type, 200);
+})();
     // fade-in
     // slider-in
     const slider = document.querySelectorAll(".slider-in")
