@@ -11,8 +11,23 @@
 
 <!-- for navbar strucure -->
 <div class="MaincontainerNav">
-    <div class="logo">Ben - G- </div>
-    <nav>
+    <div class="logocontainer">
+        <div class="logotxt">Ben-G-</div>
+    </div>
+    <div class="logocontainer2">
+        <nav>
+            <input type="checkbox" id="check">
+             <label for="check" class="checkbtn">
+                  <i class="fa fa-bars" style=" text-align:center; font-size:23px; text-align:center;"></i>
+             </label>
+         <ul>
+              <li><a href="" class="Active">Home</a></li>
+              <li><a href="index.html">about</a></li>
+             <li><a href="index2.html">Contact</a></li>
+         </ul>
+     </nav>
+    </div>
+    <!-- <nav>
            <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                  <i class="fa fa-bars" style=" text-align:center; font-size:23px; text-align:center;"></i>
@@ -22,17 +37,60 @@
              <li><a href="index.html">about</a></li>
             <li><a href="index2.html">Contact</a></li>
         </ul>
-    </nav> 
+    </nav>  -->
 </div>
 
-<style>s
+<style>
+    .logotxt{
+     
+        margin: 10px;
+        font-size: 25px;
+        
+    }
+    .MaincontainerNav{
+    min-height:15vh;
+     max-width:100%;
+     display:flex;
+     margin: -1rem 0 0  0;
+     flex-wrap:wrap;
+     align-items:center;
+     justify-content:center;
+     background-color:#f2f0f0;
+     
+    
+}
+.logocontainer{
+    min-height:9vh;
+     width:45%;
+     display:flex;
+     margin: 1rem 0 0  0;
+     flex-wrap:wrap;
+     align-items:center;
+     justify-content:flex-start ;
+     background-color:white;
+     box-shadow: #333;
+     border-radius: 50px 0px 0px 50px; 
+
+}
+.logocontainer2{
+    min-height:9vh;
+     width:40%;
+     display:flex;
+     margin: 1rem 0 0  0;
+     flex-wrap:wrap;
+     align-items:center;
+     justify-content:space-around;
+     background-color:white;
+     box-shadow: #333;
+     border-radius: 0px 50px 50px 0px; 
+}
 /* --------navbar css */
 .logo::after{
     content: "io";
     color: white;
 }
 .Active{    
-    border-bottom:4px solid #00eded;
+  
 }
 .checkbtn{
     float:right;
@@ -41,10 +99,10 @@
 #check{
     display:none;
 }
-@media screen and (max-width: 776px){
+@media screen and (max-width: 900px){
 .checkbtn{
     display:block;
-    color: white;
+    color: black;
     margin-right:39px;
 }
 ul{
@@ -84,7 +142,7 @@ ul li{
 
 a{ 
     font-weight:bold;
-    color:white;
+    color:black;
     font-size:17px;
 }
 ul li a:hover{
@@ -92,14 +150,7 @@ ul li a:hover{
     transition: 2ms;
 }
 
-.MaincontainerNav{
-    background-color:rgb(0,32,50);
-    line-height:50px;
-    height:55px;
-    position:fixed;
-    width:100%;
-    z-index: 3;
-}
+
 .logo{
     margin:0 0 0 5.4em;
     color:#00eded;
@@ -143,7 +194,7 @@ ul li a:hover{
         color:395B64;
         margin:0 0 0 .7rem;
         font-size: 25px;
-        font-weight: bold;
+        font-weight: bold;  
         position: relative;
         margin: 2rem 0 1.5rem .6rem;
     }
@@ -152,7 +203,7 @@ ul li a:hover{
         position:absolute;
         width: 1px;
         height: 100%;
-        border-right: 2px solid white;
+        border-right: 2px solid black;
         animation: typing 0.5s infinite ease;
     }
     @keyframes typing{
@@ -308,13 +359,14 @@ ul li a:hover{
 
 /* for container1 */
 .container1{
-     min-height:95vh;
+     min-height:80vh;
      max-width:100%;
      display:flex;
-     margin: -1rem 0 0  0;
+     margin: -4rem 0 0  0;
      flex-wrap:wrap;
      align-items:center;
      justify-content:space-around;
+     background-color: #f2f0f0;
      
   
     }
@@ -431,7 +483,7 @@ ul li a:hover{
      align-items: c;
      justify-content: space-around;
      flex-wrap: wrap;     
-     background-color: white;
+     background-color:#f2f0f0;
 }
 .headerandparagraphcontainer{
     text-align: center;
@@ -831,7 +883,8 @@ ul li a:hover{
 .maincontainer{
     min-height: 420vh;
     min-width: 100%;
-    background-color: white;
+    background-color:#f2f0f0;
+
 }
 
 </style>
