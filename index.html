@@ -27,7 +27,7 @@
          </ul>
      </nav>
      <div class="logocontainer3">
-        <div class="logotxt2" style="background-color: rgb(0,32,50);">find me</div>
+        <div class="logotxt2">Find me</div>
 
     </div>
     </div>
@@ -49,7 +49,7 @@
 
 <style>
     .gtxt{
-        color: #00eded;
+        color: #F39C12;
         margin-left: 5px;
         font-size: 30px;
     }
@@ -106,14 +106,17 @@
      flex-wrap:wrap;
      align-items:center;
      justify-content:center;
-     background-color:rgb(0,32,50);
-     box-shadow: #333;
+     background-image: url("img/bg3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
      border-radius: 50px 50px 50px 50px; 
 }
 
 .logotxt2{
         color:white;    
         font-size:17px;
+        font-weight: bold;
         font-style:inherit;
       
         
@@ -202,7 +205,7 @@ nav ul li{
     padding: 0;
 }
 ul{ 
-    line-height:50px;
+    line-height:30px;
     float:right;
     margin-right: 10px;
  
@@ -214,13 +217,19 @@ ul li{
 }
 
 a{ 
-    font-weight:bold;
+    
     color:#515A5A;  
     font-size:17px;
 }
 ul li a:hover{
-    border-bottom:4px solid #00eded;
+   
     transition: 2ms;
+    background-image: url("img/bg3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: #F4F6F6;
+    border-radius: 50px 50px 50px 50px; 
 }
 
 .logo{
@@ -278,7 +287,7 @@ ul li a:hover{
                 <div class="caption1">
                     <div class="autotyping">Hello </div>
                      <h2 class ="mynametxt "> Hi! I'm Benedick. <span class="txtfrontend"> welcome here</span> </h2>
-                    <P class="portfoliotxt"> Welcome to my little slice of the internet.ilove making web and mobile app design .... hope you like it my mini website</P>
+                    <P class="portfoliotxt"> Welcome to my little slice of the internet. Ilove making web and mobile app design .... hope you like it my mini website</P>
                 </div>
                 <!-- <div class="btnlearn"  > <button class="Btnlearn" id="btnlearn">Hire me</button> </div> -->
         </div>
@@ -333,9 +342,9 @@ ul li a:hover{
     <div class="container3">
         <div class="buildportfoliocontainer from-left slider-in">
             <div class="icontitleandparagraphcontainer">
-                <div class="icon"><i class="fa fa-file-o" id="designicon"></i> <span class="buildPortfoliotxt">Build/Portfolio</span></div>
-                    <p class="paragraphtxt">As Frontend web developer my objective is to grow exponentially in terms of web designing. 
-                                            This is my first portfolio i've done and i want to make more</p>
+                <div class="icon"><i class="fa fa-file-o" id="designicon"></i> <span class="buildPortfoliotxt">Build web / app design</span></div>
+                    <p class="paragraphtxt">As UI/UX Designer my objective is to grow exponentially in terms of web and app design. 
+                                            Design with Figma which is the best tools for making ui</p>
             </div>
         </div>
         <div class="mobileresponsivcontainer from-right slider-in">
@@ -365,7 +374,7 @@ ul li a:hover{
     <div class="container4">
        <div class="aboutcontainer fade-in">
            <div class="titleabouttxt">About Me</div>
-           <div class="abouttxt">I'm Benedick erlano residing in  bagong silang Caloocan city, BSIT  (Bachlor f science  in  Information Technology) graduate in University of caloocan city "Ucc" 2017-2021. I enjoys <span class="txtcolor"> creating wonderful things in terms of web designs and interactive ui</span>. 
+           <div class="abouttxt">I'm Benedick erlano residing in  bagong silang Caloocan city, BSIT  (Bachlor f science  in  Information Technology) graduate in University of caloocan city "Ucc" 2017-2021. I enjoys <span class="txtcolor"> creating wonderful things in terms of web and mobile app dsign </span>. 
             I have been practicing web design since my 1st year in college. i love this things and imsure it will grow if i push myself to do this every day.
             My goal now is to practice in html, css and javascript to be frondend developer. 
             <br> 
@@ -377,13 +386,13 @@ ul li a:hover{
                     <div class="csstxt">css</div>
                     <div class="html5txt">html5</div>
                     <div class="javascripttxt">javascript</div>
-                    <div class="responsivetxt">responsive</div>
+                    <div class="responsivetxt">figma</div>
                 </div>
                 <div class="listoftitle2">
                     <div class="familiarwithtxt"> Familiar with multimedia and programing langauge:</div>
                     <div class="microftofficetxt">microsoft  office</div>
                     <div class="photoshop">photoshop</div>
-                    <div class="c#">figma</div>
+                    <div class="c#">responsive</div>
                     <div class="javatxt">java</div>
                 </div>
             </div>
@@ -456,7 +465,7 @@ ul li a:hover{
 
 /* for container1 */
 .container1{
-     min-height:80vh;
+     min-height:100vh;
      max-width:100%;
      display:flex;
      margin: -4rem 0 0  0;
@@ -501,14 +510,14 @@ ul li a:hover{
     margin: 1rem 0 0 0;
 }
 .txtfrontend{
-    color: #00eded;
+    color: #F39C12;
 }
 .mynametxt{
 
-    font-size:60px;
+    font-size:50px;
     font-weight: bold;
     margin: -1rem 0  0 6px;
-    color: #00eded;
+    color: #F39C12;
     line-height: 3.rem;
 }
 .caption1{
@@ -575,24 +584,28 @@ ul li a:hover{
 }
 /* container2//////////////////////// */
 .containe2{
-     min-height:50vh;
+     min-height:100vh;
      max-width:100%;
      display: flex;
-     align-items: c;
+     align-items: flex-start;
      justify-content: space-around;
      flex-wrap: wrap;     
      background-color:#F4F6F6;
 }
 .headerandparagraphcontainer{
     text-align: center;
-    min-height: 50vh;
+    min-height: 80vh;
     min-width: 100%;
-    overflow: hidden;
-    background-color: #f2f0f0;
-    border: px solid #333;
-    margin: 1rem;
+    align-items: center;
+    /* overflow: hidden;
+    background-image: url("img/bg1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    margin: -1rem;
 }
-.headerandparagraphcontainer::before{
+/* .headerandparagraphcontainer::before{
     content: "<";
     display: block;
     min-width: 20%;
@@ -611,12 +624,12 @@ ul li a:hover{
     font-weight: bold;
     color:#00eded;
     transform: rotate(0deg);
-    }
+    } */
 .txtparagraph{
-    font-size:50px;
+    font-size:90px;
     font-style: normal;
-    padding: 0 4rem 1rem;
-    line-height: 3rem;
+    margin-top: 2em;
+    line-height: 5rem;
     z-index: 2;
     color:rgb(0,32,50);
     position: relative;
@@ -672,26 +685,26 @@ ul li a:hover{
     width: 30rem;   
     margin: 1rem ;
     transition: 1s;
-    border-right: 7px solid #00eded;
+    
 }
 
 .mobileresponsivcontainer{
     min-height:25vh;
     width: 30rem;
     margin:  1rem;
-    border-right: 7px solid #00eded;
+   
 }
 .designcontainer{
     min-height: 25vh;
     width: 30rem;
     margin: 1rem;
-    border-right: 7px solid #00eded;
+ 
   }
 .developmentcontainer{
     min-height: 25vh;
     width: 30rem;
     margin:1rem;
-    border-right: 7px solid #00eded; 
+
 }
 .paragraphtxt{
     padding: 0 .4rem 1rem 1.6rem;
@@ -772,7 +785,6 @@ ul li a:hover{
     min-height: 25vh;
     max-width: 35rem;
     margin: 1rem;
-    border-top: .1px solid gray ;
 }
 .cardcontainerforimage{
     min-height: 150px;
@@ -791,12 +803,12 @@ ul li a:hover{
     max-width:220px;
     margin:1rem;
     padding: 0 1rem 1rem 0;
-    border-right: 1px solid #00eded;
-    border-bottom: 1px solid #00eded;    
+    border-right: 1px solid #D9DCDD;
+    border-bottom: 1px solid #D9DCDD;    
 }
 .titleabouttxt{
     margin: 1rem 0 0 .1rem;
-    color:white;
+    color:black;
     font-size: 25px;
 }
 .titleabouttxt::before{
@@ -808,7 +820,7 @@ ul li a:hover{
     margin: .9rem 0 0 .1rem ;
     font-size: 17px;
     line-height: 2rem;
-    color:white;
+    color:black;
     font-weight: normal;
 }
 .listforskill{
