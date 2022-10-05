@@ -376,7 +376,7 @@ ul li a:hover{
 <!-- 4th container -->
 <div class="mainObjectivecontainer">
     <div class="objectivecon">
-        <div class="font-size:50px;">Indor Plant and Watering Support and Maintanance System 
+        <div class="obj">Indor Plant and Watering Support and Maintanance System <picture>( IPWSAMS )</P> 
             <br><p class="txtsmallobjective">mobile application with hardware application offered the ability to <br>
                  help indoor plant growers manage their time in taking care of plants. </p>
             <p class="txtsmallobjective2">View Project </p>
@@ -519,49 +519,7 @@ ul li a:hover{
 .caption1{
     margin-top: 1rem;
 }
-/* .Btnlearn{
-    border:none;
-    min-width: 120px;
-    background-color: #00eded;
 
-    padding:2px;
-    margin: 1rem 0 0 .3rem;
-    color:white;
-    font-weight: bold;
-   
-    cursor: pointer;
-    font-weight: bold;
-    border-radius:5%;
-    font-size: 17px;
-    z-index: 2;
-    position: relative;
-    
-} */
-/* .Btnlearn::before{
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    background-color: #00eded;
-    margin: 30% 0 0 -1.7rem;
-    width: 100%;
-    height: 100%;
-    transform: perspective(1em) rotateX(40deg) scale(1,0.35) ;
-    filter: blur(1em);
-    opacity: 0.7;
-} */
-/* .Btnlearn::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;  
-    box-shadow: 0 0 2em .58em #00eded ;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #00eded ;
-    z-index: -1;
-    transition: .25ms;
-} */
 .Btnlearn:hover,
 .Btnlearn:focus{
    
@@ -777,6 +735,7 @@ ul li a:hover{
     flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  background-color: #00eded;
 
 }
 
@@ -787,11 +746,12 @@ ul li a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    transition: 1s;
+
     display: flex;
     overflow: hidden;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
     border-radius: 10px 10px 10px 10px; 
 
 }
@@ -805,52 +765,18 @@ ul li a:hover{
     margin:0px 10px 0px; 
     position: relative;
 }
-.titleabouttxt{
-    margin: 1rem 0 0 .1rem;
-    color:black;
-    font-size: 25px;
-}
 
-.abouttxt{
-    margin: .9rem 0 0 .1rem ;
-    font-size: 17px;
-    line-height: 2rem;
-    color:#626567;  
-    font-weight: normal;
-}
-.listforskill{
-    display: flex;
-    align-items: flex-start;
-    justify-content:space-between;
-    min-height:10rem;
-    flex-wrap: wrap;
-}
-.listoftitle1{
-    flex-direction: column;
-}
-.listoftitle2{
-    flex-direction: column;
-    padding: 0 0 0 0;
-}
-.txtcolor, 
-.proficiencytxt,
-.familiarwithtxt
-{
-    font-weight: 900;
-    color: #F39C12;
-}
 @media screen and (max-width: 414px) {
-    .abouttxt 
-    {
-        font-size: 15px;
-    }  
-   
+ 
+    .obj{
+    font-size: 20px;
+    color: #00eded;
+       
+    }
+
 }
 @media screen and (max-width: 891px) {
-.aboutcontainer
-    {
-        max-width: 47rem;
-    }
+  
    
 }
 .mainObjectivecontainer{
@@ -858,8 +784,9 @@ ul li a:hover{
      max-width:100%;
      display:flex;
      align-items:center;
-     justify-content:space-around;
+     justify-content:center;
      flex-wrap:wrap;
+     margin: 3rem;
   
 
 
@@ -868,12 +795,15 @@ ul li a:hover{
 
     min-height:5vh;
      max-width:100%;
-     text-align: center;
+   
      align-items: center;
      justify-items:end;
-     font-size: 30px;
+     justify-content: center;
+     font-size: 25px;
      font-weight: bold;
      margin-top: 5rem;
+     
+     
     
     }
     .txtsmallobjective{
