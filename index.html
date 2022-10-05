@@ -675,7 +675,7 @@ ul li a:hover{
 <div class="container4">    
     <div class="boxforimag1">  <img src="img/ui1.png" alt="" class="imgrightside1">
     </div>
-        <div class="boxforimag1">  <img src="img/ui2.png" alt="" class="imgrightside1">
+        <div class="boxforimag2">  <img src="img/ui2.png" alt="" class="imgrightside2">
         </div>
 </div>
 <style>
@@ -709,6 +709,28 @@ ul li a:hover{
     margin:0px 10px 0px; 
     position: relative;
 }
+.imgrightside2{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+   display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px; 
+}
+.boxforimag2{
+    overflow:hidden;
+    min-height:400px;
+    max-width:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0px 10px 0px; 
+    position: relative;
+}
+
 .mainObjectivecontainer{
         min-height:20vh;
      max-width:100%;
@@ -754,8 +776,30 @@ ul li a:hover{
     .txtsmallobjective{
         font-size: 15px;
     }
+    .boxforimag2{
+        margin-top: -4rem;
+    }
 
 }
+@media screen and (max-width: 369px) {
+ 
+
+ .boxforimag2{
+     margin-top: -7rem;
+ }
+
+}
+
+@media screen and (max-width: 280px) {
+ 
+
+ .boxforimag2{
+     margin-top: -10rem;
+ }
+
+}
+
+
 @media screen and (max-width: 891px) {
   
    
