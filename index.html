@@ -323,7 +323,7 @@ ul li a:hover{
     <div class="container1">    
         <div class="boxforobjective">
                 <div class="caption1">
-                    <div class="autotyping">Hello </div>
+                    <div class="autotyping2">Hello </div>
                      <h2 class ="mynametxt "> Hi! I'm Benedick. <span class="txtfrontend"> welcome here</span> </h2>
                     <P class="portfoliotxt"> Welcome to my little slice of the internet. Ilove making web and mobile app design .... hope you like it my mini website</P>
                 </div>
@@ -344,6 +344,24 @@ ul li a:hover{
         z-index: 2;
     }
     .autotyping::after{
+        content: "";
+        position:absolute;
+        width: 1px;
+        height: 100%;
+        border-right: 2px solid white;
+        animation: typing 0.5s infinite ease;
+    }
+    .autotyping2{
+        color:#515A5A;  
+        margin:0 0 0 .7rem;
+        font-size: 20px;
+        font-weight: bold;  
+        position: relative;
+        font-style:;
+        margin: 2rem 0 1.5rem .6rem;
+        z-index: 2;
+    }
+    .autotyping2::after{
         content: "";
         position:absolute;
         width: 1px;
@@ -1100,7 +1118,36 @@ ul li a:hover{
 
     }
     setTimeout(type, 200);
+
+    
 })();
+
+
+const texts1 =["UI/UX DESIGNER", "FRONTEND DEVELOPER"];
+   let count1 = 0;
+   let index1 = 0;
+   let currenttext1="";
+   let letter1 ="";
+
+(function type(){
+    if(count1 === texts1.length){
+        count1 = 0;
+    }
+    currenttext1 = texts1[count1];
+    letter1 = currenttext1.slice(0, ++index1);
+
+    document.querySelector(".autotyping2").textContent = letter1;
+    if (letter1.length === currenttext1.length){
+        count1++;
+        index1 = 2;
+
+    }
+    setTimeout(type, 200);
+
+    
+})();
+
+
     // fade-in
     // slider-in
     const slider = document.querySelectorAll(".slider-in")
@@ -1136,6 +1183,12 @@ ul li a:hover{
         slider.forEach(slider => {
             appearOnScroll.observe(slider);
         });
+
+
+
+
+        
 </script> 
+
 </body>
 </html>
