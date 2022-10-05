@@ -8,7 +8,9 @@
     <title>My Portfolio</title>
 </head>
 <body>
+    <div class="maincontainer">
 
+        
 <!-- for navbar strucure -->
 <div class="MaincontainerNav">
     <div class="logocontainer">
@@ -277,24 +279,43 @@ ul li a:hover{
     
 }
 </style>
-<br><br><br>
+
+
+
+
+
+
+
+
+
+
+<!-- for ui ux -->
+
+<div class="bg1">
+    <div class="boxforuxui">
+        
+        <div class="autotyping">Hello </div>
+        
+    </div>
+    
+</div>
 
 <style>
-
-
+    .bg1{
+        min-height:100vh;
+     max-width:100%;
+     display:flex;
+    margin-top: -4rem;
+     flex-wrap:wrap;
+     align-items:center;
+     justify-content:space-around;
+     background-image: url("img/imgko7.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+     border-radius: 50px 50px 50px 50px; 
+    }
 </style>
-
-
-
-
-
-
-
-<!-- for whole container -->
-<div class="maincontainer">
-
-
-
 
 
     <!-- first conatiner -->
@@ -308,16 +329,17 @@ ul li a:hover{
                 </div>
                 <!-- <div class="btnlearn"  > <button class="Btnlearn" id="btnlearn">Hire me</button> </div> -->
         </div>
-        <div class="boxforimag">  <img src="img/imgko.png" alt="" class="imgrightside">
+        <div class="boxforimag">  <img src="img/imgko8.png" alt="" class="imgrightside">
         </div>
     </div>
 <style>
     .autotyping{
-        color: #626567;
+        color: white;
         margin:0 0 0 .7rem;
-        font-size: 25px;
+        font-size: 70px;
         font-weight: bold;  
         position: relative;
+        font-style: italic;
         margin: 2rem 0 1.5rem .6rem;
         z-index: 2;
     }
@@ -326,7 +348,7 @@ ul li a:hover{
         position:absolute;
         width: 1px;
         height: 100%;
-        border-right: 2px solid black;
+        border-right: 2px solid white;
         animation: typing 0.5s infinite ease;
     }
     @keyframes typing{
@@ -348,7 +370,7 @@ ul li a:hover{
      flex-wrap:wrap;
      align-items:center;
      justify-content:space-around;
-     background-image: url("img/bg5.png");
+  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -427,6 +449,9 @@ ul li a:hover{
     min-height:300px;
     max-width:300px;
 }
+.autotyping{
+    font-size: 30px;
+}
 }
 </style>
 <br>
@@ -439,10 +464,10 @@ ul li a:hover{
         </div>
     </div>
     <br><br><br><br><br><br>
-<div class="whatidocontainer">
+<!-- <div class="whatidocontainer">
     <div class="containerforwhatido fade-in">
          <div class="whatidotxt1">What I  do </div>
-    </div>
+    </div> -->
 
 
 <style>
@@ -1055,7 +1080,7 @@ ul li a:hover{
 
 
 <script>
-   const texts =["UI Desinger", "UX Designer"];
+   const texts =["LOVE YOUR PASSION", "CREATE MORE"];
    let count = 0;
    let index = 0;
    let currenttext="";
