@@ -726,7 +726,7 @@ ul li a:hover{
 
 <!-- 4th container -->
 <div class="mainObjectivecontainer">
-    <div class="objectivecon">
+    <div class="objectiveconproject">
         <div class="obj">Project
             
             <p class="txtsmallobjective2">Let see my Project that i build using figma </p>
@@ -740,23 +740,21 @@ ul li a:hover{
 .mainObjectivecontainer{
         min-height:20vh;
      max-width:100%;
-     display:flex;
-     align-items:center;
-     justify-content:start;
+     display:flex;  
+     align-content: flex-start;
+     justify-content:flex-end;
      flex-wrap:wrap;
-     margin: 0rem 3rem 0rem 3rem;
-   
+    
     }
-    .objectivecon{
+    .objectiveconproject{
     min-height:5vh;
      max-width:100%; 
      align-items: center;
      justify-items:end;
      justify-content: center;
-     font-size: 34px;
+     font-size: 25px;
      font-weight: bold;
-     margin-top: 5rem;
-     margin-left: 2.5em;
+     color: #4D5656;
     
     }.txtsmallobjective2{
         font-size: 15px;
@@ -814,9 +812,6 @@ ul li a:hover{
 
 }
 </style>
-
-
-
 
 <!-- for my Project 1-->
 <div class="boxcontainer">
@@ -997,7 +992,7 @@ ul li a:hover{
 
 <!-- for my Expertise-->
 <div class="mainObjectivecontainer">
-    <div class="objectivecon">
+    <div class="objectiveconexpertise">
         <div class="obj">Expertise
             
             <p class="txtsmallobjective2"> </p>
@@ -1012,22 +1007,21 @@ ul li a:hover{
         min-height:20vh;
      max-width:100%;
      display:flex;
-     align-items:center;
      justify-content:start;
+     align-content: flex-end;
      flex-wrap:wrap;
      margin: 0rem 3rem 0rem 3rem;
    
     }
-    .objectivecon{
+    .objectiveconexpertise{
     min-height:5vh;
      max-width:100%; 
      align-items: center;
      justify-items:end;
      justify-content: center;
-     font-size: 34px;
+     font-size:25px;
      font-weight: bold;
-     margin-top: 5rem;
-     margin-left: 2.5em;
+     color: #4D5656;
     
     }.txtsmallobjective2{
         font-size: 15px;
@@ -1206,7 +1200,7 @@ ul li a:hover{
 
 <!-- for my Passion-->
 <div class="mainObjectivecontainer">
-    <div class="objectivecon">
+    <div class="objectiveconpassion1">
         <div class="obj">My Passion Project
             
             <p class="txtsmallobjective2"> </p>
@@ -1221,25 +1215,20 @@ ul li a:hover{
         min-height:20vh;
      max-width:100%;
      display:flex;
-     align-items:center;
      justify-content:start;
+     align-content: flex-end;
      flex-wrap:wrap;
-     margin: 0rem 3rem 0rem 3rem;
-     background-color: #333;
+     margin: 0rem 7.5rem 0rem 7.5rem;
+     
    
     }
-    .objectivecon{
+    .objectiveconpassion1{
     min-height:5vh;
      max-width:100%; 
-     align-items: center;
-     justify-items:end;
-     justify-content: center;
-     font-size: 25px;
+     font-size:25px;
      font-weight: bold;
-     margin-top: 5rem;
-    
      color: #4D5656;
-    
+     
     }.txtsmallobjective2{
         font-size: 15px;
         font-weight: bold;
@@ -1247,9 +1236,7 @@ ul li a:hover{
         color:#797D7F; 
     }
 
-.ipwsamstxt{
-    color:#A6ACAF; 
-}
+
 
 @media screen and (max-width: 414px) {
  
@@ -1438,12 +1425,15 @@ ul li a:hover{
             flex-wrap: wrap;
             justify-content: center;
             align-content: center;
-                    border-radius: 20px; 
+            border-radius: 20px;
+            box-shadow: 1px 1px 20px #E5E7E9; 
     }
     .titleforpromotion{
         font-size: 20px;
         font-weight: bold;
         color: #515A5A;
+        line-height: 30px;
+        margin: 10px;
     }
     .annycommentxt{
         color:#797D7F;
@@ -1468,11 +1458,13 @@ ul li a:hover{
         background-repeat: no-repeat;
         background-size: cover; 
          border-radius: 20px 0px 20px 0px; 
-
          display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 10px;
+        cursor:pointer;
+        
     }
 .btnfind{
     text-align: center;
