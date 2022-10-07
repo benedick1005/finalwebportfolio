@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+<!-- for navbar strucure -->
+<div class="MaincontainerNav">
+    <div class="logocontainer">
+        <div class="logotxt"><div class="gtxt"><a href=.html">BenPort</a></div></div> 
+    </div>
+    <div class="logocontainer2">
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+             <label for="check" class="checkbtn">
+                  <i class="fa fa-bars" style=" text-align:center; font-size:23px; text-align:center;"></i>
+             </label>
+         <ul>
+              <li><a href="abt.html" class="Active">About</a></li>
+              <li><a href="index.html">Review</a></li>
+             <li><a href="index2.html">My project</a></li>
+             <li><a href="index2.html">Resources</a></li>
+             <li class="logocontainer3"><a href="index2.html"><div class="logotxt2">Find me</div></a></li>
+         </ul>
+     </nav>
+     
+    </div>
+
+
+
+</div>
+
+<style>
+    .gtxt{
+        color:#515A5A;  
+        margin-left:6rem ;
+        font-size: 20px;
+    }
+    .logotxt{
+        min-height:8vh;
+     width:17%;
+     display:flex;
+     margin-right:17px;
+     flex-wrap:wrap;
+     align-items:center;
+     justify-content:center;
+     background-image: url("img/blogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 5px;
+   font-weight: bold;
+    border-radius: 50px 50px 50px 50px; 
+      
+        
+    }
+
+    .MaincontainerNav{
+    min-height:15vh;
+     max-width:100%;
+     display:flex;
+     margin: -1rem 0 0  0;
+     flex-wrap:wrap;
+     align-items:center;
+     justify-content:center;
+    background-color:#FBFBFB;
+     position: relative;
+     
+    
+}
+.logocontainer{
+    min-height:9.1vh;
+     width:35%;
+     display:flex;
+     margin: 1rem 0 0  0;
+     flex-wrap:wrap;
+     align-items:center;
+     justify-content:flex-start ;
+     background-color:white;
+     box-shadow: #333;
+     border-radius: 50px 0px 0px 50px; 
+
+}
+.logocontainer2{
+    min-height:9.1vh;
+     width:45%;
+     display:flex;
+     margin: 1rem 0 0  0;
+     flex-wrap:wrap;
+     align-items:center;
+     justify-content:end ;
+     background-color:white;
+     box-shadow: #333;
+     border-radius: 0px 50px 50px 0px; 
+}
+.logocontainer3{
+   
+ 
+     /* background-image: url("img/bg3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  */
+     /* border-radius: 20px 20px 20px 20px;  */
+}
+
+.logotxt2{
+    background-image: url("img/bg3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-radius: 20px 0px 20px 0px; 
+        font-size:17px;
+        font-weight: bold;
+        font-style:inherit;
+        padding: 1px;
+        color: white;
+      
+        
+    }
+/* --------navbar css */
+.logo::after{
+    content: "io";
+    color: white;
+}
+.Active{    
+  
+}
+.checkbtn{
+    float:right;
+    display:none;
+}
+#check{
+    display:none;
+}
+@media screen and (max-width: 1044px){
+.checkbtn{
+    display:block;
+    color: black;
+    margin-right:39px;
+}
+
+ul{
+    position:fixed;
+    height:50vh;
+    width:80%;
+    background-color:#FBFBFB;
+    top:200px;
+    left:100%;
+    transition:all .5s;
+    text-align:center;
+    z-index: 3;
+    margin-left: 2rem;
+    border-radius: 20px 0px 20px 0px; 
+    
+}
+.logotxt{
+        font-size: 18px;
+
+    }
+    .gtxt{
+        font-size: 19px;
+    } .logotxt{
+        font-size: 17px;
+
+    }
+
+nav ul li{
+    display:block;
+    }
+    #check:checked ~  ul{
+        left:0px;
+        color: #00eded;
+    }
+
+    .logocontainer{
+    min-height:7vh;
+     width:35%;
+     display:flex;
+     margin: 1rem 0 0  0;
+     flex-wrap:wrap;
+     align-items:center;
+     justify-content:flex-start ;
+ 
+     box-shadow: #333;
+     border-radius: 50px 0px 0px 50px; 
+
+}
+.logocontainer2{
+    min-height:7vh;
+     width:45%;
+     display:flex;
+     margin: 1rem 0 0  0;
+     flex-wrap:wrap;
+     align-items:center;
+     justify-content:end ;
+    
+     box-shadow: #333;
+     border-radius: 0px 50px 50px 0px; 
+}
+}
+*{   
+    text-decoration: none;
+    box-sizing: 0px;
+    margin: 0px;
+    padding: 0;
+}
+ul{ 
+    line-height:30px;
+    float:right;
+    margin-right: 10px;
+ 
+}
+ul li{
+    margin:0px 14px  0px;
+    display:inline-block;
+    line-height:60px;   
+}
+
+a{ 
+    
+    color:#515A5A;  
+    font-size:17px;
+}
+ul li a:hover{
+   
+    transition: 2ms;
+    background-image: url("img/bg3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: #F4F6F6;
+    border-radius: 50px 50px 50px 50px; 
+}
+
+.logo{
+    margin:0 0 0 5.4em;
+    color:#00eded;
+    font-weight:bold;
+    font-size:25px;
+    position: absolute;
+    font-family:cursive;
+}
+.iocolor{
+    color:#00eded;
+    font-size:26px;
+}
+@media screen and (max-width:668px) {
+    .logo{
+        
+        margin: 0 0 0 1.2rem;
+    }
+    .gotloxt2{
+        color:white;
+        font-size: 14px;
+        border: none;
+    }
+    .logotxt{
+        font-size: 18px;
+
+    } 
+    .gtxt{
+        font-size: 15px;
+    }
+  
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="boxcontainer">
+        <div class="box1">
+            <div class="Titlefornumber">1st Project </div>
+            <div class="Title">Indor Plant and Maintenance ....</div>
+            <div class="Titleviewcase"> View case study</div>
+        </div>
+        <div class="box2">
+            <div class="Titlefornumber">1st Project </div>
+            <div class="Title">Indor Plant and Maintenance ....</div>
+            <div class="Titleviewcase"> View case study</div>
+        </div>
+        
+        <div class="box3">
+            <div class="Titlefornumber">1st Project </div>
+            <div class="Title">Indor Plant and Maintenance ....</div>
+            <div class="Titleviewcase"> View case study</div>
+        </div>
+    </div>
+   
+    <style>
+        .boxcontainer{
+            flex-wrap: wrap ;
+            display: flex;
+          
+            justify-content:center;
+            background-color:#FBFBFB;
+        }
+        .box1{
+            width:22em;
+            height: 25em;
+            padding: ;
+            background-image: url("img/sampleui1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            margin: 1em;
+            background-color:white;
+            border-radius: 20px;      
+        }
+        .box2{
+            width:22em;
+            height: 25em;
+            padding: 6.em;
+            background-image: url("img/sampleui2.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            margin: 1em;
+            background-color:white;
+            border-radius: 20px;      
+        }
+        .box3{
+            width:22em;
+            height: 25em;
+            padding: 6.em;
+            background-image: url("img/sampleui3.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            margin: 1em;
+            background-color:white;
+            border-radius: 20px;      
+        }
+        .box1:hover{
+            box-shadow: 1px 1px 20px #E5E7E9;
+            transition: 10ms;
+            top: 2px;
+            position: relative;
+        }
+        .box2:hover{
+            box-shadow: 1px 1px 20px #E5E7E9;
+            transition: 10ms;
+            top: 2px;
+            position: relative;
+        }
+        .box3:hover{
+            box-shadow: 1px 1px 20px #E5E7E9;
+            transition: 10ms;
+            top: 2px;
+            position: relative;
+        }
+    
+        .Titlefornumber{
+            text-align: justify;
+        top: 18rem;
+        margin: 0em 0em 0em 1em;
+        position: relative;
+        color: black;
+        font-size: 15px;
+        color:#797D7F; 
+        line-height: 28px;
+        }
+
+        .Title{
+        text-align: justify;
+        top: 19rem;
+        margin: 0em 0em 0em 1em;
+        position: relative;
+        color: #424949;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 28px;
+        }
+        .Titleviewcase{
+            text-align: justify;
+        top: 19rem;
+        margin: 0em 0em 0em 1em;
+        position: relative;
+        color:#797D7F; 
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 28px;
+        }
+       
+</style>
+
+
+
+<div class="containerforpromotion">
+    <div class="boxforpromotion">
+        <div class="titleforpromotion">Create web and mobldsjsh djshjsdhjsdhile app design, selft-developtment, selft-motivated, still learning and enhanece my capabilities..  </div>
+        <p class="annycommentxt">Anny comments and reaction will be appreciated,</p>
+        <div class="btnforfindmebox"><div class="btnfindme"><div class="btnfind">Find me</div></div></div>
+    </div>
+</div>
+<style>
+    .containerforpromotion{
+        background-color: #797D7F;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        min-height: 20em;
+    }
+
+    .boxforpromotion{
+            width:35em;
+            height: 11em;
+            padding: 3em;
+            background-color:white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+                    border-radius: 20px; 
+    }
+    .titleforpromotion{
+        font-size: 20px;
+        font-weight: bold;
+        color: #515A5A;
+        text-align: center;
+    }
+    .annycommentxt{
+        color:#797D7F;
+        font-size: 15px;
+        text-align: ;
+    }
+    .btnforfindmebox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 3em;
+        
+    }
+    .btnfindme{
+        width: 6em;
+        height: 2.4em;
+        text-align: center;
+        background-color: red;
+        background-image: url("img/bg3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+         border-radius: 20px 0px 20px 0px; 
+
+         display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+    }
+.btnfind{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+   
+}
+
+</style>
+</body>
+</html>
