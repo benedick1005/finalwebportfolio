@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Document</title>
+    <title>My Portfolio</title>
 </head>
 <body>
+    <div class="maincontainer">
 
 <!-- for navbar strucure -->
 <div class="MaincontainerNav">
@@ -37,6 +37,7 @@
 </div>
 
 <style>
+    
     .gtxt{
         color:#515A5A;  
         margin-left:6rem ;
@@ -52,12 +53,10 @@
      background-image: url("img/bglogo.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size:contain; 
+    background-size: contain; 
     padding: 5px;
-
    font-weight: bold;
-    border-radius: 50px 50px 50px 50px;
-    
+    border-radius: 50px 50px 50px 50px; 
       
         
     }
@@ -73,6 +72,7 @@
     background-color:#FBFBFB;
      position: relative;
      
+     
     
 }
 .logocontainer{
@@ -84,8 +84,10 @@
      align-items:center;
      justify-content:flex-start ;
      background-color:white;
+     
      box-shadow: #333;
-     border-radius: 50px 0px 0px 50px; 
+     border-radius: 50px 0px 0px 50px;
+     
 
 }
 .logocontainer2{
@@ -273,10 +275,20 @@ ul li a:hover{
 </style>
 
 
-<!--for bg-->
+
+
+
+
+
+
+
+
+<!-- for ui ux -->
 
 <div class="bg1">
     <div class="boxforuxui">
+        
+        <div class="autotyping">Hello </div>
         
     </div>
     
@@ -291,21 +303,13 @@ ul li a:hover{
      flex-wrap:wrap;
      align-items:center;
      justify-content:space-around;
-     background-image: url("img/uifor1stproject.png");
+     background-image: url("img/imgko7.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    object-fit: cover;
-    margin: 1em;
-    padding: 1em;
-    background-size: contain;
     
      border-radius: 50px 50px 50px 50px; 
     }
-        body{
-                background-color:#FBFBFB;
-
-        }
 
 
     @media screen and (max-width:1200px) {
@@ -313,363 +317,1501 @@ ul li a:hover{
             min-height:70vh;
          max-width:100%;
        
-        }     
- 
+
+        }
+      
 }    
 </style>
 
 
+    <!-- first conatiner -->
 
+    <div class="container1">    
+        <div class="boxforobjective">
+                <div class="caption1">
+                    <div class="autotyping2">Hello </div>
+                     <h2 class ="mynametxt "> Hi! I'm Benedick. <span class="txtfrontend"> welcome here</span> </h2>
+                    <P class="portfoliotxt"> This is my little slice of the internet. Ilove making web and mobile app design Interface.... hope you like it 
 
-<!--for     experience-->
-<div class="containerforpromotion">
-    <div class="title">Experience Revamp of the Ipwsams App</div>
-    <div class="boxfortitle">
-        
-        <div class="boxfor3title">
-            <div class="one"> TIMELINE <br> June 2020 - 2021 </div>
-            <div class="one"> FLATFORM <br> Android App</div>
-            <div class="one"> MY ROLE <br> Programmer /Designer</div>
+                        <br>Explore my Portfolio
+                        
+                    </P>
+                </div>
+                <!-- <div class="btnlearn"  > <button class="Btnlearn" id="btnlearn">Hire me</button> </div> -->
         </div>
+        <div class="boxforimag">  <img src="img/imgko8.png" alt="" class="imgrightside">
+        </div>
+    </div>
+<style>
+    .autotyping{
+        color: white;
+        margin:0 0 0 .7rem;
+        font-size: 70px;
+        font-weight: bold;  
+        position: relative;
+        font-style: italic;
+        margin: 2rem 0 1.5rem .6rem;
+        z-index: 2;
+    }
+    .autotyping::after{
+        content: "";
+        position:absolute;
+        width: 1px;
+        height: 100%;
+        border-right: 2px solid white;
+        animation: typing 0.5s infinite ease;
+    }
+    .autotyping2{
+        color:#515A5A;  
+        margin:0 0 0 .7rem;
+        font-size: 20px;
+        font-weight: bold;  
+        position: relative;
+
+        margin: 2rem 0 1.5rem .6rem;
+        z-index: 2;
+    }
+    .autotyping2::after{
+        content: "";
+        position:absolute;
+        width: 1px;
+        height: 100%;
+        border-right: 2px solid white;
+        animation: typing 0.5s infinite ease;
+    }
+    @keyframes typing{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity:1;
+        }
+    }
+
+
+    /* for container1 */
+
+   
+    
+.container1{
+     min-height:70vh;
+     max-width:100%;
+     display:flex;
+    margin-top: -4rem;
+     flex-wrap:wrap;
+     align-items:center;
+     justify-content:space-around;
+     
+  
+    }
+.boxforobjective{
+    min-height:260px;
+    max-width:570px;
+    margin:0px 10px 0px;
+
+}
+.boxforimag{
+    overflow:hidden;
+    min-height:300px;
+    max-width:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0rem 2rem 0rem 2rem; 
+    position: relative;
+}
+
+.imgrightside{
+    margin-top:10px;    
+    min-height: 300px;
+    max-width:400px;
+    margin:0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%; 
+    
+
+}
+.portfoliotxt{
+    padding: 1px 6px ;
+    font-size:17px;
+    line-height: 1.5rem;
+    color:#626567;
+    
+    margin: 1rem 0 0 0;
+}
+.txtfrontend{
+    color: #F39C12;
+}
+.mynametxt{
+
+    font-size:50px;
+    font-weight: bold;
+    margin: -1rem 0  0 6px;
+    color: #F39C12;
+    line-height: 3.rem;
+}
+.caption1{
+    margin-top: 1rem;
+}
+
+.Btnlearn:hover,
+.Btnlearn:focus{
+   
+    text-shadow: none;
+}
+.Btnlearn:hover::after{
+    opacity: 1;
+}
+@media screen and (max-width:414px) {
+    .mynametxt{
+        font-size: 30px;
+    }
+    .portfoliotxt{
+        font-size: 15px;
+    }
+.boxforimag{
+    min-height:300px;
+    max-width:300px;
+}
+.autotyping{
+    font-size: 33px;
+}
+}
+
+
+
+
+</style>
+<br>
+
+
+   <!-- second container -->
+    <div class="containe2">
+        <div class="headerandparagraphcontainer fade-in">
+        <div class="Getstarted"></div>
+            <div class="txtparagraph"> "Do what you love <br> <span class="andtxt"> &</span> <br>Love what you do" 
+            </div>
+        </div>
+    </div>
+   
+<style>
+
+.containe2{
+     min-height:70vh;
+     max-width:100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;     
+     background-color:#FBFBFB;
+     /* background-color: #040F20; */
+}
+.headerandparagraphcontainer{
+    text-align: center;
+    min-height: 40vh;
+    min-width: 100%;
+    align-items: center;
+    /* overflow: hidden;
+    background-image: url("img/bg1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    margin-top: 5rem;
+}
+
+.txtparagraph{
+    font-size:90px;
+    font-style: normal;
+
+    line-height: 5rem;
+    z-index: 2;
+    color:rgb(0,32,50);
+    position: relative;
+}
+/* foor what ido container */
+.whatidocontainer{
+    min-height: 5vh;
+    max-width: 100%;
+    margin: 0 auto;    
+}
+.containerforwhatido{
+    min-height: 2vh;
+    max-width: 86%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.whatidotxt1{
+   font-size: 25px;
+   margin: 1rem;
+   position: relative;
+   color:rgb(0,32,50);
+   margin: 0 1rem 0 1rem;
+}
+.whatidotxt1::before{
+    content: " 0.1 ";
+    font-size: 25px;
+    color: #F39C12;
+    font-weight: normal;
+}
+.dotxt{
+    color: #00eded;
+}
+/* for responsive text */
+@media screen and (max-width:414px) {
+    .txtparagraph{
+        font-size: 35px;
+        line-height: 3rem;
+    }   
+}
+
+</style>
+
+
+
+
+
+<!-- third container   -->
+    <div class="container3">
+        <div class="buildportfoliocontainer from-left slider-in">
+            <div class="icontitleandparagraphcontainer">
+                <div class="icon"><i class="fa fa-file-o" id="designicon"></i> <span class="buildPortfoliotxt">Build web / app design</span></div>
+                    <p class="paragraphtxt">As UI/UX Designer my objective is to grow exponentially in terms of web and app design. 
+                                            Design with Figma which is the best tools for making ui</p>
+            </div>
+        </div>
+        <div class="mobileresponsivcontainer from-right slider-in">
+            <div class="icontitleandparagraphcontainer">
+                <div class="icon"><i class="fa fa-linode" id="designicon"></i> <span class="buildPortfoliotxt">Mobile/Responsive</span></div>
+                <p class="paragraphtxt2">Year (2020) people worldwide got affected by the pandemic and the philippineswas among the them. Because of that our country was placed under community quarantine to help the government avoid the widespread of the virus through the entire nation.
+                    Many people stayed at home for their safety  and to get away from the covid-19 virus infection.
+                    According  to Philstar (GLOBAL) August 29, 2019, 3.3 million Filipinos suffer from depression
+                    which is one of the highest in southeast Asia.
+                    As a result , a lot of people are now engaging into planting according to the article entitled "New Plant Lovers Emerge from Quarantine"  to relieve the 
+                    stress  while staying at home which is proven according to the expert in the article titled" 
+                    The Prescription for a Healthy Life" A house Plant ! Greenery Boots Mood, Reduces Stress and Clean the Air around Us",
+                    and now they are call the "Plantito " and "Plantita " who love to take care of plants</p>
+            </div>
+        </div>
+        <div class="designcontainer from-left slider-in">
+            <div class="icontitleandparagraphcontainer">
+                <div class="icon"><i class="fa fa-gittip"id="designicon"></i>  <span class="buildPortfoliotxt">Design</span></div>
+                <p class="paragraphtxt2">Designing a web interface is one of my favorite activity. I like to explore and get inspired, 
+                                        and grow exponentially in terms of desingning. I used a lot of tools to make ui prototyping.</p>
+            </div>
+        </div>
+        <div class="developmentcontainer from-right slider-in">
+            <div class="icontitleandparagraphcontainer">
+                <div class="icon"><i class="fa fa-cogs" id="designicon"></i><span class="buildPortfoliotxt">Development</span></div>
+                <p class="paragraphtxt">In terms of web design, specially the user interface which is need create user friendly. 
+                                I create basic and readable web design interface which result a good respons from the user.</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+         /* container 3////////////////// */
+ .container3{
+     min-height:70vh;
+     max-width:100%;
+     margin: 0;
+     display: flex;
+    background-color: #00eded;
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap:wrap;
+}
+.buildportfoliocontainer{
+    min-height: 25vh;
+    width: 30rem;   
+    margin: 1rem ;
+    transition: 1s;
+    
+}
+
+.mobileresponsivcontainer{
+    min-height:25vh;
+    width: 30rem;
+    margin:  1rem;
+   
+}
+.designcontainer{
+    min-height: 25vh;
+    width: 30rem;
+    margin: 1rem;
+ 
+  }
+.developmentcontainer{
+    min-height: 25vh;
+    width: 30rem;
+    margin:1rem;
+
+}
+.paragraphtxt{
+    padding: 0 .4rem 1rem 1.6rem;
+    margin: .9rem 0 0 .5rem  ;
+    line-height: 2rem;
+    color:#626567;  
+
+} 
+.paragraphtxt2{
+    padding: 0 .4rem 1rem 1.6rem;
+    margin: .9rem 0 0 .5rem  ;
+    line-height: 2rem;
+    color:#626567;  
+}
+/* iocontxttitle container */
+.icontitleandparagraphcontainer{
+    margin: 2px;
+    font-size: 17px;
+    padding: .5rem 0 0 .9rem;
+}
+#designicon{
+    font-size: 28px;
+    color:#626567;  
+}
+.buildPortfoliotxt{
+    font-weight: bold;
+    margin: 0 0 0 .5rem;
+    color:#626567;   
+}
+/* FOR resposive */
+@media screen  and (max-width:1024px){
+    .buildportfoliocontainer{
+    min-height: auto;
+    width: 70rem;
+    margin: 1rem ;
+}
+    .mobileresponsivcontainer{
+    min-height:auto;
+    width: 70rem;
+    margin: 1rem ;
+}
+.designcontainer{
+    min-height: auto;
+    width: 70rem;
+    margin: 1rem ;
+}
+.developmentcontainer{
+    min-height: auto;
+    width: 70rem;
+    margin: 1rem ;
+}
+}
+@media screen and (max-width:414px){
+    .paragraphtxt{
+        font-size: 15px;
+    }
+    .buildPortfoliotxt{
+        font-size: 15;
+    }
+    #designicon{
+        font-size: 25px;
+    }
+    .whatidotxt1{
+        font-size: 25px;
+    }
+}
+    </style>
+
+
+
+
+
+
+
+<!-- 4th container -->
+
+<!-- 4th container -->
+
+<!-- 4th container -->
+
+<!-- 4th container -->
+
+<!-- 4th container -->
+<div class="mainObjectivecontainer">
+    <div class="objectivecon">
+        <div class="obj">Project
+            
+            <p class="txtsmallobjective2">Let see my Project that i build using figma </p>
+        </div>
+    </div>
+</div>
+
+<style>
+   /* for  container 4 /////////// */
+
+.mainObjectivecontainer{
+        min-height:20vh;
+     max-width:100%;
+     display:flex;
+     align-items:center;
+     justify-content:start;
+     flex-wrap:wrap;
+     margin: 0rem 1rem 0rem 1rem;
+    
+   
+    }
+    .objectivecon{
+    min-height:5vh;
+     max-width:100%; 
+     align-items: center;
+     justify-items:end;
+     justify-content: center;
+     font-size: 25px;
+     font-weight: bold;
+     margin-top: 5rem;
+     margin-left:4.3em;
+     color: #4D5656;
+    
+    }.txtsmallobjective2{
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 2rem;
+        color:#797D7F; 
+    }
+
+.ipwsamstxt{
+    color:#A6ACAF; 
+}
+
+@media screen and (max-width: 414px) {
+ 
+    .obj{
+    font-size: 20px;
+  
+    }
+    .txtsmallobjective{
+        font-size: 15px;
+    }
+    .boxforimag2{
+        margin-top: -4rem;
+    }
+
+}
+@media screen and (max-width: 369px) {
+ 
+
+ .boxforimag2{
+     margin-top: -7rem;
+ }
+
+}
+
+@media screen and (max-width: 280px) {
+ 
+
+ .boxforimag2{
+     margin-top: -10rem;
+ }
+
+}
+
+
+@media screen and (max-width: 891px) {
+  
+   
+}
+@media screen and (max-width: 968px) {
+ 
+    .objectivecon{
+        margin-left: 0rem;
+    }
+
+}
+</style>
+
+
+
+
+<!-- for my Project 1-->
+<div class="boxcontainer" ><a href="1stproject.html">
+    <div class="box1"> 
+        <div class="Titlefornumber"> See my work</div>
+        <div class="Title">Indor Plant and Maintenance ....</div>
+        <div class="Titleviewcase"> View case study<i class="fa fa-long-arrow-right" id="arrow"></i></div>
+    </a>
+    </div>
+
+
+    <div class="box2">
+        <div class="Titlefornumber">See my work</div>
+        <div class="Title">Indor Plant and Maintenance ....</div>
+        <div class="Titleviewcase"> View case study <i class="fa fa-long-arrow-right" id="arrow"></i></div>
+    </div>
+    
+    <div class="box3">
+        <div class="Titlefornumber">See my work </div>
+        <div class="Title">Indor Plant and Maintenance ....</div>
+        <div class="Titleviewcase"> View case study <i class="fa fa-long-arrow-right" id="arrow"></i></div>
+    </div>
+
+
+
+    <div class="box3">
+        <div class="Titlefornumber">See my work </div>
+        <div class="Title">Indor Plant and Maintenance ....</div>
+        <div class="Titleviewcase"> View case study <i class="fa fa-long-arrow-right  " id="arrow"></i></div>
+    </div>
+    <div class="box1">
+        <div class="Titlefornumber"> See my work</div>
+        <div class="Title">Indor Plant and Maintenance ....</div>
+        <div class="Titleviewcase"> View case study<i class="fa fa-long-arrow-right" id="arrow"></i></div>
+    </div>
+    <div class="box2">
+        <div class="Titlefornumber">See my work</div>
+        <div class="Title">Indor Plant and Maintenance ....</div>
+        <div class="Titleviewcase"> View case study <i class="fa fa-long-arrow-right" id="arrow"></i></div>
+    </div>
+    
+    
+
+
+
+    <!--for visible box-->
+    <!-- <div class="boxvisible">
+            </div>
+    <div class="boxvisible">
+        </div> -->
+
+
+
+
+</div>
+
+<style>
+
+    #arrow{
+        color: black;
+        margin: 7px;
+    }
+
+    .boxcontainer{
+        flex-wrap: wrap ;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        background-color:#FBFBFB;
+    }
+    .box1{
+        width:22em;
+        height: 25em;
+        padding: 6.em;
+        background-image: url("img/sampleui1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain; 
+        margin: 1em;
+        background-color:white;
+        border-radius: 20px;    
+        transition: background-color 0.5s ease;  
+    }
+    .box2{
+        width:22em;
+        height: 25em;
+        padding: 6.em;
+        background-image: url("img/sampleui2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        margin: 1em;
+        background-color:white;
+        border-radius: 20px;      
+    }
+    .box3{
+        width:22em;
+        height: 25em;
+        padding: 6.em;
+        background-image: url("img/sampleui3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        margin: 1em;
+        background-color:white;
+        border-radius: 20px;      
+    }
+    
+    .boxvisible{
+        width:22em;
+        height: 2em;
+        padding: 6.em;
+        /* background-image: url("img/sampleui3.png"); */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        margin: 1em;
+        /* background-color:white; */
+        border-radius: 20px;      
+    }
+
+    .box1:hover{
+        box-shadow: 1px 1px 20px #E5E7E9;
+        transition: 10ms;
+        top: 2px;
+        position: relative;
+        cursor: pointer;
+    }
+    .box2:hover{
+        box-shadow: 1px 1px 20px #E5E7E9;
+        transition: 10ms;
+        top: 2px;
+        position: relative;
+        cursor: pointer;
+    }
+    .box3:hover{
+        box-shadow: 1px 1px 20px #E5E7E9;
+        transition: 10ms;
+        top: 2px;
+        position: relative;
+    
+    }
+
+    .Titlefornumber{
+        text-align: justify;
+    top: 18rem;
+    margin: 0em 0em 0em 1em;
+    position: relative;
+    color: black;
+    font-size: 15px;
+    color:#797D7F; 
+    line-height: 28px;
+    }
+
+    .Title{
+    text-align: justify;
+    top: 19rem;
+    margin: 0em 0em 0em 1em;
+    position: relative;
+    color: #424949;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+    }
+    .Titleviewcase{
+        text-align: justify;
+    top: 19rem;
+    margin: 0em 0em 0em 1em;
+    position: relative;
+    color:#797D7F; 
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 28px;
+    }
+   
+</style>
+
+
+
+
+
+<!-- for my Expertise-->
+<div class="mainObjectivecontainer">
+    <div class="objectivecon">
+        <div class="obj">Expertise
+            
+            <p class="txtsmallobjective2"> </p>
+        </div>
+    </div>
+</div>
+
+<style>
+   /* for  container 4 /////////// */
+
+.mainObjectivecontainer{
+        min-height:20vh;
+     max-width:100%;
+     display:flex;
+     align-items:center;
+     justify-content:start;
+     flex-wrap:wrap;
+     
+    }
+    .objectivecon{
+    min-height:5vh;
+     max-width:100%; 
+     align-items: center;
+     justify-items:end;
+     justify-content: center;
+     font-size: 25px;
+     font-weight: bold;
+     margin-top: 5rem;
+     
+     color: #4D5656;
+    
+    }.txtsmallobjective2{
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 2rem;
+        color:#797D7F; 
+    }
+
+.ipwsamstxt{
+    color:#A6ACAF; 
+}
+
+@media screen and (max-width: 414px) {
+ 
+    .obj{
+    font-size: 20px;
+  
+    }
+    .txtsmallobjective{
+        font-size: 15px;
+    }
+    .boxforimag2{
+        margin-top: -4rem;
+    }
+
+}
+@media screen and (max-width: 369px) {
+ 
+
+ .boxforimag2{
+     margin-top: -7rem;
+ }
+
+}
+
+@media screen and (max-width: 280px) {
+ 
+
+ .boxforimag2{
+     margin-top: -10rem;
+ }
+
+}
+
+
+@media screen and (max-width: 891px) {
+  
+   
+}
+@media screen and (max-width: 968px) {
+ 
+    .objectivecon{
+        margin-left: 0rem;
+    }
+
+}
+</style>
+<!-- for my Expertise-->
+<div class="boxcontainer">
+    <div class="box1">
+        <div class="Titlefornumber">1st Project </div>
+        <div class="Title">Indor Plant and Maintenance ....</div>
+        <div class="Titleviewcase"> View case study<i class="fa fa-long-arrow-right" id="arrow"></i></div>
+    </div>
+    <div class="box2">
+        <div class="Titlefornumber">1st Project </div>
+        <div class="Title">Indor Plant and Maintenance ....</div>
+        <div class="Titleviewcase"> View case study <i class="fa fa-long-arrow-right" id="arrow"></i></div>
+    </div>
+    <div class="boxvisible">
+    </div>
+    
+    
+</div>
+
+<style>
+    .boxcontainer{
+        flex-wrap: wrap ;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        background-color:#FBFBFB;
+    }
+    .box1{
+        width:22em;
+        height: 25em;
+        padding: 6.em;
+        background-image: url("img/sampleui1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        margin: 1em;
+        background-color:white;
+        border-radius: 20px;    
+        transition: background-color 0.5s ease;  
+    }
+    .box2{
+        width:22em;
+        height: 25em;
+        padding: 6.em;
+        background-image: url("img/sampleui2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        margin: 1em;
+        background-color:white;
+        border-radius: 20px;      
+    }
+    .box3{
+        width:22em;
+        height: 25em;
+        padding: 6.em;
+        background-image: url("img/sampleui3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        margin: 1em;
+        background-color:white;
+        border-radius: 20px;      
+    }
+    .box1:hover{
+        box-shadow: 1px 1px 20px #E5E7E9;
+        transition: 10ms;
+        top: 2px;
+        position: relative;
+    }
+    .box2:hover{
+        box-shadow: 1px 1px 20px #E5E7E9;
+        transition: 10ms;
+        top: 2px;
+        position: relative;
+    }
+    .box3:hover{
+        box-shadow: 1px 1px 20px #E5E7E9;
+        transition: 10ms;
+        top: 2px;
+        position: relative;
+    }
+
+    .Titlefornumber{
+        text-align: justify;
+    top: 18rem;
+    margin: 0em 0em 0em 1em;
+    position: relative;
+    color: black;
+    font-size: 15px;
+    color:#797D7F; 
+    line-height: 28px;
+    }
+
+    .Title{
+    text-align: justify;
+    top: 19rem;
+    margin: 0em 0em 0em 1em;
+    position: relative;
+    color: #424949;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+    }
+    .Titleviewcase{
+        text-align: justify;
+    top: 19rem;
+    margin: 0em 0em 0em 1em;
+    position: relative;
+    color:#797D7F; 
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 28px;
+    }
+   
+</style>
+
+
+
+
+<!-- for my Passion-->
+<div class="mainObjectivecontainer">
+    <div class="objectivecon">
+        <div class="obj">My Passion Project
+            
+            <p class="txtsmallobjective2"> </p>
+        </div>
+    </div>
+</div>
+
+<style>
+   /* for  container 4 /////////// */
+
+.mainObjectivecontainer{
+        min-height:20vh;
+     max-width:100%;
+     display:flex;
+     align-items:center;
+     justify-content:start;
+     flex-wrap:wrap;
+
+   
+    }
+    .objectivecon{
+    min-height:5vh;
+     max-width:100%; 
+     align-items: center;
+     justify-items:end;
+     justify-content: center;
+     font-size:25px;
+     font-weight: bold;
+     margin-top: 5rem;
+     color: #4D5656;
+    
+    }
+@media screen and (max-width: 414px) {
+ 
+    }
+    .txtsmallobjective{
+        font-size: 15px;
+    }
+    .boxforimag2{
+        margin-top: -4rem;
+    }
+
+
+@media screen and (max-width: 369px) {
+ 
+
+ .boxforimag2{
+     margin-top: -7rem;
+ }
+
+}
+
+@media screen and (max-width: 280px) {
+ 
+
+ .boxforimag2{
+     margin-top: -10rem;
+ }
+
+}
+
+
+@media screen and (max-width: 891px) {
+  
+   
+}
+@media screen and (max-width: 968px) {
+ 
+    .objectivecon{
+        margin-left: 0rem;
+    }
+
+}
+</style>
+<!-- for my Passion-->
+<div class="boxcontainer">
+    <div class="box1">
+        <div class="Titlefornumber">1st Project </div>
+        <div class="Title">Indor Plant and Maintenance ....</div>
+        <div class="Titleviewcase"> View case study<i class="fa fa-long-arrow-right" id="arrow"></i></div>
+    </div>
+    <div class="boxvisible">
+            </div>
+    
+    <div class="boxvisible">
+            </div>
+    
+</div>
+
+<style>
+    .boxcontainer{
+        flex-wrap: wrap ;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        background-color:#FBFBFB;
+    }
+    .box1{
+        width:22em;
+        height: 25em;
+        padding: 6.em;
+        background-image: url("img/sampleui1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        margin: 1em;
+        background-color:white;
+        border-radius: 20px;    
+        transition: background-color 0.5s ease;  
+    }
+    .box2{
+        width:22em;
+        height: 25em;
+        padding: 6.em;
+        background-image: url("img/sampleui2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        margin: 1em;
+        background-color:white;
+        border-radius: 20px;      
+    }
+    .box3{
+        width:22em;
+        height: 25em;
+        padding: 6.em;
+        background-image: url("img/sampleui3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        margin: 1em;
+        background-color:white;
+        border-radius: 20px;      
+    }
+    .box1:hover{
+        box-shadow: 1px 1px 20px #E5E7E9;
+        transition: 10ms;
+        top: 2px;
+        position: relative;
+    }
+    .box2:hover{
+        box-shadow: 1px 1px 20px #E5E7E9;
+        transition: 10ms;
+        top: 2px;
+        position: relative;
+    }
+    .box3:hover{
+        box-shadow: 1px 1px 20px #E5E7E9;
+        transition: 10ms;
+        top: 2px;
+        position: relative;
+    }
+
+    .Titlefornumber{
+        text-align: justify;
+    top: 18rem;
+    margin: 0em 0em 0em 1em;
+    position: relative;
+    color: black;
+    font-size: 15px;
+    color:#797D7F; 
+    line-height: 28px;
+    }
+
+    .Title{
+    text-align: justify;
+    top: 19rem;
+    margin: 0em 0em 0em 1em;
+    position: relative;
+    color: #424949;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+    }
+    .Titleviewcase{
+        text-align: justify;
+    top: 19rem;
+    margin: 0em 0em 0em 1em;
+    position: relative;
+    color:#797D7F; 
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 28px;
+    }
+   
+</style>
+
+
+<!--for my promotio-->
+<div class="containerforpromotion">
+    <div class="boxforpromotion">
+        <div class="titleforpromotion">Create web and mobile app design, selft-developtment, selft-motivated, still learning and enhanece my capabilities..  </div>
+        <p class="annycommentxt">Anny comments and reaction will be appreciated,</p>
+        <div class="btnforfindmebox"><div class="btnfindme"><div class="btnfind">Find me</div></div></div>
     </div>
 </div>
 <style>
     .containerforpromotion{
-        min-height:30vh;
-     max-width:100%;
-     margin: 0;
-     display: flex;
 
-     align-items: center;
-     justify-content: space-around;
-     flex-wrap:wrap;
-    }
-
-    .boxfortitle{
-        
-            margin: 2em;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-                         border-top: 1px solid #AAB7B8;
-                         
-                   
-                    
-            }
-    .title{
-        
-        font-size: 25px;
-        font-weight: bold;
-        color: #515A5A;
-        text-align: center;
-        display: block;
-
-
-        min-height:30vh;
-        max-width:20%;
-
-     
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
-        
-    }
-    .boxfor3title{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-
+        align-content: center;
+        width: 100%;
+        min-height: 20em;
     }
-    .one{
-        margin: 1em 8em 0em  0em;
-        line-height: 2em;
-        height: 3em;
+
+    .boxforpromotion{
+            width:35em;
+            height: 11em;
+            padding: 3em;
+            background-color:white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+                    border-radius: 20px; 
+                    box-shadow: 1px 1px 20px #E5E7E9;
+    }
+    .titleforpromotion{
+        font-size: 20px;
+        font-weight: bold;
+        color: #515A5A;
+        line-height: 30px;
+        margin: 10px;
+        text-align: center;
+    }
+    .annycommentxt{
+        color:#797D7F;
         font-size: 15px;
+        text-align: center;
+    }
+    .btnforfindmebox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 3em;
         
     }
-    @media screen and (max-width:745px) {
-    .title{
-        font-size: 20px;
-}
-    .one{
-        font-size:13px ;
-        margin: 1em 7em 0em  0em;
-    }
-}
-
-@media screen and (max-width:618px) {
-    .one{
-        font-size:13px ;
-        margin: 1em 4em 0em  0em;
-    }
-}
-@media screen and (max-width:500px) {
-    .one{
-        font-size:13px ;
-        margin: 1em 2em 0em  0em;
-    }
-}
-@media screen and (max-width:420px){
-    .one{
-        margin: 2em 0em 0em  3em;
-    }
-    .boxfor3title{
-        display: block;
-        align-items: center;
+    .btnfindme{
+        width: 6em;
+        height: 2.4em;
+        text-align: center;
+   
+        background-image: url("img/bg3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+         border-radius: 20px 0px 20px 0px; 
+         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        align-content: center;
+        margin: 10px;
+        cursor:pointer;
     }
+.btnfind{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
 
 }
 
 
-@media screen and (max-width:930px){
-    .title{
-     min-height:15vh;
-     max-width:100%;    
-     display: flex;
-     align-items: flex-end;
-     justify-content: end;
-    
 
-    }
+<!---->
+@media screen and (max-width:668px) {
+    .titleforpromotion{
+        font-size: 17px;}
+        .annycommentxt{
+            font-size: 13px;
+        }
+        .btnfind{
+            font-size: 13px;
+        }
+        .objectivecon{
+            font-size: 20px;
+            
+        }
+        .Title{
+            font-size: 14px;
+        }
+        .Titleviewcase{
+            font-size: 13px;
+        }
 
-}
-
+        }
 
 </style>
 
 
 
 
-<!--foe Intro duction-->
-<!-- <div class="conforIntro">
-    <div class="forparaghrap">INTRODUCTION</div> 
-    <div class="boxforall">
-           Year (2020) people worldwide got affected by the pandemic and the philippineswas    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 5th conatainer -->
+    <div class="container5">
+        <div class="myoverviewcontainer">
+            <div class="overviewtxttitle">Overview</div>
+            <div class="overviewtxt">My project</div>
+            <div class="overviewtxt">Contact</div>
+            <div class="overviewtxt">What i do</div>
+            <div class="overviewtxt">About me</div>
+        </div>
+        <div class="elmentscontainer">
+            <div class="messagetitletxt">My Portfolio</div>
+            <div class="messagetxt">Create and design your dream and make it happen. <br> Error is not a hindrance to success. <br>Debug it and compile, until it Run. <br>Don't be rush.</div> 
+        </div>
+        <div class="contactcontainer">
+            <div class="contacttxt1"><i class="fa fa-long-arrow-right" id="iconcontact"></i> </div>
+            <div class="contacttxt1"><i class="fa fa-phone" id="iconcontact"></i> </div>
+            <div class="contacttxt1"> <i class="fa fa-google" id="iconcontact"></i> </div>
+            <div class="contacttxt1"> <i class="fa fa-facebook-official" id="iconcontact"></i></div>
+         </div>
+         <div class="githubandotherelementscontainer">
+             <div class="githubtxt">Github </div>
+         </div>
     </div>
-</div>
+    
 <style>
-    .conforIntro{
-        min-height:50vh;
+    /* for 5thcontainer */
+.container5{ 
+     min-height:50vh;
      max-width:100%;
-     margin: 0;
+     margin: 0  ;
      display: flex;
-
      align-items: center;
-     justify-content: space-around;
+     justify-content: space-evenly;
      flex-wrap:wrap;
-        
-    }
-    .boxforall{
-        margin: 2em;
-    width: 50%;
-    background-color: red;
-     font-size: 15px;
-        line-height: 2em;
-        color: #515A5A;
-    }
+    
+     background-color:#FBFBFB;
+}
+#iconcontact{
+    color:#626567;
+    font-size: 1.4rem;
+    padding: .49rem;
+    border: 1px solid #626567;
+    border-radius: 20%;
+    position: relative;
+    cursor: pointer;
+}
+#iconcontact::after{
+    content: "visit ";
+    position: absolute;
+    padding: .1em 1em  ;
+    border: 1px solid black;
+    font-size:18px;
+    margin: -3.3em 0 0 -1.6em ;
+    white-space: nowrap;
+    transform: scale(0);
+    transition: transform ease-out 190ms;
+    display: block;
+    text-decoration: none;
+}
 
-    .forparaghrap{
+#iconcontact:hover{
+    color: white;
+    
+    background-image: url("img/bg3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+}
+.contactcontainer{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    .githubtxt{
+        color:#626567;
+    }
+    .messagetitletxt{
+        font-size: 25px;
+        color:#626567;
+        margin: 1rem 0 1rem 0;
+        font-weight: bold;
+    }
+    .messagetxt{
+        color:#626567;
+        font-size: 17px;
+    }
+    .elmentscontainer{
+        margin: 1rem;
+        line-height: 1.7rem;                                                                                                                                                                                                                
+    }
+    .githubtxt{
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        min-height: 1rem;
+        min-width: 5rem;
+        margin: 1rem;
+        color:#626567;
+        text-shadow:  10px 10px 10px 10px #00eded ;
+    }
+ 
+   
+    .myoverviewcontainer{
+        margin: 1rem;
+        line-height: 1.7rem;
+    }
+    .overviewtxt{
+        color:#626567;
+        font-size: 17px;
+    }
+    .overviewtxttitle{
+        color: #626567;
         font-size: 25px;
         font-weight: bold;
-        min-height:30vh;
-        max-width:20%;
-        color: #515A5A;
-        display: flex;
-        align-items: center;
-        justify-content: end;
+        margin: 1rem 0 1rem 0;
     }
-
-    @media screen and (max-width:1000px){
-        .boxforall{
-        width: 100%;
+    @media screen and (max-width:414px) {
+        .overviewtxt{
+            font-size: 15px;
+        }
+        .overviewtxttitle{
+            font-size: 22px;
+        }
+        .messagetxt{
+            font-size: 15px;
+        }
+        .logonametxt{
+            font-size: 22px;
+        }
+        #iconcontact{
+            font-size: 1rem;
+        }
+        .githubtxt{
+            font-size: 22px;
+        }
     }
-    }
-    @media screen and (max-width:1000px){
-    .forparaghrap{
-     min-height:20vh;
-     max-width:50%;    
-     display: flex;
-     align-items: flex-end;
-     justify-content: end;
-   
-    }
-    .conforIntro{
-        min-height:20vh;
-     max-width:100%;
-
-    }
-    .forparaghrap{
-        font-size: 20px;
-}
-    .ptxt{
-        font-size:13px ;
-     }
-    }
-    @media screen and (max-width:745px) {
-    .forparaghrap{
-        font-size: 20px;
-}
-    .ptxt{
-        font-size:13px ;
-     }
-
-    
-
-}
-
-
-
-</style> -->
-
-<!-- third container   -->
-<div class="container3">
-    <div class="buildportfoliocontainer from-left slider-in">
-        <div class="icontitleandparagraphcontainer">
-            <div class="icon"><i class="fa fa-file-o" id="designicon"></i> <span class="buildPortfoliotxt">Build web / app design</span></div>
-                <p class="paragraphtxt">As UI/UX Designer my objective is to grow exponentially in terms of web and app design. 
-                                        Design with Figma which is the best tools for making ui</p>
-        </div>
-    </div>
-    <div class="mobileresponsivcontainer from-right slider-in">
-        <div class="icontitleandparagraphcontainer">
-            <div class="icon"><i class="fa fa-linode" id="designicon"></i> <span class="buildPortfoliotxt">Mobile/Responsive</span></div>
-            <p class="paragraphtxt2">Year (2020) people worldwide got affected by the pandemic and the philippineswas among the them. Because of that our country was placed under community quarantine to help the government avoid the widespread of the virus through the entire nation.
-                Many people stayed at home for their safety  and to get away from the covid-19 virus infection.
-                According  to Philstar (GLOBAL) August 29, 2019, 3.3 million Filipinos suffer from depression
-                which is one of the highest in southeast Asia.
-                As a result , a lot of people are now engaging into planting according to the article entitled "New Plant Lovers Emerge from Quarantine"  to relieve the 
-                stress  while staying at home which is proven according to the expert in the article titled" 
-                The Prescription for a Healthy Life" A house Plant ! Greenery Boots Mood, Reduces Stress and Clean the Air around Us",
-                and now they are call the "Plantito " and "Plantita " who love to take care of plants</p>
-        </div>
-    </div>
-    <div class="designcontainer from-left slider-in">
-        <div class="icontitleandparagraphcontainer">
-            <div class="icon"><i class="fa fa-gittip"id="designicon"></i>  <span class="buildPortfoliotxt">Design</span></div>
-            <p class="paragraphtxt2">Designing a web interface is one of my favorite activity. I like to explore and get inspired, 
-                                    and grow exponentially in terms of desingning. I used a lot of tools to make ui prototyping.</p>
-        </div>
-    </div>
-    <div class="developmentcontainer from-right slider-in">
-        <div class="icontitleandparagraphcontainer">
-            <div class="icon"><i class="fa fa-cogs" id="designicon"></i><span class="buildPortfoliotxt">Development</span></div>
-            <p class="paragraphtxt">In terms of web design, specially the user interface which is need create user friendly. 
-                            I create basic and readable web design interface which result a good respons from the user.</p>
-        </div>
-    </div>
-</div>
-
-<style>
-     /* container 3////////////////// */
-.container3{
- min-height:70vh;
- max-width:100%;
- margin: 0;
- display: flex;
-background-color: #00eded;
- align-items: center;
- justify-content: space-around;
- flex-wrap:wrap;
-}
-.buildportfoliocontainer{
-min-height: 25vh;
-width: 30rem;   
-margin: 1rem ;
-transition: 1s;
-
-}
-
-.mobileresponsivcontainer{
-min-height:25vh;
-width: 30rem;
-margin:  1rem;
-
-}
-.designcontainer{
-min-height: 25vh;
-width: 30rem;
-margin: 1rem;
-
-}
-.developmentcontainer{
-min-height: 25vh;
-width: 30rem;
-margin:1rem;
-
-}
-.paragraphtxt{
-padding: 0 .4rem 1rem 1.6rem;
-margin: .9rem 0 0 .5rem  ;
-line-height: 2rem;
-color:#626567;  
-
-} 
-.paragraphtxt2{
-padding: 0 .4rem 1rem 1.6rem;
-margin: .9rem 0 0 .5rem  ;
-line-height: 2rem;
-color:#626567;  
-}
-/* iocontxttitle container */
-.icontitleandparagraphcontainer{
-margin: 2px;
-font-size: 17px;
-padding: .5rem 0 0 .9rem;
-}
-#designicon{
-font-size: 28px;
-color:#626567;  
-}
-.buildPortfoliotxt{
-font-weight: bold;
-margin: 0 0 0 .5rem;
-color:#626567;   
-}
-/* FOR resposive */
-@media screen  and (max-width:1024px){
-.buildportfoliocontainer{
-min-height: auto;
-width: 70rem;
-margin: 1rem ;
-}
-.mobileresponsivcontainer{
-min-height:auto;
-width: 70rem;
-margin: 1rem ;
-}
-.designcontainer{
-min-height: auto;
-width: 70rem;
-margin: 1rem ;
-}
-.developmentcontainer{
-min-height: auto;
-width: 70rem;
-margin: 1rem ;
-}
-}
-@media screen and (max-width:414px){
-.paragraphtxt{
-    font-size: 15px;
-}
-.buildPortfoliotxt{
-    font-size: 15;
-}
-#designicon{
-    font-size: 25px;
-}
-.whatidotxt1{
-    font-size: 25px;
-}
-}
 </style>
 
-    
-</body>
+<style>
+/* for javascript animation */
+.fade-in{
+    opacity: 0;
+    transition: 2s;
+    transform: opacity 250ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+}
+.from-left{
+    transform: translateY(10%);
+}
+.from-right{
+    transform: translateY(10%);
+}
+.from-left,
+.from-right{
+    transition: 
+    opacity .5s ease-in, 
+    transform 600ms ease-in;
+    opacity:0;   
+}
 
+.from-left.appear,
+.from-right.appear{
+    transform: translateY(0);
+    opacity: 1;
+}
+/* for javascript animation */
+
+
+
+
+
+
+
+   
+/* whole body background color */
+.maincontainer{
+    min-height: 420vh;
+    min-width: 100%;
+    background-color:#FBFBFB;
+
+}
+
+</style>
+
+
+
+
+
+<script>
+   const texts =["LOVE YOUR PASSION", "CREATE MORE"];
+   let count = 0;
+   let index = 0;
+   let currenttext="";
+   let letter ="";
+
+(function type(){
+    if(count === texts.length){
+        count = 0;
+    }
+    currenttext = texts[count];
+    letter = currenttext.slice(0, ++index);
+
+    document.querySelector(".autotyping").textContent = letter;
+    if (letter.length === currenttext.length){
+        count++;
+        index = 2;
+
+    }
+    setTimeout(type, 200);
+
+    
+})();
+
+
+const texts1 =["UI/UX DESIGNER", "FRONTEND DEVELOPER"];
+   let count1 = 0;
+   let index1 = 0;
+   let currenttext1="";
+   let letter1 ="";
+
+(function type(){
+    if(count1 === texts1.length){
+        count1 = 0;
+    }
+    currenttext1 = texts1[count1];
+    letter1 = currenttext1.slice(0, ++index1);
+
+    document.querySelector(".autotyping2").textContent = letter1;
+    if (letter1.length === currenttext1.length){
+        count1++;
+        index1 = 2;
+
+    }
+    setTimeout(type, 200);
+
+    
+})();
+
+
+    // fade-in
+    // slider-in
+    const slider = document.querySelectorAll(".slider-in")
+    const faders = document.querySelectorAll(".fade-in");
+
+    const appearOptions = {
+        threshold: 0,
+        rootMargin:"0px 0px -200px 0px"
+
+    };
+
+    const appearOnScroll = new IntersectionObserver
+    (function(
+        entries, 
+        appearOnScroll)
+        {
+            entries.forEach(entry =>{
+                if(!entry.isIntersecting){
+                    return;
+                }
+                else{
+                    entry.target.classList.add("appear");
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, 
+        appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+
+        slider.forEach(slider => {
+            appearOnScroll.observe(slider);
+        });
+
+
+
+
+        
+</script> 
+
+</body>
 </html>
