@@ -290,10 +290,10 @@ ul li a:hover{
     <!-- first conatiner -->
 
     <div class="container1">    
+        <div class="boxforTitle"> Introduction </div>
         <div class="boxforobjective">
-                <div class="caption1">
-                    <div class="autotyping2">Hello </div>
-                     <h2 class ="mynametxt "> Hi! I'm Benedick. <span class="txtfrontend"> welcome here</span> </h2>
+               
+                
                     <P class="portfoliotxt"> Year (2020) people worldwide got affected by the pandemic and the philippineswas among the them. Because of that our country was placed under community quarantine to help the government avoid the widespread of the virus through the entire nation.
                         Many people stayed at home for their safety  and to get away from the covid-19 virus infection.
                         According  to Philstar (GLOBAL) August 29, 2019, 3.3 million Filipinos suffer from depression
@@ -313,50 +313,7 @@ ul li a:hover{
        
     </div>
 <style>
-    .autotyping{
-        color: white;
-        margin:0 0 0 .7rem;
-        font-size: 70px;
-        font-weight: bold;  
-        position: relative;
-        font-style: italic;
-        margin: 2rem 0 1.5rem .6rem;
-        z-index: 2;
-    }
-    .autotyping::after{
-        content: "";
-        position:absolute;
-        width: 1px;
-        height: 100%;
-        border-right: 2px solid white;
-        animation: typing 0.5s infinite ease;
-    }
-    .autotyping2{
-        color:#515A5A;  
-        margin:0 0 0 .7rem;
-        font-size: 20px;
-        font-weight: bold;  
-        position: relative;
-
-        margin: 2rem 0 1.5rem .6rem;
-        z-index: 2;
-    }
-    .autotyping2::after{
-        content: "";
-        position:absolute;
-        width: 1px;
-        height: 100%;
-        border-right: 2px solid white;
-        animation: typing 0.5s infinite ease;
-    }
-    @keyframes typing{
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity:1;
-        }
-    }
+    
 
 
     /* for container1 */
@@ -370,17 +327,18 @@ ul li a:hover{
     margin-top: -4rem;
      flex-wrap:wrap;
      align-items:center;
-     justify-content:space-around;
+     justify-content:space-evenly;
      
   
     }
 .boxforobjective{
     min-height:260px;
-    max-width:570px;
+    max-width:700px;
     margin:0px 10px 0px;
+    background-color: #00eded;
 
 }
-.boxforimag{
+.boxforTitle{
     overflow:hidden;
     min-height:300px;
     max-width:300px;
@@ -389,6 +347,9 @@ ul li a:hover{
     align-items:center;
     margin:0rem 2rem 0rem 2rem; 
     position: relative;
+    font-size: 25px;
+    background-color: #F39C12;
+
 }
 
 .imgrightside{
