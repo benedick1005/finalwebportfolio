@@ -290,7 +290,7 @@ ul li a:hover{
     <!-- first conatiner -->
 
     <div class="container1">    
-        <div class="boxforimag"> Introduction </div>
+        <div class="boxforTitle"> Introduction </div>
         <div class="boxforobjective">
                
                 
@@ -327,84 +327,52 @@ ul li a:hover{
     margin-top: -4rem;
      flex-wrap:wrap;
      align-items:center;
-     justify-content:space-around;
+     justify-content:space-evenly;
      
   
     }
 .boxforobjective{
     min-height:260px;
-    max-width:570px;
+    max-width:700px;
     margin:0px 10px 0px;
+    background-color: #00eded;
 
 }
-.boxforimag{
-    overflow:hidden;
+.boxforTitle{
+  
     min-height:300px;
     max-width:300px;
     display:flex;
     justify-content:center;
     align-items:center;
-    margin:0rem 2rem 0rem 2rem; 
-    position: relative;
-}
-
-.imgrightside{
-    margin-top:10px;    
-    min-height: 300px;
-    max-width:400px;
-    margin:0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 100%; 
     
+  
+    font-size: 25px;
+
 
 }
+
+
 .portfoliotxt{
     padding: 1px 6px ;
-    font-size:17px;
+    font-size:15px;
     line-height: 1.5rem;
     color:#626567;
     
     margin: 1rem 0 0 0;
 }
-.txtfrontend{
-    color: #F39C12;
-}
-.mynametxt{
 
-    font-size:50px;
-    font-weight: bold;
-    margin: -1rem 0  0 6px;
-    color: #F39C12;
-    line-height: 3.rem;
-}
-.caption1{
-    margin-top: 1rem;
-}
+@media screen and (max-width:842px) {
+   .boxforTitle{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    font-size: 20px;
+   }
+   .portfoliotxt{
+    font-size: 15px;
+   }
 
-.Btnlearn:hover,
-.Btnlearn:focus{
-   
-    text-shadow: none;
-}
-.Btnlearn:hover::after{
-    opacity: 1;
-}
-@media screen and (max-width:414px) {
-    .mynametxt{
-        font-size: 30px;
-    }
-    .portfoliotxt{
-        font-size: 15px;
-    }
-.boxforimag{
-    min-height:300px;
-    max-width:300px;
-}
-.autotyping{
-    font-size: 33px;
-}
 }
 
 
