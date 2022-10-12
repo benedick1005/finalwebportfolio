@@ -294,11 +294,11 @@ ul li a:hover{
      background-image: url("img/uifor1stproject.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: contain;
     object-fit: cover;
     margin: 1em;
     padding: 1em;
-    background-size: contain;
+   
     
      border-radius: 50px 50px 50px 50px; 
     }
@@ -321,59 +321,44 @@ ul li a:hover{
 
 
 
-<!--for     experience-->
-<div class="containerforpromotion">
-    <div class="title">Experience Revamp of the Ipwsams App</div>
-    <div class="boxfortitle">
-        
+<div class="containerforpromotion1">
+    <div class="boxfortitle1">
+        <div class="title1">Experience Revamp of the Ipwsams App</div>
         <div class="boxfor3title">
-            <div class="one"> TIMELINE <br> June 2020 - 2021 </div>
-            <div class="one"> FLATFORM <br> Android App</div>
-            <div class="one"> MY ROLE <br> Programmer /Designer</div>
+            <div class="one1"> TIMELINE <br> June 2020 - 2021 </div>
+            <div class="one1"> FLATFORM <br> Android App</div>
+            <div class="one1"> MY ROLE <br> Programmer /Designer</div>
         </div>
     </div>
 </div>
 <style>
-    .containerforpromotion{
-        min-height:30vh;
-     max-width:100%;
-     margin: 0;
-     display: flex;
-  
-     align-items: center;
-     justify-content: space-around;
-     flex-wrap:wrap;
+    .containerforpromotion1{
+      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        min-height: 20em;
     }
 
-    .boxfortitle{
-        
-            margin: 2em;
+    .boxfortitle1{
+        min-height: 40vh;
+        width:  min( 800px,70%);
+            
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-                         border-top: 1px solid #AAB7B8;
-            
-                    
-            }
-    .title{
-        
-        font-size: 25px;
+             
+             border-top: 1px solid #515A5A; 
+    }
+    .title1{
+        font-size: 26px;
         font-weight: bold;
         color: #515A5A;
         text-align: center;
-        display: block;
-
-
-        min-height:30vh;
-        max-width:20%;
-    
-     
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
-        
+        margin-top: 1rem;
     }
     .boxfor3title{
         display: flex;
@@ -382,61 +367,82 @@ ul li a:hover{
         align-items: center;
 
     }
-    .one{
-        margin: 1em 8em 0em  0em;
+    .one1{
+        margin: 1.6em;
         line-height: 2em;
-        height: 3em;
-        font-size: 15px;
+        font-size: clamp(1rem, 1vw, .5rem);
+       
         
     }
-    @media screen and (max-width:745px) {
+ 
+</style>
+
+
+
+
+<div class="containerforpromotion2">
+    <div class="boxfortitle2">
+        <div class="title2">Experience Revamp of the Ipwsams App</div>
+        
+            <div class="one2"> According to Philstar (GLOBAL) August 29, 2019, 3.3 million Filipinos suffer from depression which is one of the highest rates in Southeast Asia 2020. As a result, a lot of people are now engaging into planting according to the Article entitled “New Plant Lovers Emerge from Quarantine” to relieve the stress while staying at home which is proven according to the expert in the article titled “The Prescription for a Healthy Life? A House Plant! Indoor Greenery Boosts Mood, Reduces Stress and Cleans the Air around Us”, and now they are called the "plantito" and "plantita" who love to take care of plants. 
+            
+            
+            
+        </div>
+    </div>
+</div>
+<style>
+    .containerforpromotion2{
+      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        min-height:50vh;
+     max-width:100%;
+     margin: 0;
+    }
+
+    .boxfortitle2{
+        min-height: 50vh;
+        width:  min( 800px,70%);
+        margin: .5rem ;
+        
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 20px; 
+    }
+    .title2{
+        font-size: clamp(1.5rem, 6vw, 1.25rem);
+        font-weight: bold;
+        color: #515A5A;
+        text-align: start;
+        margin: 2rem  .5rem 0rem;
+
+    }
+   
+    .one2{
+        margin: .5rem;
+        line-height: 2em;
+     
+        font-size: clamp(1rem, 1vw, .5rem);
+        
+    }
+    @media screen and (max-width:668px) {
     .title{
         font-size: 20px;
 }
     .one{
         font-size:13px ;
-        margin: 1em 7em 0em  0em;
     }
 }
-
-@media screen and (max-width:618px) {
-    .one{
-        font-size:13px ;
-        margin: 1em 4em 0em  0em;
-    }
-}
-@media screen and (max-width:500px) {
-    .one{
-        font-size:13px ;
-        margin: 1em 2em 0em  0em;
-    }
-}
-@media screen and (max-width:420px){
-    .one{
-        margin: 2em 0em 0em  3em;
-    }
-    .boxfor3title{
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
-
-}
-
-
-@media screen and (max-width:930px){
-    .title{
-     min-height:15vh;
-     max-width:50%;    
-     display: flex;
-     align-items: flex-end;
-     justify-content: end;
-
-    }
-
-}
-
 </style>
+
+
+
+
 
 
 
@@ -613,15 +619,40 @@ ul li a:hover{
 
 <!--for Problem-->
 <div class="conforIntro">
-    <div class="titleformyrole">Problem</div> 
-    <div class="boxforall">
+    <div class="titleformyrole"> Problem</div> 
+    <div class="boxforall1">
           <br>
-   <p class="ptxt">Taking care of the plants is something that needs enough time and effort for it to grow healthy, that’s why our group came up with the idea of creating 
-    a system that can help and/or support their new hobby by giving them a live status of their plants, light support as substitute for the sunlight, 
-    and automated watering support that can be easily utilized via mobile app.  </p>
+   <p class="ptxt">During the strike of pandemic, community quarantine has been the way of the government to prevent wide 
+    spread of the Covid-19 virus throughout the whole country. While being stucked in the house lots of our countrymen are 
+    on their effort to cure their boredom and most of all the most common problem in every household which is financial problem.
+     Lots of people engaged themselves in indoor planting as the way of fighting stress but as they start we may say that they might 
+     get stressed if the plant grows unhealthy. 
+<br>
+<br>
+     <span class="Sptxt">Specifif Problem</span>
+     <br>  •	Limited knowledge about indoor plants.
+     <br>  •	Difficulty in monitoring the live status of indoor plants.
+     <br>  •	Manual checking of soil status.
+     <br>  •	Unnecessary amount of water used in watering the indoor plant.
+     <br>  •	Manual watering of indoor plant.
+     <br>  •	No temperature checks in the surroundings of plants.
+
+
+    
+    </p>
+     
+
+     
     </div>
+    
 </div>
 <style>
+
+    .Sptxt{
+        font-size: 16px;
+        font-weight: bold;
+
+    }
     .conforIntro{
         min-height:50vh;
      max-width:100%;
@@ -633,15 +664,13 @@ ul li a:hover{
      flex-wrap:wrap;
         
     }
-    .boxforall{
+    .boxforall1{
     min-height: 25vh;
     width: 45rem;
     margin:1rem;
 
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
         
     }
 
@@ -663,7 +692,7 @@ ul li a:hover{
         padding: 0rem 1rem 0rem 1rem;
     }
     @media screen and (max-width:1000px){
-        .boxforall{
+        .boxforall1{
         width: 100%;
     }
     }
@@ -694,6 +723,276 @@ ul li a:hover{
 
 </style>
 
+
+
+
+
+
+
+<!--for Goal-->
+<div class="conforIntro1">
+    <div class="titleformyrole">Goal</div> 
+    <div class="boxforall1">
+          <br>
+   <p class="ptxt">Indoor Plant Watering Support and Maintenance System is designed to provide assistance 
+    to the plantitos/plantitas in taking care and monitoring of the plants. It gives ease for plants care 
+    taker for them to easily look for their plants using their smartphone and do necessary actions with just tapping on it.. 
+<br>
+<br>
+     <span class="Sptxt">Specifif Goal</span>
+     <br>  	•	To provide knowledge about indoor plants.
+     <br>  	•	To develop a system that would help in easy monitoring of indoor plants.
+     <br>  	•	To automated soil humidity monitoring.
+     <br>  	•	To help save unnecessary amount of water being used in watering indoor plant.
+     <br>   •	To provide automated indoor plant watering support system.
+     <br>  	•	To provide temperature checks and avoid reaching critical temperature that could harm indoor plant.
+      	    
+    </p>
+
+    </div>
+    
+</div>
+<style>
+
+    .Sptxt{
+        font-size: 16px;
+        font-weight: bold;
+
+    }
+    .conforIntro1{
+        min-height:80vh;
+     max-width:100%;
+     margin: 0;
+     display: flex;
+
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap:wrap;
+
+        
+    }
+    .boxforall1{
+    min-height: 25vh;
+    width: 45rem;
+    margin:1rem;
+
+
+
+        
+    }
+
+    .titleformyrole{
+        font-size: 25px;
+        font-weight: bold;
+        min-height:30vh;
+        width:20%;
+        color: #515A5A;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .ptxt{
+        font-size: 15px;
+        line-height: 2em;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    @media screen and (max-width:1000px){
+        .boxforall1{
+        width: 100%;
+    }
+    }
+    @media screen and (max-width:1000px){
+    .titleformyrole{
+     min-height:24vh;
+     max-width:50%;    
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+
+    }
+    
+
+}
+@media screen and (max-width:745px) {
+    .titleformyrole{
+        font-size: 20px;
+        width: 100%;
+}
+    .ptxt{
+        font-size:13px ;
+      
+    }
+}
+
+</style>
+
+
+
+<!--for Goal-->
+<div class="conforIntro1">
+    <div class="titleforTargerUsers">Targt Users</div> 
+    <div class="boxforall1">
+          <br>
+   <p class="ptxt"><span class="Sptxt">To the plantitos/plantitas</span>
+    Help them in taking care of their plants. The system has an archive of main information about the indoor plants that 
+    would help them to understand more about the plants and which benefit would a
+     specific plant be able to contribute in their environment or household.
+<br>
+<br>
+     
+
+The most common target of this project and will effectively reach their need are the people who 
+    recently engaged themselves in indoor planting. The main functions which are monitoring and watering support will 
+    make it easier for them to take care of their plants.
+
+      
+      
+    </p>
+
+    </div>
+    
+</div>
+<style>
+
+
+    .Sptxt{
+        font-size: 16px;
+        font-weight: bold;
+
+    }
+    .conforIntro1{
+        min-height:70vh;
+     max-width:100%;
+     margin: 0;
+     display: flex;
+
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap:wrap;
+
+        
+    }
+    .boxforall1{
+    min-height: 25vh;
+    width: 45rem;
+    margin:1rem;
+
+
+
+        
+    }
+
+    .titleforTargerUsers{
+        font-size: 25px;
+        font-weight: bold;
+        min-height:30vh;
+        width:20%;
+        color: #515A5A;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .ptxt{
+        font-size: 15px;
+        line-height: 2em;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    @media screen and (max-width:1000px){
+        .boxforall1{
+        width: 100%;
+    }
+    }
+    @media screen and (max-width:1000px){
+    .titleformyrole{
+     min-height:24vh;
+     max-width:50%;    
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+
+    }
+    
+
+}
+@media screen and (max-width:745px) {
+    .titleformyrole{
+        font-size: 20px;
+        width: 100%;
+}
+    .ptxt{
+        font-size:13px ;
+      
+    }
+}
+
+</style>
+
+
+
+
+
+
+<div class="boxconatinerfor">
+    <div class="titleformyrole">Process</div>
+    <div class="container">
+       
+    </div>
+</div>
+
+
+<style>
+    .titleformyrole{
+        font-size: 25px;
+        font-weight: bold;
+        color: #515A5A;
+    }
+    .boxconatinerfor{
+        min-height:70vh;
+     max-width:100%;
+     margin: 0;
+     display: flex;
+   
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap:wrap;
+    
+    }
+
+    .container{
+        min-height:60vh;
+    width:50rem;
+     margin: 0;
+     display: flex;
+
+     align-items: center;
+     justify-content: center;
+     flex-wrap:wrap;
+
+
+     background-image: url("img/hardwareprototype.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    .con1{
+        min-height:50vh;
+    width: 15rem;
+    background-color: #333;
+    margin: 1rem;
+
+
+    background-image: url("img/uifor1stproject.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    object-fit: cover;
+    }
+</style> 
 
 
 
