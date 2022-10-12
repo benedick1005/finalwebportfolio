@@ -340,14 +340,13 @@ ul li a:hover{
         align-content: center;
         width: 100%;
         min-height: 20em;
-        background-color: #00eded;
+        background-color: red;
     }
 
     .boxfortitle1{
         min-height: 40vh;
         width:  min( 800px,70%);
-            
-            flex-direction: column;
+        flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
@@ -355,7 +354,7 @@ ul li a:hover{
              border-top: 1px solid #515A5A; 
     }
     .title1{
-        font-size: 26px;
+        font-size: clamp(1.5rem, 6vw, 1.25rem);
         font-weight: bold;
         color: #515A5A;
         text-align: center;
@@ -375,6 +374,16 @@ ul li a:hover{
        
         
     }
+
+    
+    @media screen and (max-width:426px) {
+        .boxfor3title{
+           display: block;
+           text-align: center;
+       
+        }     
+ 
+}  
  
 </style>
 
