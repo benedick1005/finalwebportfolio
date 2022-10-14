@@ -1109,40 +1109,28 @@ ul li a:hover{
 
 
 <!--for my final design---------------------------------------------------------------------------------->
-<div class="containerforfinalDesign1">
-    <div class="boxforfinaldesign">
-        
-        
-            <div class="oneforfinaldesign"> 
-            </div>
-            <div class="oneforlogin"> 
-            </div>
-            <div class="oneforsignup"> 
-            </div>
-            <div class="oneforhome"> 
-            </div>
-            <div class="oneforcategory"> 
-            </div>
-            <div class="oneforaddplant"> 
-            </div>
-            <div class="oneforhistory"> 
-            </div>
-            
-    </div>
+
+
+<div class="containerforall">
+    <div class="oneforfinaldesign1"> </div>
+    <div class="oneforlogin2"> </div>
+    <div class="oneforsignup3"> </div>
+    <div class="oneforhome4"> </div>
+    <div class="oneforcategory5"> </div>
+    <div class="oneforaddplant6"> </div>
+    <div class="oneforhistory7"> </div>
+
 </div>
 
-<div class="sample">
-    <div class="sampleko"> </div>
-    <div class="sampleko"> </div>
-</div>
-<div class="sample2">
-    <div class="sampleko2"> </div>
-</div>
+
+
+
+
 
 
 <style>
 
-.sample{
+.containerforall{
     display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -1150,12 +1138,23 @@ ul li a:hover{
     
      max-width:100%;
      margin: 0;
-     background-color: red;
+     
 
   
 }
 
-.sampleko{
+.oneforfinaldesign1{
+    min-height:65vh;
+    width: max( 500px,70%); 
+    background-image: url("img/forfinaldesign.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;   
+    margin: 1rem;  
+
+}
+.oneforlogin2{
     min-height:65vh;
     width: max( 500px,70%); 
     background-image: url("img/forlogin.png");
@@ -1166,108 +1165,7 @@ ul li a:hover{
     margin: 1rem;  
 
 }
-
-@media screen and (max-width:419px) {
-
-.sampleko{
-   min-height:30vh;
-}
-}
-</style>
-
-
-<style>
-
-    .sample2{
-        display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
-        
-         max-width:100%;
-         margin: 0;
-         background-color:blue;
-    
-      
-    }
-    
-    .sampleko2{
-        min-height:65vh;
-        width: max( 500px,70%); 
-        background-image: url("img/forlogin.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        object-fit: cover;   
-        margin: 1rem;  
-    
-    }
-    
-    @media screen and (max-width:419px) {
-    
-    .sampleko2{
-       min-height:30vh;
-    }
-    }
-    </style>
-    
-
-<style>
-
-
-    .containerforfinalDesign1{
-      
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        min-height:100vh;
-     max-width:100%;
-     margin: 0;
-     background-color: #00eded;
-  
-
-  
-    }
-
-    .boxforfinaldesign{
-        min-height: 70vh;
-        width:  max( 300px,50%);
-        border-radius: 20px; 
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-
-  
-
-      
-    }
-
-    .oneforfinaldesign{
-        min-height:65vh;
-        width: max( 500px,70%); 
-        padding: ;
-        background-image: url("img/sampleui1.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size:contain; 
-        margin: 1em;
-        background-color:white;
-        border-radius: 20px;    
-        transition: background-color 0.5s ease;  
-    }
-    .oneforlogin{
-    min-height:65vh;
-    width: max( 500px,70%); 
-    background-image: url("img/forlogin.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;   
-    margin: 1rem;  
-    }
-    .oneforsignup{
+.oneforsignup3{
     min-height:65vh;
     width: max( 500px,70%); 
     background-image: url("img/forsignup.png");
@@ -1276,8 +1174,9 @@ ul li a:hover{
     background-size: contain;
     object-fit: cover;   
     margin: 1rem;  
-    }
-    .oneforhome{
+
+}
+.oneforhome4{
     min-height:65vh;
     width: max( 500px,70%); 
     background-image: url("img/forhome.png");
@@ -1286,8 +1185,10 @@ ul li a:hover{
     background-size: contain;
     object-fit: cover;   
     margin: 1rem;  
-    }
-    .oneforcategory{
+
+}
+
+.oneforcategory5{
     min-height:65vh;
     width: max( 500px,70%); 
     background-image: url("img/forcategory.png");
@@ -1296,8 +1197,9 @@ ul li a:hover{
     background-size: contain;
     object-fit: cover;   
     margin: 1rem;  
-    }
-    .oneforaddplant{
+
+}
+.oneforaddplant6{
     min-height:65vh;
     width: max( 500px,70%); 
     background-image: url("img/foraddplant.png");
@@ -1306,8 +1208,9 @@ ul li a:hover{
     background-size: contain;
     object-fit: cover;   
     margin: 1rem;  
-    }
-    .oneforhistory{
+
+}
+.oneforhistory7{
     min-height:65vh;
     width: max( 500px,70%); 
     background-image: url("img/forhistory.png");
@@ -1316,62 +1219,200 @@ ul li a:hover{
     background-size: contain;
     object-fit: cover;   
     margin: 1rem;  
-    }
-    @media screen and (max-width:900px) {
 
-     .oneforfinaldesign{
-        min-height:40vh;
-     }
-    }
-     @media screen and (max-width:800px) {
+}
 
-.oneforfinaldesign{
-   min-height:55vh;
-}
-     }
-@media screen and (max-width:700px) {
 
-.oneforfinaldesign{
-   min-height:50vh;
-}
-}
-@media screen and (max-width:600px) {
 
-.oneforfinaldesign{
-   min-height:50vh;
-}
-}
-@media screen and (max-width:400px) {
 
-.oneforfinaldesign{
-   min-height:45vh;
-}
-}
-@media screen and (max-width:400px) {
+@media screen and (max-width:800px) {
 
-.oneforfinaldesign{
-   min-height:45vh;
-}
-}
-@media screen and (max-width:300px) {
-
-.oneforfinaldesign{
+.oneforfinaldesign1{
    min-height:40vh;
-
 }
-}@media screen and (max-width:250px) {
-
-.oneforfinaldesign{
-   min-height:35vh;
-
+.oneforlogin2{
+   min-height:40vh;
 }
-}@media screen and (max-width:200px) {
+.oneforsignup3{
+   min-height:40vh;
+}
+.oneforhome4{
+   min-height:40vh;
+}
 
-.oneforfinaldesign{
+.oneforcategory5{
+   min-height:40vh;
+}
+
+.oneforaddplant6{
+   min-height:40vh;
+}
+.oneforhistory7{
+   min-height:40vh;
+}
+}
+
+@media screen and (max-width:419px) {
+
+.oneforfinaldesign1{
+   min-height:30vh;
+}
+.oneforlogin2{
+   min-height:30vh;
+}
+.oneforsignup3{
+   min-height:30vh;
+}
+.oneforhome4{
+   min-height:30vh;
+}
+
+.oneforcategory5{
+   min-height:30vh;
+}
+
+.oneforaddplant6{
+   min-height:30vh;
+}
+.oneforhistory7{
    min-height:30vh;
 }
 }
+@media screen and (max-width:380px) {
+
+.oneforfinaldesign1{
+   min-height:30vh;
+}
+.oneforlogin2{
+   min-height:30vh;
+}
+.oneforsignup3{
+   min-height:30vh;
+}
+.oneforhome4{
+   min-height:30vh;
+}
+
+.oneforcategory5{
+   min-height:30vh;
+}
+
+.oneforaddplant6{
+   min-height:30vh;
+}
+.oneforhistory7{
+   min-height:30vh;
+}
+}
+
+
+@media screen and (max-width:325px) {
+
+.oneforfinaldesign1{
+   min-height:25vh;
+}
+.oneforlogin2{
+   min-height:25vh;
+}
+.oneforsignup3{
+   min-height:25vh;
+}
+.oneforhome4{
+   min-height:25vh;
+}
+
+.oneforcategory5{
+   min-height:25vh;
+}
+
+.oneforaddplant6{
+   min-height:25vh;
+}
+.oneforhistory7{
+   min-height:25vh;
+}
+}
+
+@media screen and (max-width:280px) {
+
+.oneforfinaldesign1{
+   min-height:20vh;
+}
+.oneforlogin2{
+   min-height:20vh;
+}
+.oneforsignup3{
+   min-height:20vh;
+}
+.oneforhome4{
+   min-height:20vh;
+}
+
+.oneforcategory5{
+   min-height:20vh;
+}
+
+.oneforaddplant6{
+   min-height:20vh;
+}
+.oneforhistory7{
+   min-height:20vh;
+}
+}
+@media screen and (max-width:232px) {
+
+.oneforfinaldesign1{
+   min-height:16vh;
+}
+.oneforlogin2{
+   min-height:16vh;
+}
+.oneforsignup3{
+   min-height:16vh;
+}
+.oneforhome4{
+   min-height:16vh;
+}
+
+.oneforcategory5{
+   min-height:16vh;
+}
+
+.oneforaddplant6{
+   min-height:16vh;
+}
+.oneforhistory7{
+   min-height:16vh;
+}
+}
+
+
+
+
+
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
  
 
 </body>
