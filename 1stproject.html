@@ -1130,7 +1130,91 @@ ul li a:hover{
             
     </div>
 </div>
+
+<div class="sample">
+    <div class="sampleko"> </div>
+    <div class="sampleko"> </div>
+</div>
+<div class="sample2">
+    <div class="sampleko2"> </div>
+</div>
+
+
 <style>
+
+.sample{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    
+     max-width:100%;
+     margin: 0;
+     background-color: red;
+
+  
+}
+
+.sampleko{
+    min-height:65vh;
+    width: max( 500px,70%); 
+    background-image: url("img/forlogin.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;   
+    margin: 1rem;  
+
+}
+
+@media screen and (max-width:419px) {
+
+.sampleko{
+   min-height:30vh;
+}
+}
+</style>
+
+
+<style>
+
+    .sample2{
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        
+         max-width:100%;
+         margin: 0;
+         background-color:blue;
+    
+      
+    }
+    
+    .sampleko2{
+        min-height:65vh;
+        width: max( 500px,70%); 
+        background-image: url("img/forlogin.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        object-fit: cover;   
+        margin: 1rem;  
+    
+    }
+    
+    @media screen and (max-width:419px) {
+    
+    .sampleko2{
+       min-height:30vh;
+    }
+    }
+    </style>
+    
+
+<style>
+
+
     .containerforfinalDesign1{
       
         display: flex;
@@ -1140,6 +1224,7 @@ ul li a:hover{
         min-height:100vh;
      max-width:100%;
      margin: 0;
+     background-color: #00eded;
   
 
   
@@ -1160,14 +1245,17 @@ ul li a:hover{
     }
 
     .oneforfinaldesign{
-    min-height:65vh;
-    width: max( 500px,70%); 
-    background-image: url("img/fordesign.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;   
-    margin: 1rem;  
+        min-height:65vh;
+        width: max( 500px,70%); 
+        padding: ;
+        background-image: url("img/sampleui1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain; 
+        margin: 1em;
+        background-color:white;
+        border-radius: 20px;    
+        transition: background-color 0.5s ease;  
     }
     .oneforlogin{
     min-height:65vh;
@@ -1234,56 +1322,57 @@ ul li a:hover{
      .oneforfinaldesign{
         min-height:40vh;
      }
-
+    }
      @media screen and (max-width:800px) {
 
 .oneforfinaldesign{
    min-height:55vh;
 }
-
+     }
 @media screen and (max-width:700px) {
 
 .oneforfinaldesign{
    min-height:50vh;
+}
 }
 @media screen and (max-width:600px) {
 
 .oneforfinaldesign{
    min-height:50vh;
 }
-@media screen and (max-width:400px) {
-
-.oneforfinaldesign{
-   min-height:45vh;
 }
 @media screen and (max-width:400px) {
 
 .oneforfinaldesign{
    min-height:45vh;
-}@media screen and (max-width:300px) {
+}
+}
+@media screen and (max-width:400px) {
+
+.oneforfinaldesign{
+   min-height:45vh;
+}
+}
+@media screen and (max-width:300px) {
 
 .oneforfinaldesign{
    min-height:40vh;
+
 }
 }@media screen and (max-width:250px) {
 
 .oneforfinaldesign{
    min-height:35vh;
+
 }
 }@media screen and (max-width:200px) {
 
 .oneforfinaldesign{
    min-height:30vh;
 }
-}@media screen and (max-width:150px) {
-
-.oneforfinaldesign{
-   min-height:25vh;
 }
-    }
 </style>
-
-
+ 
 
 </body>
 
