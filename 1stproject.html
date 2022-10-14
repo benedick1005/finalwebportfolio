@@ -774,43 +774,39 @@ ul li a:hover{
 
 
 
-<!--for my Process---------------------------------------------------------------------------------->
-<div class="containerforpromotionforProcess">
-    <div class="boxfortitleforProcess">
-        <div class="title2">Process</div>
+
+<!--for Process---------------------------------------------------------------------------------->
+<div class="containerfortxtProcss">
+    <div class="boxfortitlefortxtprocess">
+        <div class="title2">Target User</div>
         
-            <div class="oneforProcess"> 
+          
             
-            
-            </div>
     </div>
 </div>
 <style>
-    .containerforpromotionforProcess{
+    .containerfortxtProcss{
       
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-        min-height:30vh;
-     max-width:100%;
-     margin: 0;
+        min-height:10vh;
+        max-width:100%;
+        margin: 0;
 
+    
   
     }
 
-    .boxfortitleforProcess{
-        min-height: 70vh;
+    .boxfortitlefortxtprocess{
         width:  max( 600px,60%);
         margin: .5rem ;
-        
-       
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
         border-radius: 20px; 
-
-      
     }
     .title2{
         font-size: clamp(1.5rem, 6vw, 1.25rem);
@@ -822,14 +818,12 @@ ul li a:hover{
 
     }
    
-    .oneforProcess{
-    min-height: 70vh;
-    width:  min( 800px,80%); 
-    background-image: url("img/hardwareprototype.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;     
+    .one2{
+        margin: .5rem;
+        line-height: 2em;
+        font-family: sans-serif;
+        font-size: clamp(1rem, 1vw, .5rem);
+        
     }
     @media screen and (max-width:668px) {
         .title2{
@@ -842,76 +836,156 @@ ul li a:hover{
 }
 </style>
 
-<!--for my Process---------------------------------------------------------------------------------->
-<div class="containerforpromotionforProcess">
-    <div class="boxfortitleforProcessimg">
-        
-        
-            <div class="oneforwiframingimg"> 
-            </div>
-            <div class="oneforwiframingimg2"> 
-            </div>
-            
-    </div>
+<div class="containerforPrototype">
+
+    <div class="oneforprototype1"> </div>
+    <div class="oneforprototype2"> </div>
+    <div class="oneforprototype3"> </div>
+   
+
 </div>
+
 <style>
-    .containerforpromotionforProcess{
-      
-        display: flex;
+
+.containerforPrototype{
+    display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-        min-height:50vh;
      max-width:100%;
      margin: 0;
+  
+     
 
   
-    }
+}
 
-    .boxfortitleforProcessimg{
-        min-height: 50vh;
-        width:  max( 300px,50%);
-   
-        
-   
-       
-        border-radius: 20px; 
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
+.oneforprototype1{
+    min-height:65vh;
+    width: max( 500px,70%); 
+    background-image: url("img/hardwareprototype.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;   
+    margin: 1rem;  
 
-      
-    }
-
-   
-    .oneforwiframingimg{
-    min-height: 43vh;
-    width: max( 500px,60%); 
+}
+.oneforprototype2{
+    min-height:65vh;
+    width: max( 500px,70%); 
     background-image: url("img/wiframing.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    object-fit: cover;     
-    }
-    .oneforwiframingimg2{
-    min-height: 43vh;
-    width: max( 500px,60%); 
+    object-fit: cover;   
+    margin: 1rem;  
+
+}
+.oneforprototype3{
+    min-height:65vh;
+    width: max( 300px,60%); 
     background-image: url("img/circuitdiagram.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    object-fit: cover;     
-    }
-    @media screen and (max-width:668px) {
-        .title2{
-        font-size: clamp(1rem, 6vw, 1.25rem);
-        }
-        .one2{
-            font-size: clamp(.9rem, 1vw, .5rem);
+    object-fit: cover;   
+    margin: 1rem;  
 
-        }
 }
+
+   
+    @media screen and (max-width:1200px) {
+
+.oneforprototype1{
+   min-height:40vh;
+}
+.oneforprototype2{
+   min-height:40vh;
+}
+.oneforprototype3{
+   min-height:40vh;
+}
+
+ }
+ @media screen and (max-width:900px) {
+
+.oneforprototype1{
+   min-height:30vh;
+}
+.oneforprototype2{
+   min-height:30vh;
+}
+.oneforprototype3{
+   min-height:30vh;
+}
+
+ }
+@media screen and (max-width:559px) {
+
+.oneforprototype1{
+   min-height:30vh;
+}
+.oneforprototype2{
+   min-height:30vh;
+}
+.oneforprototype3{
+   min-height:30vh;
+}
+}
+
+@media screen and (max-width:407px) {
+
+.oneforprototype1{
+   min-height:25vh;
+}
+.oneforprototype2{
+   min-height:25vh;
+}
+.oneforprototype3{
+   min-height:25vh;
+}
+}
+@media screen and (max-width:343px) {
+
+.oneforprototype1{
+   min-height:20vh;
+}
+.oneforprototype2{
+   min-height:20vh;
+}
+.oneforprototype3{
+   min-height:20vh;
+}
+}
+
+@media screen and (max-width:280px) {
+
+.oneforprototype1{
+   min-height:17vh;
+}
+.oneforprototype2{
+   min-height:17vh;
+}
+.oneforprototype3{
+   min-height:17vh;
+}
+}
+@media screen and (max-width:232px) {
+    .oneforprototype1{
+   min-height:16vh;
+
+}
+.oneforprototype2{
+   min-height:16vh;
+
+}
+.oneforprototype3{
+   min-height:16vh;
+
+}
+}
+
 </style>
 
 <!--for my process---------------------------------------------------------------------------------->
@@ -1030,15 +1104,8 @@ ul li a:hover{
     object-fit: cover;     
     }
  
-    @media screen and (max-width:668px) {
-        .title2{
-        font-size: clamp(1rem, 6vw, 1.25rem);
-        }
-        .one2{
-            font-size: clamp(.9rem, 1vw, .5rem);
+  
 
-        }
-}
 </style>
 
 
@@ -1108,6 +1175,17 @@ ul li a:hover{
 </style>
 
 
+
+
+
+
+
+
+
+
+
+
+
 <!--for my final design---------------------------------------------------------------------------------->
 
 
@@ -1121,12 +1199,6 @@ ul li a:hover{
     <div class="oneforhistory7"> </div>
 
 </div>
-
-
-
-
-
-
 
 <style>
 
@@ -1224,6 +1296,33 @@ ul li a:hover{
 
 
 
+@media screen and (max-width:900px) {
+
+.oneforfinaldesign1{
+   min-height:40vh;
+}
+.oneforlogin2{
+   min-height:40vh;
+}
+.oneforsignup3{
+   min-height:40vh;
+}
+.oneforhome4{
+   min-height:40vh;
+}
+
+.oneforcategory5{
+   min-height:40vh;
+}
+
+.oneforaddplant6{
+   min-height:40vh;
+}
+.oneforhistory7{
+   min-height:40vh;
+}
+}
+
 
 @media screen and (max-width:800px) {
 
@@ -1249,6 +1348,32 @@ ul li a:hover{
 }
 .oneforhistory7{
    min-height:40vh;
+}
+}
+@media screen and (max-width:500px) {
+
+.oneforfinaldesign1{
+   min-height:30vh;
+}
+.oneforlogin2{
+   min-height:30vh;
+}
+.oneforsignup3{
+   min-height:30vh;
+}
+.oneforhome4{
+   min-height:30vh;
+}
+
+.oneforcategory5{
+   min-height:30vh;
+}
+
+.oneforaddplant6{
+   min-height:30vh;
+}
+.oneforhistory7{
+   min-height:30vh;
 }
 }
 
@@ -1304,8 +1429,6 @@ ul li a:hover{
    min-height:30vh;
 }
 }
-
-
 @media screen and (max-width:325px) {
 
 .oneforfinaldesign1{
