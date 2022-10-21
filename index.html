@@ -281,20 +281,31 @@ ul li a:hover{
 
 
 
-
+</style>
 
 <!-- for ui ux -->
 
 <div class="bg1">
     <div class="boxforuxui">
         
-        <div class="autotyping">Hello </div>
+        <div class="txtparagraph"> "Do what you love <br> <span class="andtxt"> &</span> <br>Love what you do" 
+        </div>
         
     </div>
     
 </div>
 
 <style>
+  .txtparagraph{
+    font-size:90px;
+    font-style: normal;
+
+    line-height: 5rem;
+    z-index: 2;
+    color:white;
+    position: relative;
+    text-align: center;
+}
     .bg1{
         min-height:110vh;
      max-width:100%;
@@ -307,7 +318,6 @@ ul li a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    
      border-radius: 50px 50px 50px 50px; 
     }
 
@@ -321,6 +331,25 @@ ul li a:hover{
         }
       
 }    
+@media screen and (max-width:686px) {
+    .txtparagraph{
+        font-size: 60px;
+        line-height: 3rem;
+    }   
+}
+@media screen and (max-width:414px) {
+    .txtparagraph{
+        font-size: 30px;
+        line-height: 3rem;
+    }   
+}
+@media screen and (max-width:251px) {
+    .txtparagraph{
+        font-size: 30px;
+        line-height: 3rem;
+    }   
+}
+
 </style>
 
 
@@ -339,7 +368,7 @@ ul li a:hover{
                 </div>
                 <!-- <div class="btnlearn"  > <button class="Btnlearn" id="btnlearn">Hire me</button> </div> -->
         </div>
-        <div class="boxforimag">  <img src="img/imgko8.png" alt="" class="imgrightside">
+        <div class="boxforimag">  <img src="img/imgko12.png" alt="" class="imgrightside">
         </div>
     </div>
 <style>
@@ -394,7 +423,7 @@ ul li a:hover{
    
     
 .container1{
-     min-height:70vh;
+     min-height:100vh;
      max-width:100%;
      display:flex;
     margin-top: -4rem;
@@ -423,13 +452,14 @@ ul li a:hover{
 
 .imgrightside{
     margin-top:10px;    
-    min-height: 300px;
-    max-width:400px;
+    min-height: 200px;
+    max-width:300px;
     margin:0;
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 100%; 
+    background-size: contain;
+    object-fit: cover;
+  
     
 
 }
@@ -487,87 +517,7 @@ ul li a:hover{
 <br>
 
 
-   <!-- second container -->
-    <div class="containe2">
-        <div class="headerandparagraphcontainer fade-in">
-        <div class="Getstarted"></div>
-            <div class="txtparagraph"> "Do what you love <br> <span class="andtxt"> &</span> <br>Love what you do" 
-            </div>
-        </div>
-    </div>
-   
-<style>
 
-.containe2{
-     min-height:70vh;
-     max-width:100%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-wrap: wrap;     
-     background-color:#FBFBFB;
-     /* background-color: #040F20; */
-}
-.headerandparagraphcontainer{
-    text-align: center;
-    min-height: 40vh;
-    min-width: 100%;
-    align-items: center;
-    /* overflow: hidden;
-    background-image: url("img/bg1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-
-    margin-top: 5rem;
-}
-
-.txtparagraph{
-    font-size:90px;
-    font-style: normal;
-
-    line-height: 5rem;
-    z-index: 2;
-    color:rgb(0,32,50);
-    position: relative;
-}
-/* foor what ido container */
-.whatidocontainer{
-    min-height: 5vh;
-    max-width: 100%;
-    margin: 0 auto;    
-}
-.containerforwhatido{
-    min-height: 2vh;
-    max-width: 86%;
-    margin: 0 auto;
-    padding: 1rem;
-}
-.whatidotxt1{
-   font-size: 25px;
-   margin: 1rem;
-   position: relative;
-   color:rgb(0,32,50);
-   margin: 0 1rem 0 1rem;
-}
-.whatidotxt1::before{
-    content: " 0.1 ";
-    font-size: 25px;
-    color: #F39C12;
-    font-weight: normal;
-}
-.dotxt{
-    color: #00eded;
-}
-/* for responsive text */
-@media screen and (max-width:414px) {
-    .txtparagraph{
-        font-size: 35px;
-        line-height: 3rem;
-    }   
-}
-
-</style>
 
 
 
@@ -832,8 +782,8 @@ ul li a:hover{
 
         <div class="box22">
             <div class="Titlefornumber">Pending</div>
-            <!-- <div class="Title">Indor Plant and Maintenance ....</div>
-            <div class="Titleviewcase"> View case study <i class="fa fa-long-arrow-right" id="arrow"></i></div> -->
+            <div class="Title">Indor Plant and Maintenance ....</div>
+            <div class="Titleviewcase"> View case study <i class="fa fa-long-arrow-right" id="arrow"></i></div>
         </div>
         
         <div class="box33">
@@ -906,12 +856,12 @@ ul li a:hover{
         width:22em;
         height: 25em;
         padding: 6.em;
-        /* background-image: url("img/sampleui2.png"); */
+        background-image: url("img/keykabite.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover; 
+        background-size: contain; 
         margin: 1em;
-        background-color:white;
+        background-color:#D8F3DC;
         border-radius: 20px;      
     }
     .box33{
@@ -1715,29 +1665,29 @@ ul li a:hover{
 
 
 <script>
-   const texts =["LOVE YOUR PASSION", "CREATE MORE"];
-   let count = 0;
-   let index = 0;
-   let currenttext="";
-   let letter ="";
+//    const texts =["LOVE YOUR PASSION", "CREATE MORE"];
+//    let count = 0;
+//    let index = 0;
+//    let currenttext="";
+//    let letter ="";
 
-(function type(){
-    if(count === texts.length){
-        count = 0;
-    }
-    currenttext = texts[count];
-    letter = currenttext.slice(0, ++index);
+// (function type(){
+//     if(count === texts.length){
+//         count = 0;
+//     }
+//     currenttext = texts[count];
+//     letter = currenttext.slice(0, ++index);
 
-    document.querySelector(".autotyping").textContent = letter;
-    if (letter.length === currenttext.length){
-        count++;
-        index = 2;
+//     document.querySelector(".autotyping").textContent = letter;
+//     if (letter.length === currenttext.length){
+//         count++;
+//         index = 2;
 
-    }
-    setTimeout(type, 300);
+//     }
+//     setTimeout(type, 300);
 
     
-})();
+// })();
 
 
 const texts1 =["UI/UX DESIGNER", "FRONTEND DEVELOPER"];
